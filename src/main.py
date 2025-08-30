@@ -3,7 +3,7 @@ import tkinter as tk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.pyplot as plt
 
-from funciones.bernoulli import generar_Bernoulli
+from functions.bernoulli import generar_Bernoulli
 
 def abrir_bernoulli():
     nueva = tk.Toplevel(ventana)
