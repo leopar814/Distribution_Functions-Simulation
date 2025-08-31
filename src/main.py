@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 
 from functions.bernoulli import generar_Bernoulli
 from functions.binomial import generar_Binomial
+from functions.exponential import generar_exponencial
 
 def abrir_bernoulli():
     nueva = tk.Toplevel(ventana)
@@ -103,6 +104,40 @@ def abrir_binomial():
     boton.pack(pady=10)
 
 
+def abrir_exponencial():
+    nueva = tk.Toplevel(ventana)
+    nueva.title("Distribución Bernoulli")
+    nueva.geometry("800x900")
+    nueva.configure(bg="#CACDE6")
+
+    tk.Label(nueva, text="Distribución Exponencial", bg="#E6D5CA", fg="black", font=("Arial", 16)).pack(pady=20)
+
+    frame_botones = tk.Frame(nueva, bg="#CACDE6")
+    frame_botones.pack(side="bottom", fill="x", pady=10, padx=10)
+
+    btn_regresar = tk.Button(frame_botones, text="Regresar", font=("Arial", 12), bg="lightgray", fg="black", width=12, command=nueva.destroy)
+    btn_regresar.pack(side="left", anchor="w")
+    
+    btn_info = tk.Button(frame_botones, text="Info", font=("Arial", 12), bg="lightgray", fg="black", width=12, command=lambda: messagebox.showinfo("Info", "Aquí va la información de Bernoulli"))
+    btn_info.pack(side="right", anchor="e")
+
+    tk.Label(nueva, text="Tamaño de la muestra(n):").pack(pady=(5))
+    entrada_n = tk.Entry(nueva)
+    entrada_n.pack()
+
+    tk.Label(nueva, text="Valor de λ (lambda):").pack(pady=(5))
+    entrada_lambda = tk.Entry(nueva)
+    entrada_lambda.pack(pady=(5))
+
+    frame_grafica = tk.Frame(nueva)
+    frame_grafica.pack(pady=(10))
+
+    tk.Button(nueva, text="Generar", command=lambda: generar_exponencial(entrada_n, entrada_lambda, frame_grafica)).pack()
+
+
+
+
+
 # Ventana principal
 ventana = tk.Tk()
 ventana.title("Simulación de distribuciones")
@@ -115,6 +150,7 @@ tk.Label(ventana, text="Elige una distribución:", font=("Arial", 14)).pack(pady
 # Botones
 tk.Button(ventana, text="Bernoulli", width=20, command=abrir_bernoulli).pack(pady=5)
 tk.Button(ventana, text="Binomial", width=20, command=abrir_binomial).pack(pady=5)
+tk.Button(ventana, text="Exponencial", width=20, command=abrir_exponencial).pack(pady=5)
 
 
 ventana.mainloop()
