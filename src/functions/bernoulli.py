@@ -21,7 +21,7 @@ def simular_muestra(n,p):
 
 def graficar_Bernulli(num_Exitos, num_Fracasos, frame):
     fig, ax = plt.subplots(figsize=(4,3))
-    barras = ax.bar(["CARAS", "CRUCES"], [num_Exitos, num_Fracasos], color=["skyblue", "red"])
+    barras = ax.bar(["Éxito", "Fracaso"], [num_Exitos, num_Fracasos], color=["skyblue", "red"])
     ax.set_ylabel("Frecuencia")
     ax.set_title("Histograma de Resultados")
 
