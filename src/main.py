@@ -1,4 +1,5 @@
 import tkinter as tk
+import tkinter.messagebox as messagebox
 
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.pyplot as plt
@@ -18,6 +19,7 @@ def abrir_bernoulli():
 
     btn_regresar = tk.Button(frame_botones, text="Regresar", font=("Arial", 12), bg="lightgray", fg="black", width=12, command=nueva.destroy)
     btn_regresar.pack(side="left", anchor="w")
+    
     btn_info = tk.Button(frame_botones, text="Info", font=("Arial", 12), bg="lightgray", fg="black", width=12, command=lambda: messagebox.showinfo("Info", "Aquí va la información de Bernoulli"))
     btn_info.pack(side="right", anchor="e")
 
@@ -40,9 +42,12 @@ def abrir_bernoulli():
     frame_grafica = tk.Frame(nueva)
     frame_grafica.pack(pady=10)
 
+    # Frame para los detalles(secuencia)
+    frame_detalles = tk.Frame(nueva)
+    frame_detalles.pack(pady=5)
 
     # Botón para ejecutar
-    boton = tk.Button(nueva, text="Generar", command = lambda: generar_Bernoulli(entrada_n, deslizador_p, frame_grafica))
+    boton = tk.Button(nueva, text="Generar", command = lambda: generar_Bernoulli(entrada_n, deslizador_p, frame_grafica, frame_detalles))
     boton.pack(pady=10)
 
 
