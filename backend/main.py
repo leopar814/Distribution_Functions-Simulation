@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import numpy as np
 import random   
+from collections import Counter
 
 app = FastAPI()
 
@@ -38,19 +39,20 @@ def generar_bernoulli(repeticiones: int, proba_exito: float):
         "secuencia": secuencia[:100]  # limitar a 100 elementos para frontend
     }
 
+# --------------------
+# Simulación Binomial
+# --------------------
+@app.get("/binomial")
+def simular_binomial(repeticiones : int, muestra : int, proba_exito : float):
+    secuencia = []  # Lista con el número de éxitos de cada repetición
+    for _ in range(repeticiones):  
+        resultado = generar_bernoulli(muestra, proba_exito)  # Reutilizamos Bernoulli k veces
+        num_Exitos = resultado["exitos"]
+        secuencia.append(num_Exitos)  # Guardamos los éxitos de esta repetición
+    conteo = Counter(secuencia)
 
-
-# def get_distribution(
-#     type: str = "normal",
-#     mean: float = 0,
-#     std: float = 1,
-#     n: int = 10
-# ):
-#     """Genera muestras de una distribución y las regresa como JSON"""
-#     if type == "normal":
-#         data = np.random.normal(mean, std, n).tolist()
-#     elif type == "uniform":
-#         data = np.random.uniform(-1, 1, n).tolist()
-#     else:
-#         data = []
-#     return {"samples": data}
+    frecuencias = [{"x" : i, "y" : conteo.get(i, 0)} for i in range(muestra + 1)]
+    return {
+        "frecuencias": frecuencias,
+        "secuencia" : secuencia
+    }
