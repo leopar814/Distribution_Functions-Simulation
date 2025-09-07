@@ -15,8 +15,5 @@ export default function App() {
         <Route path="*" element={<div>Página no encontrada</div>} />
       </Route>
     </Routes>
-    // <div>
-    //   <Layout/>
-    // </div>
   );
 }
