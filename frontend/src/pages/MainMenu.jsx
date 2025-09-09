@@ -19,9 +19,9 @@ export default function MainMenu() {
             </button>
           </Link>
           {/* Más botones para otras distribuciones */}
-          <Link to="/normal">
+          <Link to="/exponential">
             <button className="w-full bg-purple-300 hover:bg-purple-600 text-black font-semibold py-3 rounded-xl shadow-md transition duration-300">
-              Normal
+              Exponencial
             </button>
           </Link>
         </div>

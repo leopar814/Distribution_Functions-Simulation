@@ -1,6 +1,9 @@
 import { useState } from "react";
-import DistributionChart from "./DistributionChart";
+import DistributionChart from "../DistributionChart";
 import Swal from 'sweetalert2';
+import 'katex/dist/katex.min.css';
+import { BlockMath } from 'react-katex';
+
 
 export default function BernoulliSimulation() {
   const [repeticiones, setRepeticiones] = useState(100);
@@ -17,6 +20,7 @@ export default function BernoulliSimulation() {
     <div className="flex flex-col  items-center min-h-screen bg-gray-50 p-10">
       <div className="w-[90vw] h-[90vh] bg-white shadow-lg rounded-lg p-8">
         <h1 className="text-4xl font-extrabold text-gray-800 mb-6 text-center">Simulación de Distribución Bernoulli</h1>
+        <BlockMath math="f(x) = " />
 
         <div className="flex flex-row items-center justify-center gap-6">
           <div className="flex flex-col gap-4">

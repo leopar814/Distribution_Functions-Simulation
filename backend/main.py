@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import numpy as np
 import random   
+import math
 from collections import Counter
 
 app = FastAPI()
@@ -56,3 +57,31 @@ def simular_binomial(repeticiones : int, muestra : int, proba_exito : float):
         "frecuencias": frecuencias,
         "secuencia" : secuencia
     }
+
+# --------------------
+# Simulación Exponencial
+# --------------------
+@app.get("/exponential")
+def simular_exponencial(n : int, lambda_ : float):
+    
+    muestras = []
+    for _ in range(n):
+        u = random.random()
+        x = -math.log(1 - u) / lambda_
+        muestras.append(x)
+
+    conteo, bordes = np.histogram(muestras, bins="auto", density=False)
+    frecuencias = [{"x": float(bordes[i]), "y": int(conteo[i])} for i in range(len(conteo))]
+    
+    max_x = max(muestras)
+    theo_x = np.linspace(0, max_x, 100)
+    theo_y = lambda_ * np.exp(-lambda_ * theo_x)
+    teorica = [{"x": float(x), "y": float(y)} for x, y in zip(theo_x, theo_y)]
+
+    return {
+        "muestras": muestras[:100],   # Para detalle
+        "frecuencias": frecuencias,   # Histograma simulado
+        "teorica": teorica,           # Curva teórica
+        "lambda": lambda_
+    }
+
