@@ -8,6 +8,7 @@ from functions.bernoulli import generar_Bernoulli
 from functions.binomial import generar_Binomial
 from functions.exponential import generar_exponencial
 from functions.multinomial import generar_multinomial
+from functions.gebbs import generar_gebbs
 
 def abrir_bernoulli():
     nueva = tk.Toplevel(ventana)
@@ -204,7 +205,64 @@ def abrir_exponencial():
     tk.Button(nueva, text="Generar", command=lambda: generar_exponencial(entrada_n, entrada_lambda, frame_grafica, frame_detalles)).pack()
 
 
+def abrir_gebbs():
+    nueva = tk.Toplevel(ventana)   
+    nueva.title("Distribución Bernoulli") 
+    nueva.geometry("800x900")
+    nueva.configure(bg="#CACDE6")
 
+    frame_funcion = tk.Frame(nueva, bg="#CACDE6")
+    frame_funcion.pack(pady=20)
+
+    fila0 = tk.Frame(frame_funcion, bg="#CACDE6")
+    fila0.pack(pady=5)
+    tk.Label(fila0, text="f(x, y)= ", width=20, anchor="e").pack(side="left", padx=5)
+    inFuncion = tk.Entry(fila0)
+    inFuncion.pack(side="left", padx=5)
+    inFuncion.insert(0, "1/28*(2*x+3*y+2)")
+
+    fila1 = tk.Frame(frame_funcion, bg="#CACDE6")
+    fila1.pack(pady=5)
+    tk.Label(fila1, text="Límite Inferior de X = ", width=20, anchor="e").pack(side="left", padx=5)
+    inXmin = tk.Entry(fila1)
+    inXmin.pack(side="left", padx=5)
+    inXmin.insert(0, "0")
+
+    fila2 = tk.Frame(frame_funcion, bg="#CACDE6")
+    fila2.pack(pady=5)
+    tk.Label(fila2, text="Límite Superior de X = ", width=20, anchor="e").pack(side="left", padx=5)
+    inXmax = tk.Entry(fila2)
+    inXmax.pack(side="left", padx=5)
+    inXmax.insert(0, "2")
+
+    fila3 = tk.Frame(frame_funcion, bg="#CACDE6")
+    fila3.pack(pady=5)
+    tk.Label(fila3, text="Límite Inferior de Y = ", width=20, anchor="e").pack(side="left", padx=5)
+    inYmin = tk.Entry(fila3)
+    inYmin.pack(side="left", padx=5)
+    inYmin.insert(0, "0")
+
+    fila4 = tk.Frame(frame_funcion, bg="#CACDE6")
+    fila4.pack(pady=5)
+    tk.Label(fila4, text="Límite Superior de Y = ", width=20, anchor="e").pack(side="left", padx=5)
+    inYmax = tk.Entry(fila4)
+    inYmax.pack(side="left", padx=5)
+    inYmax.insert(0, "2")
+
+    fila5 = tk.Frame(frame_funcion, bg="#CACDE6")
+    fila5.pack(pady=5)
+    tk.Label(fila5, text="Tamaño de la muestra (N): ", width=20, anchor="e").pack(side="left", padx=5)
+    inN = tk.Entry(fila5)
+    inN.pack(side="left", padx=5)
+    inN.insert(0, "10")
+
+    frame_grafica = tk.Frame(nueva)
+    frame_grafica.pack(pady=(10))
+
+    frame_detalles = tk.Frame(nueva)
+    frame_detalles.pack(pady=5)
+
+    tk.Button(nueva, text="Generar", command=lambda: generar_gebbs(inFuncion, inXmin, inXmax, inYmin, inYmax, inN, frame_grafica, frame_detalles)).pack()
 
 
 # Ventana principal
@@ -221,7 +279,7 @@ tk.Button(ventana, text="Bernoulli", width=20, command=abrir_bernoulli).pack(pad
 tk.Button(ventana, text="Binomial", width=20, command=abrir_binomial).pack(pady=10)
 tk.Button(ventana, text="Multinomial", width=20, command=abrir_multinomial).pack(pady=10)
 tk.Button(ventana, text="Exponencial", width=20, command=abrir_exponencial).pack(pady=10)
-
+tk.Button(ventana, text="GEBBS", width=20, command=abrir_gebbs).pack(pady=10)
 
 ventana.mainloop()
 
