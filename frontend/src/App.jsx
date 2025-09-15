@@ -1,9 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import MainMenu from "./pages/MainMenu";
-import Layout from "./pages/Layout";
+import Layout from "./components/Layout";
 import BernoulliSimulation from "./pages/distributions/BernoulliSimulation";
 import BinomialSimulation from "./pages/distributions/BinomialSimulation";
 import ExponentialSimulation from "./pages/distributions/ExponentialSimulation";
+import MultinomialSimulation from "./pages/distributions/MultinomialSimulation";
+import GebbsSimulation from "./pages/distributions/GebbsSimulation";
 
 export default function App() {
   return (
@@ -13,6 +15,8 @@ export default function App() {
         <Route path="/bernoulli" element={<BernoulliSimulation />} />
         <Route path="/binomial" element={<BinomialSimulation />} />
         <Route path="/exponential" element={<ExponentialSimulation />} />
+        <Route path="/multinomial" element={<MultinomialSimulation />} />
+        <Route path="/gebbs" element={<GebbsSimulation />} />
         {/* Más rutas aquí  */}
         <Route path="*" element={<div>Página no encontrada</div>} />
       </Route>
