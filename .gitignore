@@ -44,6 +44,12 @@ frontend/dist-ssr
 *.local
 __pychache__
 
+# Ignorar carpetas de caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
