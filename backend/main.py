@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Query, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import numpy as np
 import sympy as sp
@@ -72,8 +72,13 @@ def simular_exponencial(n : int, lambda_ : float):
         x = -math.log(1 - u) / lambda_
         muestras.append(x)
 
-    conteo, bordes = np.histogram(muestras, bins="auto", density=False)
-    frecuencias = [{"x": float(bordes[i]), "y": int(conteo[i])} for i in range(len(conteo))]
+    conteo, bordes = np.histogram(muestras, bins="auto", density=True)
+    centers = (bordes[:-1] + bordes[1:]) / 2
+    frecuencias = [
+        {"x": float(c), "y": float(d)}
+        for c, d in zip(centers, conteo)
+    ]
+
     
     max_x = max(muestras)
     theo_x = np.linspace(0, max_x, 100)
@@ -135,6 +140,10 @@ def generar_multinomial(
             "categorias": [f"C{i+1}" for i in range(len(probs))]
         }
     
+# --------------------
+# Simulación Gebbs
+# --------------------
+    
 x, y, t = sp.symbols('x y t')
 
 def X(f, xmin, xmax, y_val):
@@ -175,3 +184,46 @@ def generar_gibbs(funcion: str, xmin: float, xmax: float, ymin: float, ymax: flo
         "fin": {"x": float(muestras[-1][0]), "y": float(muestras[-1][1])}
     }
 
+# --------------------
+# Simulación Normal
+# --------------------
+@app.get("/normal")
+def generar_normal(
+    repeticiones: int,
+    mu: float = 0.0,
+    sigma: float = 1.0,
+    bins: int = 20
+):
+    if repeticiones <= 0 or sigma <= 0:
+        raise HTTPException(status_code=400, detail="repeticiones y sigma deben ser positivos")
+
+    # Box–Muller
+    datos = []
+    pares = (repeticiones + 1) // 2
+    for _ in range(pares):
+        u1, u2 = random.random() or 1e-10, random.random()
+        r = math.sqrt(-2 * math.log(u1))
+        z1 = r * math.cos(2 * math.pi * u2)
+        z2 = r * math.sin(2 * math.pi * u2)
+        datos.append(mu + sigma * z1)
+        if len(datos) < repeticiones:
+            datos.append(mu + sigma * z2)
+
+    muestra = datos
+
+    # Histograma (densidad)
+    counts, edges = np.histogram(muestra, bins=bins, density=True)
+    centers = (edges[:-1] + edges[1:]) / 2
+    frecuencias = [{"x": float(c), "y": float(d)} for c, d in zip(centers, counts)]
+
+    # Curva teórica más suave
+    xs = np.linspace(min(muestra), max(muestra), 200)
+    pdf = 1/(sigma * np.sqrt(2*np.pi)) * np.exp(-((xs - mu)**2) / (2 * sigma**2))
+    teorica = [{"x": float(x), "y": float(y)} for x, y in zip(xs, pdf)]
+
+    return {
+        "repeticiones": repeticiones,
+        "frecuencias": frecuencias,
+        "teorica": teorica,
+        "muestra": muestra[:100]
+    }

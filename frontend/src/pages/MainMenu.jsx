@@ -24,6 +24,11 @@ export default function MainMenu() {
               Exponencial
             </button>
           </Link>
+          <Link to="/normal">
+            <button className="w-[20vw] bg-pink-300 hover:bg-pink-600 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+              Normal
+            </button>
+          </Link>
           <Link to="/multinomial">
             <button className="w-[20vw] bg-red-300 hover:bg-red-500 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               Multinomial

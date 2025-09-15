@@ -7,21 +7,18 @@ import matplotlib.pyplot as plt
 
 #genera n numeros aleatorios y cuenta cuantos caen en cada rango
 def simular_muestra(n,p):
-    secuencia = []
     num_Exitos, num_Fracasos = 0, 0
     for _ in range(n):
         r = random.random()
         if r <= p:
-            secuencia.append("E")  # Éxito
             num_Exitos += 1
         else:
-            secuencia.append("F")  # Fracaso
             num_Fracasos += 1
-    return num_Exitos, num_Fracasos, secuencia
+    return num_Exitos, num_Fracasos
 
 def graficar_Bernulli(num_Exitos, num_Fracasos, frame):
     fig, ax = plt.subplots(figsize=(4,3))
-    barras = ax.bar(["Éxito", "Fracaso"], [num_Exitos, num_Fracasos], color=["skyblue", "red"])
+    barras = ax.bar(["CARAS", "CRUCES"], [num_Exitos, num_Fracasos], color=["skyblue", "red"])
     ax.set_ylabel("Frecuencia")
     ax.set_title("Histograma de Resultados")
 
@@ -39,35 +36,14 @@ def graficar_Bernulli(num_Exitos, num_Fracasos, frame):
 
     plt.close(fig) #liberar memoria
 
-# Función para mostrar la secuencia de éxitos y fracasos
-def mostrar_detalles(secuencia, frame_detalles):
-    # Limitar a 100 elementos
-    secuencia_a_mostrar = secuencia[:100]
-    texto = ", ".join(secuencia_a_mostrar)
-    
-    for widget in frame_detalles.winfo_children():
-        widget.destroy()
-    
-    text_widget = tk.Text(frame_detalles, height=5, width=80)
-    text_widget.pack()
-    text_widget.insert(tk.END, texto)
-    text_widget.config(state=tk.DISABLED)
-
-def generar_Bernoulli(entrada_n, deslizador_p, frame_grafica, frame_detalles):
+def generar_Bernoulli(entrada_n, deslizador_p, frame_grafica):
     try:
         n = int(entrada_n.get())
         p = deslizador_p.get()
 
-        num_Exitos, num_Fracasos, secuencia = simular_muestra(n, p)
+        num_Exitos, num_Fracasos = simular_muestra(n, p)
 
         graficar_Bernulli(num_Exitos, num_Fracasos, frame_grafica)
-
-        # Botón para ver detalles
-        for widget in frame_detalles.winfo_children():
-            widget.destroy()
-        
-        boton_detalles = tk.Button(frame_detalles, text="¿Desea ver detalles?", command=lambda: mostrar_detalles(secuencia, frame_detalles))
-        boton_detalles.pack()
 
     except ValueError:
         messagebox.showerror("Error", "Ingresa un número válido")

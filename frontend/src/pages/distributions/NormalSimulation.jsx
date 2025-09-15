@@ -1,27 +1,26 @@
 import { useState } from "react";
-import DistributionChart from "../../components/DistributionChart";
-import Header from "../../components/Header";
 import Swal from 'sweetalert2';
 import 'katex/dist/katex.min.css';
+import DistributionChart from "../../components/DistributionChart";
+import Header from "../../components/Header";
 import Parametros from "../../components/Parametros";
+
 
 export default function BinomialSimulation() {
     
     const [n, setN] = useState(1000);
-    const [lambda, setLambda] = useState(1.0);
+    const [media, setMedia] = useState(0);
+    const [desviacionEst, setDesviacionEst] = useState(1);
     const [data, setData] = useState(null);
 
     const params = [
-      { label: "Número de Muestras", type: "number",  min: 0, value: n, setter: setN },
-      { label: "Lambda", type: "number", min: 0, value: lambda, setter: setLambda }
+      { label: "Tamaño de la Muestra", type: "number",  min: 0, value: n, setter: setN },
+      { label: "Media", type: "number", min: 0, value: media, setter: setMedia },
+      { label: "Desviación Estándar", type: "number", min: 0, value: desviacionEst, setter: setDesviacionEst }
     ];
 
     const fetchData = async () => {
-      if (lambda <= 0) {
-        Swal.fire("Error", "λ debe ser mayor que 0", "error");
-        return;
-      }
-      const res = await fetch(`http://localhost:8000/exponential?n=${n}&lambda_=${lambda}`);
+      const res = await fetch(`http://localhost:8000/normal?repeticiones=${n}&mu=${media}&sigma=${desviacionEst}`);
       const json = await res.json();
       setData(json);
   };
@@ -29,8 +28,8 @@ export default function BinomialSimulation() {
       <div className = "flex flex-col  items-center min-h-screen bg-gray-50 p-10">
         
         <Header 
-          distributionName={"Exponencial"}
-          formula={"f(x) = \\lambda e^{-\\lambda x}, \\quad x \\geq 0"}  
+          distributionName={"Normal"}
+          formula={"f(x) = \\frac{1}{\\sigma \\sqrt{2\\pi}} \\exp^{\\!\\biggl(-\\frac{(x - \\mu)^2}{2\\sigma^2}\\biggr)}"}  
         />
 
         <div className="w-[95vw] h-[95vh] bg-white shadow-lg rounded-lg p-6 grid grid-cols-3 gap-4">
@@ -54,7 +53,7 @@ export default function BinomialSimulation() {
           <div className="flex col-span-2 bg-gray-100 p-4 rounded shadow items-center">
             {data && (
               <div className = "w-full flex flex-col items-center">
-                <DistributionChart type="exponential" data={data} />
+                <DistributionChart type="normal" data={data} />
 
                 <button
                   onClick={() => Swal.fire({

@@ -1,18 +1,28 @@
 import { useState } from "react";
 import Header from "../../components/Header";
 import DistributionChart from "../../components/DistributionChart";
+import Parametros from "../../components/Parametros";
 
 export default function GebbsSimulation() {
   const [funcion, setFuncion] = useState("x*exp(-x-y)"); // Ejemplo
-  const [xmin, setXmin] = useState(0);
-  const [xmax, setXmax] = useState(10);
-  const [ymin, setYmin] = useState(0);
-  const [ymax, setYmax] = useState(10);
-  const [n, setN] = useState(200);
+  const [xMin, setXMin] = useState(0);
+  const [xMax, setXMax] = useState(10);
+  const [yMin, setYMin] = useState(0);
+  const [yMax, setYMax] = useState(10);
+  const [n, setN] = useState(100);
 
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+
+  const params = [
+    { label: "Función f(x,y)", type: "text", value: funcion, setter: setFuncion },
+    { label: "Número de muestras (N)", type: "number", value: n, setter: setN },
+    { label: "X min", type: "number", value: xMin, setter: setXMin },
+    { label: "X max", type: "number", value: xMax, setter: setXMax },
+    { label: "Y min", type: "number", value: yMin, setter: setYMin },
+    { label: "Y max", type: "number", value: yMax, setter: setYMax },
+  ];
 
   const handleSimulate = async () => {
     setLoading(true);
@@ -20,10 +30,10 @@ export default function GebbsSimulation() {
     try {
       const params = new URLSearchParams({
         funcion,
-        xmin,
-        xmax,
-        ymin,
-        ymax,
+        xmin: xMin,
+        xmax: xMax,
+        ymin: yMin,
+        ymax: yMax,
         n,
       });
       const res = await fetch(`http://localhost:8000/gebbs?${params.toString()}`);
@@ -46,66 +56,9 @@ export default function GebbsSimulation() {
             <h1 className="text-2xl font-bold mb-4">Simulación Gibbs</h1>
 
             <div className="grid grid-cols-2 gap-4 mb-4">
-                <div>
-                    <label className="block text-sm font-medium">Función f(x,y)</label>
-                <input
-                    type="text"
-                    value={funcion}
-                    onChange={(e) => setFuncion(e.target.value)}
-                    className="w-full p-2 border rounded"
-                />
-                </div>
 
-                <div>
-                <label className="block text-sm font-medium">Número de muestras (N)</label>
-                <input
-                    type="number"
-                    value={n}
-                    onChange={(e) => setN(e.target.value)}
-                    className="w-full p-2 border rounded"
-                    min="10"
-                />
-                </div>
+                <Parametros params={params} />
 
-                <div>
-                <label className="block text-sm font-medium">X min</label>
-                <input
-                    type="number"
-                    value={xmin}
-                    onChange={(e) => setXmin(e.target.value)}
-                    className="w-full p-2 border rounded"
-                />
-                </div>
-
-                <div>
-                <label className="block text-sm font-medium">X max</label>
-                <input
-                    type="number"
-                    value={xmax}
-                    onChange={(e) => setXmax(e.target.value)}
-                    className="w-full p-2 border rounded"
-                />
-                </div>
-
-                <div>
-                <label className="block text-sm font-medium">Y min</label>
-                <input
-                    type="number"
-                    value={ymin}
-                    onChange={(e) => setYmin(e.target.value)}
-                    className="w-full p-2 border rounded"
-                />
-                </div>
-
-                <div>
-                <label className="block text-sm font-medium">Y max</label>
-                <input
-                    type="number"
-                    value={ymax}
-                    onChange={(e) => setYmax(e.target.value)}
-                    className="w-full p-2 border rounded"
-                />
-                </div>
             </div>
 
             <button

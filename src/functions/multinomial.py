@@ -1,12 +1,15 @@
 import tkinter as tk
 from tkinter import messagebox
+from tkinter.ttk import Combobox
 import random
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.pyplot as plt
 
-
+# =========================
+# Funciones auxiliares
+# =========================
 def _parse_probabilidad_texto(texto):
-    """Convierte 1/6 o 0.16 a float"""
+    """Convierte '1/6' o '0.16' a float"""
     texto = texto.strip()
     if "/" in texto:
         num, den = texto.split("/")
@@ -14,8 +17,8 @@ def _parse_probabilidad_texto(texto):
     else:
         return float(texto)
 
-
 def _simular_una_multinomial(n, probs):
+    """Simula un experimento multinomial"""
     k = len(probs)
     conteos = [0] * k
     secuencia = []
@@ -33,14 +36,12 @@ def _simular_una_multinomial(n, probs):
                 break
     return conteos, secuencia
 
-
 def _graficar_barras(valores, etiquetas, frame, titulo):
+    """Genera un gráfico de barras dentro de un frame de Tkinter"""
     fig, ax = plt.subplots(figsize=(4, 3))
     barras = ax.bar(etiquetas, valores)
     ax.set_ylabel("Frecuencia")
     ax.set_title(titulo)
-
-    # Números sobre las barras (si quieres quitar, comenta este bloque)
     for barra in barras:
         altura = barra.get_height()
         ax.text(
@@ -51,7 +52,6 @@ def _graficar_barras(valores, etiquetas, frame, titulo):
             va="bottom",
             fontsize=10
         )
-
     for widget in frame.winfo_children():
         widget.destroy()
     canvas = FigureCanvasTkAgg(fig, master=frame)
@@ -59,8 +59,8 @@ def _graficar_barras(valores, etiquetas, frame, titulo):
     canvas.get_tk_widget().pack()
     plt.close(fig)
 
-
 def _mostrar_detalles(secuencia, frame_detalles):
+    """Muestra los primeros 100 elementos de la secuencia"""
     for widget in frame_detalles.winfo_children():
         widget.destroy()
     texto = ", ".join(secuencia[:100])
@@ -69,11 +69,14 @@ def _mostrar_detalles(secuencia, frame_detalles):
     text_widget.insert(tk.END, texto)
     text_widget.config(state=tk.DISABLED)
 
-
+# =========================
+# Función principal multinomial
+# =========================
 def generar_multinomial(
     entrada_n, entradas_probs, entrada_rep,
-    frame_grafica, frame_resultados, frame_detalles
+    frame_resultados, frame_grafica, frame_detalles
 ):
+    """Función principal que se llama desde la ventana Tkinter"""
     try:
         n = int(entrada_n.get())
         if n <= 0:
@@ -100,11 +103,15 @@ def generar_multinomial(
             messagebox.showerror("Error", "Las probabilidades deben sumar 1")
             return
 
-        lista_conteos = []
+        # -----------------------------
+        # Generar todos los vectores
+        # -----------------------------
+        lista_vectores = []
         ultima_secuencia = []
+
         for _ in range(R):
             conteos, sec = _simular_una_multinomial(n, probs)
-            lista_conteos.append(conteos)
+            lista_vectores.append(conteos)
             ultima_secuencia = sec
 
         etiquetas = [f"{i+1}" for i in range(len(probs))]
@@ -113,28 +120,34 @@ def generar_multinomial(
         for w in frame_resultados.winfo_children():
             w.destroy()
 
-        if R == 1:
-            for i, c in enumerate(lista_conteos[0]):
-                tk.Label(frame_resultados, text=f"{c}").pack(anchor="w")
-            _graficar_barras(lista_conteos[0], etiquetas, frame_grafica, "Multinomial")
-        else:
-            proms = [sum(lista_conteos[r][i] for r in range(R)) / R for i in range(len(probs))]
-            tk.Label(frame_resultados, text=f"Promedio en {R} repeticiones:").pack(anchor="w")
-            for v in proms:
-                tk.Label(frame_resultados, text=f"{round(v, 2)}").pack(anchor="w")
-            tk.Label(frame_resultados, text="Última repetición:").pack(anchor="w", pady=(8, 0))
-            for c in lista_conteos[-1]:
-                tk.Label(frame_resultados, text=f"{c}").pack(anchor="w")
-            _graficar_barras(proms, etiquetas, frame_grafica, f"Promedio de {R} repeticiones")
+        # Mostrar todos los vectores generados
+        tk.Label(frame_resultados, text="Vectores generados:").pack(anchor="w")
+        for idx, vec in enumerate(lista_vectores):
+            tk.Label(frame_resultados, text=f"{idx+1}: {vec}").pack(anchor="w")
 
-        # Mostrar detalles
-        for w in frame_detalles.winfo_children():
-            w.destroy()
-        tk.Button(
-            frame_detalles,
-            text="Ver detalles (100 primeros)",
-            command=lambda: _mostrar_detalles(ultima_secuencia, frame_detalles)
-        ).pack()
+        # Combobox para elegir cuál graficar
+        combo = Combobox(frame_resultados, values=[str(i+1) for i in range(len(lista_vectores))], state="readonly")
+        combo.current(0)
+        combo.pack(pady=2)
+
+        def graficar_seleccionado():
+            idx = int(combo.get()) - 1
+            for w in frame_grafica.winfo_children():
+                w.destroy()
+            _graficar_barras(lista_vectores[idx], etiquetas, frame_grafica, f"Vector {idx+1}")
+
+        tk.Button(frame_resultados, text="Graficar vector seleccionado",
+                  command=graficar_seleccionado).pack(pady=5)
+
+        # Botón para ver detalles
+        if frame_detalles:
+            for w in frame_detalles.winfo_children():
+                w.destroy()
+            tk.Button(
+                frame_detalles,
+                text="Ver detalles (100 primeros)",
+                command=lambda: _mostrar_detalles(ultima_secuencia, frame_detalles)
+            ).pack()
 
     except ValueError:
         messagebox.showerror("Error", "Ingresa valores numéricos válidos")

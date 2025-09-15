@@ -79,6 +79,7 @@ export default function DistributionChart({ type, data }) {
               x: data.frecuencias.map(d => d.x),
               y: data.frecuencias.map(d => d.y),
               type: "bar",
+              opacity: 0.9,
               marker: { color: "#344fd8" },
               name: "Frecuencias simuladas",
             },
@@ -181,6 +182,47 @@ export default function DistributionChart({ type, data }) {
     );
   }
 
+  else if (type === "normal") {
+    const freqX = data.frecuencias.map(d => d.x);
+    const freqY = data.frecuencias.map(d => d.y);
+    const theoX = data.teorica.map(d => d.x);
+    const theoY = data.teorica.map(d => d.y);
+
+    return (
+      <div className="flex flex-col p-4 h-full w-full justify-center items-center">
+        <h2 className="text-lg font-bold mb-2">Distribución Normal</h2>
+        <Plot
+          data={[
+            {
+              x: freqX,
+              y: freqY,
+              type: "bar",
+              name: "Muestra simulada",
+              marker: { color: "#82ca9d" },
+              opacity: 0.7,
+            },
+            {
+              x: theoX,
+              y: theoY,
+              type: "scatter",
+              mode: "lines",
+              name: "Densidad teórica",
+              line: { color: "red", width: 2 },
+            }
+          ]}
+          layout={{
+            autosize: true,
+            margin: { t: 40, b: 50, l: 50, r: 30 },
+            xaxis: { title: { text: "Valor", font: { size: 14 } } },
+            yaxis: { title: { text: "Densidad", font: { size: 14 } } },
+            showlegend: true
+          }}
+          useResizeHandler={true}
+          style={{ width: "80%", height: "80%" }}
+        />
+      </div>
+    );
+  }
 
   return null;
 }

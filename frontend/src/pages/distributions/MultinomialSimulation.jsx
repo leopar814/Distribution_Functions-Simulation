@@ -1,21 +1,29 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DistributionChart from "../../components/DistributionChart";
 import Header from "../../components/Header";
 import Swal from 'sweetalert2';
 import 'katex/dist/katex.min.css';
+import Parametros from "../../components/Parametros";
 
 export default function MultinomialSimulation() {
+
   const [n, setN] = useState(100); // tamaño de muestra
   const [rep, setRep] = useState(1); // número de repeticiones
   const [numCategorias, setNumCategorias] = useState(3); // número de categorías
   const [probs, setProbs] = useState(Array(3).fill(0.33)); // arreglo dinámico de probabilidades
   const [data, setData] = useState(null);
+  const params = [
+    { label: "Tamaño de Muestra (N)", type: "number", value: n, setter: setN },
+    { label: "Repeticiones", type: "number", step: 1, value: rep, setter: setRep },
+    { label: "Número de categorías", type: "number", step: 1, min: 2, value: numCategorias, setter: setNumCategorias }
+  ];
 
-  const handleNumCategoriasChange = (value) => {
-    const num = Number(value);
-    setNumCategorias(num);
-    setProbs(Array(num).fill(1 / num)); // inicializa con probas iguales
-  };
+  useEffect(() => {
+    setProbs(Array(numCategorias).fill(1 / numCategorias)); // inicializa con probas iguales
+  }, [numCategorias]);
+
+
+
 
   const fetchData = async () => {
     const params = new URLSearchParams();
@@ -28,6 +36,7 @@ export default function MultinomialSimulation() {
     setData(json);
   };
 
+
   // Actualizar valor de probabilidad individual
   const handleProbChange = (index, value) => {
     const updated = [...probs];
@@ -37,6 +46,7 @@ export default function MultinomialSimulation() {
 
   return (
     <div className="flex flex-col items-center min-h-screen bg-gray-50 p-10">
+
       <Header 
         distributionName={"Multinomial"}
         formula={"f(x) = \\frac{k!}{n_1!\\,n_2!\\, \\cdots \\, n_k!} \\quad \\theta_1^{n_1} \\, \\theta_2^{n_2} \\, \\cdots \\, \\theta_k^{n_k}"}  
@@ -47,42 +57,9 @@ export default function MultinomialSimulation() {
         <div className="col-span-1 flex flex-col gap-6">
           {/* Panel 1: Inputs */}
           <div className="bg-gray-100 p-4 rounded shadow">
-            <h2 className="text-xl font-bold text-gray-700 mb-4">
-              Parámetros
-            </h2>
-            <div className="mb-4">
-              <label className="block text-gray-700 mb-1">
-                Tamaño de muestra (N):
-              </label>
-              <input
-                type="number"
-                value={n}
-                onChange={(e) => setN(Number(e.target.value))}
-                className="w-full border p-2 rounded"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-gray-700 mb-1">
-                Repeticiones:
-              </label>
-              <input
-                type="number"
-                step="1"
-                value={rep}
-                onChange={(e) => setRep(Number(e.target.value))}
-                className="border p-2 rounded w-full"
-              />
-            </div>
-            <div className="mb-2 col-span-2">
-              <label className="block text-gray-700 mb-1">Número de categorías</label>
-              <input
-                type="number"
-                min="2"
-                value={numCategorias}
-                onChange={(e) => handleNumCategoriasChange(e.target.value)}
-                className="w-full p-2 border rounded"
-              />
-            </div>
+
+            <Parametros params={params} />
+
             <div className="mb-4">
               <h2 className="text-gray-700 font-semibold mb-2">Probabilidades</h2>
               {probs.map((p, idx) => (
