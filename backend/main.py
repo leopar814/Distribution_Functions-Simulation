@@ -39,7 +39,7 @@ def generar_bernoulli(repeticiones: int, proba_exito: float):
         "proba_exito": proba_exito,
         "exitos": num_exitos,
         "fracasos": num_fracasos,
-        "secuencia": secuencia[:100]  # limitar a 100 elementos para frontend
+        "secuencia": secuencia  # limitar a 100 elementos para frontend
     }
 
 # --------------------
@@ -119,26 +119,32 @@ def generar_multinomial(
     rep: int = 1,
     probs: List[float] = Query(..., description="Lista de probabilidades que suman 1")
 ):
-    lista_conteos = []
+     
+    if n <= 0 or rep <= 0:
+        raise HTTPException(status_code=400, detail="n y repeticiones deben ser positivos")
+    if any(p < 0 for p in probs):
+        raise HTTPException(status_code=400, detail="Las probabilidades no pueden ser negativas")
+    if abs(sum(probs) - 1.0) > 1e-6:
+        raise HTTPException(status_code=400, detail="Las probabilidades deben sumar 1")
+
+    vectores = []
     ultima_secuencia = []
     for _ in range(rep):
         conteos, secuencia = simular_multinomial(n, probs)
-        lista_conteos.append(conteos)
+        vectores.append(conteos)
         ultima_secuencia = secuencia
 
-    if rep == 1:
-        return {
-            "conteos": lista_conteos[0],
-            "secuencia": ultima_secuencia[:100],
-            "categorias": [f"C{i+1}" for i in range(len(probs))]
-        }
-    else:
-        proms = [sum(lista_conteos[r][i] for r in range(rep)) / rep for i in range(len(probs))]
-        return {
-            "conteos": proms,
-            "secuencia": ultima_secuencia[:100],
-            "categorias": [f"C{i+1}" for i in range(len(probs))]
-        }
+    categorias = [f"C{i+1}" for i in range(len(probs))]
+
+    return {
+        "n": n,
+        "rep": rep,
+        "categorias": categorias,
+        "vectores": vectores,
+        "conteos": vectores[0],  # por defecto el primero
+        "secuencia": ultima_secuencia[:100]
+    }
+
     
 # --------------------
 # Simulación Gebbs

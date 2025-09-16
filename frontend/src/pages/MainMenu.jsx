@@ -9,33 +9,33 @@ export default function MainMenu() {
         </h1>
         <div className="flex flex-col gap-4">
           <Link to="/bernoulli">
-            <button className="w-[20vw] bg-blue-300 hover:bg-blue-600 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="w-[20vw] bg-green-200 hover:bg-green-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               Bernoulli
             </button>
           </Link>
           <Link to="/binomial">
-            <button className="w-[20vw] bg-green-300 hover:bg-green-600 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="w-[20vw] bg-blue-200 hover:bg-blue-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               Binomial
             </button>
           </Link>
           {/* Más botones para otras distribuciones */}
           <Link to="/exponential">
-            <button className="w-[20vw] bg-purple-300 hover:bg-purple-600 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="w-[20vw] bg-pink-200 hover:bg-pink-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               Exponencial
             </button>
           </Link>
           <Link to="/normal">
-            <button className="w-[20vw] bg-pink-300 hover:bg-pink-600 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="w-[20vw] bg-purple-200 hover:bg-purple-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               Normal
             </button>
           </Link>
           <Link to="/multinomial">
-            <button className="w-[20vw] bg-red-300 hover:bg-red-500 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="w-[20vw] bg-orange-200 hover:bg-orange-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               Multinomial
             </button>
           </Link>
           <Link to="/gebbs">
-            <button className="w-[20vw] bg-orange-300 hover:bg-orange-500 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="w-[20vw] bg-red-200 hover:bg-red-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               Gebbs
             </button>
           </Link>

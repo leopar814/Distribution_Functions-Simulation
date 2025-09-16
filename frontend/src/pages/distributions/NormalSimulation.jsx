@@ -11,21 +11,29 @@ export default function BinomialSimulation() {
     const [n, setN] = useState(1000);
     const [media, setMedia] = useState(0);
     const [desviacionEst, setDesviacionEst] = useState(1);
+    const [loading, setLoading] = useState(false);
     const [data, setData] = useState(null);
 
     const params = [
-      { label: "Tamaño de la Muestra", type: "number",  min: 0, value: n, setter: setN },
-      { label: "Media", type: "number", min: 0, value: media, setter: setMedia },
-      { label: "Desviación Estándar", type: "number", min: 0, value: desviacionEst, setter: setDesviacionEst }
+      { label: "Tamaño de la Muestra", marker: "N", type: "number",  min: 0, value: n, setter: setN },
+      { label: "Media", marker: "\\mu", type: "number", min: 0, value: media, setter: setMedia },
+      { label: "Desviación Estándar", marker: "\\sigma", type: "number", min: 0, value: desviacionEst, setter: setDesviacionEst }
     ];
 
     const fetchData = async () => {
-      const res = await fetch(`http://localhost:8000/normal?repeticiones=${n}&mu=${media}&sigma=${desviacionEst}`);
-      const json = await res.json();
-      setData(json);
+      setLoading(true);
+      try {
+        const res = await fetch(`http://localhost:8000/normal?repeticiones=${n}&mu=${media}&sigma=${desviacionEst}`);
+        const json = await res.json();
+        setData(json);
+      } catch (err) {
+          console.log(err.message);
+      } finally {
+          setLoading(false);
+      }
   };
     return (
-      <div className = "flex flex-col  items-center min-h-screen bg-gray-50 p-10">
+      <div className = "flex flex-col items-center min-h-screen bg-gray-50">
         
         <Header 
           distributionName={"Normal"}
@@ -38,34 +46,21 @@ export default function BinomialSimulation() {
               {/* Panel 1: Inputs */}
             <div className="bg-gray-100 p-4 rounded shadow">
 
-              <Parametros params={params} />
+              <Parametros 
+                params={params} 
+                fetchData={fetchData}
+                loading={loading}
+              />
 
-              <button
-                onClick = {fetchData}
-                className="w-full bg-blue-500 text-xl text-white p-4 rounded mb-3 hover:bg-blue-600"
-              > 
-                Generar
-              </button>
             </div>
           </div>
         
           
-          <div className="flex col-span-2 bg-gray-100 p-4 rounded shadow items-center">
-            {data && (
-              <div className = "w-full flex flex-col items-center">
-                <DistributionChart type="normal" data={data} />
-
-                <button
-                  onClick={() => Swal.fire({
-                    title: 'Muestras exponenciales',
-                    text: data.muestras.join(", "),
-                    icon: 'success'
-                  })}
-                  className="bg-green-500 text-white p-2 rounded mt-1"
-                >
-                  Ver muestras
-                </button>
-              </div>
+          <div className="flex col-span-2 bg-gray-100 p-4 rounded shadow justify-center items-center">
+            {data ? (
+              <DistributionChart type="normal" data={data} />
+            ) : (
+              <p className="text-xl text-gray-500">Genera la simulación para ver la gráfica...</p>
             )}
           </div>
         </div>

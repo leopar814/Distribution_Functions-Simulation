@@ -17,14 +17,14 @@ export default function GebbsSimulation() {
 
   const params = [
     { label: "Función f(x,y)", type: "text", value: funcion, setter: setFuncion },
-    { label: "Número de muestras (N)", type: "number", value: n, setter: setN },
-    { label: "X min", type: "number", value: xMin, setter: setXMin },
-    { label: "X max", type: "number", value: xMax, setter: setXMax },
-    { label: "Y min", type: "number", value: yMin, setter: setYMin },
-    { label: "Y max", type: "number", value: yMax, setter: setYMax },
+    { label: "Número de muestras", marker: "N", type: "number", value: n, setter: setN },
+    { marker: "x_{min}", type: "number", value: xMin, setter: setXMin },
+    { marker: "x_{max}", type: "number", value: xMax, setter: setXMax },
+    { marker: "y_{min}", type: "number", value: yMin, setter: setYMin },
+    { marker: "y_{max}", type: "number", value: yMax, setter: setYMax },
   ];
 
-  const handleSimulate = async () => {
+  const fetchData = async () => {
     setLoading(true);
     setError(null);
     try {
@@ -47,35 +47,34 @@ export default function GebbsSimulation() {
     }
   };
 
-    return (
-        <div className="p-6 bg-gray-50 rounded-xl shadow-md">
-            <Header 
-                distributionName={"Gebbs"}
-                formula={funcion}  
-            />
-            <h1 className="text-2xl font-bold mb-4">Simulación Gibbs</h1>
+  return (
+    <div className="flex flex-col items-center h-screen bg-gray-50">
+      <Header 
+        distributionName={"Gebbs"}
+        formula={funcion}  
+      />
+      <div className="w-[95vw] bg-white shadow-lg rounded-lg p-6 grid grid-cols-3 gap-4">
+        <div className="flex flex-col col-span-1 gap-4 bg-gray-100 p-4 rounded shadow">
+          <div className="mb-4">
 
-            <div className="grid grid-cols-2 gap-4 mb-4">
+              <Parametros 
+                params={params} 
+                fetchData={fetchData}
+                loading={loading}
+              />
 
-                <Parametros params={params} />
+          </div>
 
-            </div>
-
-            <button
-                onClick={handleSimulate}
-                disabled={loading}
-                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:bg-gray-400"
-            >
-                {loading ? "Generando..." : "Generar Muestras"}
-            </button>
-
-            {error && <p className="text-red-600 mt-3">{error}</p>}
-
-            {data && (
-                <div className="mt-6">
-                <DistributionChart type="gebbs" data={data} />
-                </div>
-            )}
+        {error && <p className="text-red-600 mt-3">{error}</p>}
         </div>
-    );
+        <div className="col-span-2 bg-gray-100 p-4 rounded shadow flex items-center justify-center">
+          {data && (
+            <div className="mt-6">
+            <DistributionChart type="gebbs" data={data} />
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
 }

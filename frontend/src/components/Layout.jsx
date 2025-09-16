@@ -5,7 +5,7 @@ export default function Layout() {
     <div className="relative">
       {/* Botón siempre visible: fixed en top-right, ajusta estilos si necesitas */}
       <Link to="/">
-        <button className="fixed bottom-4 left-4 text-xl bg-green-600 text-white p-3 rounded shadow-lg z-50 hover:bg-green-500 hover:text-black">
+        <button className="fixed top-4 left-4 text-xl text-green-700 p-3 border-1 rounded shadow-lg z-50 hover:bg-green-100">
           Menú principal
         </button>
       </Link>
