@@ -1,4 +1,11 @@
 import { Link } from "react-router-dom";
+import moneda from "/coin.png";
+import monedas from "/multiple_coins.png";
+import exponencial from "/decreasing_exponential.png";
+import normal from "/normal.png";
+import dado from "/dice.png";
+import gebbs from "/iteration.png";
+
 
 export default function MainMenu() {
   return (
@@ -7,35 +14,41 @@ export default function MainMenu() {
         <h1 className="text-5xl font-extrabold text-gray-800 mb-15">
           Simulación de Distribuciones
         </h1>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col items-center gap-4">
           <Link to="/bernoulli">
-            <button className="w-[20vw] bg-green-200 hover:bg-green-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-[20vw] items-center justify-center gap-2 bg-green-200 hover:bg-green-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+              <img src={moneda} alt="icono bernoulli" className="w-6 h-6" />
               Bernoulli
             </button>
           </Link>
           <Link to="/binomial">
-            <button className="w-[20vw] bg-blue-200 hover:bg-blue-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-[20vw] items-center justify-center gap-2 bg-blue-200 hover:bg-blue-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+              <img src={monedas} alt="icono bernoulli" className="w-6 h-6" />
               Binomial
             </button>
           </Link>
           {/* Más botones para otras distribuciones */}
           <Link to="/exponential">
-            <button className="w-[20vw] bg-pink-200 hover:bg-pink-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-[20vw] items-center justify-center gap-2 bg-pink-200 hover:bg-pink-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+              <img src={exponencial} alt="icono bernoulli" className="w-6 h-6" />
               Exponencial
             </button>
           </Link>
           <Link to="/normal">
-            <button className="w-[20vw] bg-purple-200 hover:bg-purple-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-[20vw] items-center justify-center gap-2 bg-purple-200 hover:bg-purple-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+              <img src={normal} alt="icono bernoulli" className="w-6 h-6" />
               Normal
             </button>
           </Link>
           <Link to="/multinomial">
-            <button className="w-[20vw] bg-orange-200 hover:bg-orange-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-[20vw] items-center justify-center gap-2 bg-orange-200 hover:bg-orange-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+              <img src={dado} alt="icono bernoulli" className="w-6 h-6" />
               Multinomial
             </button>
           </Link>
           <Link to="/gebbs">
-            <button className="w-[20vw] bg-red-200 hover:bg-red-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-[20vw] items-center justify-center gap-2 bg-red-200 hover:bg-red-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+              <img src={gebbs} alt="icono bernoulli" className="w-6 h-6" />
               Gebbs
             </button>
           </Link>
