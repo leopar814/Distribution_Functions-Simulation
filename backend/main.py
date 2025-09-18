@@ -175,8 +175,8 @@ def generar_gibbs(funcion: str, xmin: float, xmax: float, ymin: float, ymax: flo
     f = sp.sympify(funcion)
 
     muestras = []
-    xn = random.uniform(xmin, xmax)
-    yn = random.uniform(ymin, ymax)
+    xn = random.uniform(0, 10)
+    yn = random.uniform(0, 10)
     muestras.append((xn, yn))
 
     for _ in range(n - 1):

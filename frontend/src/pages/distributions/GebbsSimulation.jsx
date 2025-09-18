@@ -2,15 +2,17 @@ import { useState } from "react";
 import Header from "../../components/Header";
 import DistributionChart from "../../components/DistributionChart";
 import Parametros from "../../components/Parametros";
+import Accordion from "../../components/Accordion";
 
 export default function GebbsSimulation() {
-  const [funcion, setFuncion] = useState("x*exp(-x-y)"); // Ejemplo
+  const [funcion, setFuncion] = useState("1/28*(2*x+3*y+2)"); // Ejemplo
   const [xMin, setXMin] = useState(0);
-  const [xMax, setXMax] = useState(10);
+  const [xMax, setXMax] = useState(2);
   const [yMin, setYMin] = useState(0);
-  const [yMax, setYMax] = useState(10);
-  const [n, setN] = useState(100);
+  const [yMax, setYMax] = useState(2);
+  const [n, setN] = useState(20);
 
+  const[maxToShow, setMaxToShow] = useState(10);
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -57,11 +59,37 @@ export default function GebbsSimulation() {
         <div className="flex flex-col col-span-1 gap-4 bg-gray-100 p-4 rounded shadow">
           <div className="mb-4">
 
-              <Parametros 
-                params={params} 
-                fetchData={fetchData}
-                loading={loading}
-              />
+            <Parametros 
+              params={params} 
+              fetchData={fetchData}
+              loading={loading}
+            />
+
+            {data && (
+              <div className="flex flex-col items-center bg-gray-100 p-4 rounder shadow gap-4 mb-4">
+                <div className="flex gap-2 justify-center items-center">
+                  <label>Mostrar primeros:</label>
+                  <input
+                    type="number"
+                    min={1}
+                    max={data.muestras.length}
+                    value={maxToShow}
+                    onChange={(e) => setMaxToShow(Number(e.target.value))}
+                    className="border px-2 py-1 rounded w-20"
+                  />
+                  <span>elementos</span>
+                </div>
+                <Accordion title="Ver muestra">
+                  {data.muestras.slice(0, maxToShow).map((p, idx) => (
+                    <p key={idx}>
+                      {`x${idx+1} = ${p.x.toFixed(5)}, y${idx+1} = ${p.y.toFixed(5)}`}
+                    </p>
+                  ))}
+                </Accordion>
+
+
+              </div>
+            )}
 
           </div>
 

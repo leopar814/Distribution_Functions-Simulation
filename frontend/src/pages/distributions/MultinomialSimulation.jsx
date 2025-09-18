@@ -25,9 +25,6 @@ export default function MultinomialSimulation() {
     setProbs(Array(numCategorias).fill(1 / numCategorias)); // inicializa con probas iguales
   }, [numCategorias]);
 
-
-
-
   const fetchData = async () => {
     setLoading(true);
     try {
@@ -106,7 +103,11 @@ export default function MultinomialSimulation() {
           {data && (
             <div className="flex flex-col items-center bg-gray-100 p-4 rounder shadow gap-4 mb-4">
               <Accordion title="Ver muestra">
-                {`{ ${data.vectores[selectedIndex].join(", ")} }`}
+                {data.vectores.map((_, i) => (
+                  <p key={i} value={i}>
+                    {`{ ${data.vectores[i].join(", ")} }`}
+                  </p>
+                ))}
               </Accordion>
             </div>
           )}

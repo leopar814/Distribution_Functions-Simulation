@@ -126,7 +126,7 @@ export default function DistributionChart({ type, data, selectedIndex, setSelect
 
     return (
       <div className="flex flex-col p-4 h-full w-full justify-center items-center">
-        <h2 className="text-lg font-bold mb-2">Distribución Multinomial</h2>
+        <h2 className="w-full text-2xl font-bold mb-2">Distribución Multinomial</h2>
         
         <div className="mb-4 flex items-center gap-2">
           <label className="text-sm font-medium">Selecciona vector:</label>
@@ -137,7 +137,7 @@ export default function DistributionChart({ type, data, selectedIndex, setSelect
           >
             {vectores.map((_, i) => (
               <option key={i} value={i}>
-                Vector {i + 1}
+                {`Vector ${i + 1} - { ${data.vectores[i].join(", ")} }`}
               </option>
             ))}
           </select>
@@ -151,7 +151,7 @@ export default function DistributionChart({ type, data, selectedIndex, setSelect
               y: conteoActual,
               type: "bar",
               marker: { color: "#2196F3" },
-              text: data.conteos.map(c => c.toString()),
+              text: conteoActual.map(c => c.toString()),
               textposition: "inside",
               insidetextanchor: "middle",
               textfont: { size: 16, color: "white" },
@@ -174,7 +174,7 @@ export default function DistributionChart({ type, data, selectedIndex, setSelect
   else if (type === "gebbs") {
     return (
       <div className="flex flex-col p-4 h-full w-full justify-center items-center">
-        <h2 className="text-lg font-bold mb-2">Muestreo por Gibbs</h2>
+        <h2 className="w-full text-2xl font-bold mb-2">Muestreo por Gibbs</h2>
         <Plot
           data={[
             {
