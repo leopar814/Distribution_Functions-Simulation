@@ -7,6 +7,7 @@ import ExponentialSimulation from "./pages/distributions/ExponentialSimulation";
 import MultinomialSimulation from "./pages/distributions/MultinomialSimulation";
 import GebbsSimulation from "./pages/distributions/GebbsSimulation";
 import NormalSimulation from "./pages/distributions/NormalSimulation";
+import BivariadaSimulation from "./pages/distributions/BivariadaSimulation";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/normal" element={<NormalSimulation />} />
         <Route path="/multinomial" element={<MultinomialSimulation />} />
         <Route path="/gebbs" element={<GebbsSimulation />} />
+        <Route path="/bivariada" element={<BivariadaSimulation />} />
         {/* Más rutas aquí  */}
         <Route path="*" element={<div>Página no encontrada</div>} />
       </Route>

@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Query, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from typing import List, Dict, Any
 import numpy as np
 import sympy as sp
 import random   
@@ -233,3 +234,95 @@ def generar_normal(
         "teorica": teorica,
         "muestra": muestra[:100]
     }
+
+# --------------------
+# Simulación Bivariada
+# --------------------
+def pdf_bivariada_grid(mx: float, my: float, cov_matrix: np.ndarray, xs: np.ndarray, ys: np.ndarray) -> np.ndarray:
+    X, Y = np.meshgrid(xs, ys)
+    pos = np.dstack((X, Y))
+    inv = np.linalg.inv(cov_matrix)
+    det = np.linalg.det(cov_matrix)
+    norm_const = 1.0 / (2 * np.pi * np.sqrt(det))
+    diff = pos - np.array([mx, my])
+    # einsum-like: sum(diff @ inv * diff, axis=-1)
+    Z = np.empty(X.shape)
+    for i in range(X.shape[0]):
+        for j in range(X.shape[1]):
+            v = diff[i, j]
+            Z[i, j] = norm_const * np.exp(-0.5 * (v @ inv @ v))
+    return Z
+
+def simular_multivariada(n: int, mx: float, my: float, varx: float, vary: float, rho: float):
+    cov = rho * np.sqrt(varx * vary)
+    cov_matrix = np.array([[varx, cov], [cov, vary]])
+    datos = np.random.multivariate_normal([mx, my], cov_matrix, size=n)
+    return datos, cov_matrix
+
+@app.get("/normal_bivariada")
+def generar_normal_bivariada(
+    n: int,
+    mx: float = 0.0,
+    my: float = 0.0,
+    varx: float = 1.0,
+    vary: float = 1.0,
+    rho: float = 0.0,
+    grid: int = 60
+) -> Dict[str, Any]:
+    
+    # validaciones
+    if n <= 0 or varx <= 0 or vary <= 0:
+        raise HTTPException(status_code=400, detail="n, varx y vary deben ser positivos")
+    if not (-1.0 <= rho <= 1.0):
+        raise HTTPException(status_code=400, detail="rho debe estar en [-1, 1]")
+
+    # simular muestras
+    datos, cov_matrix = simular_multivariada(n, mx, my, varx, vary, rho)
+    xs = datos[:, 0].tolist()
+    ys = datos[:, 1].tolist()
+
+    # grid para PDF teórica
+    xmin, xmax = float(np.min(datos[:,0])), float(np.max(datos[:,0]))
+    ymin, ymax = float(np.min(datos[:,1])), float(np.max(datos[:,1]))
+    # ampliar un poco el rango para que la superficie no quede pegada a los puntos
+    pad_x = (xmax - xmin) * 0.1 if xmax > xmin else 1.0
+    pad_y = (ymax - ymin) * 0.1 if ymax > ymin else 1.0
+    xs_grid = np.linspace(xmin - pad_x, xmax + pad_x, grid)
+    ys_grid = np.linspace(ymin - pad_y, ymax + pad_y, grid)
+    Z = pdf_bivariada_grid(mx, my, cov_matrix, xs_grid, ys_grid)
+
+    # estadísticas
+    mean_x = float(np.mean(xs))
+    mean_y = float(np.mean(ys))
+    var_x = float(np.var(xs, ddof=0))
+    var_y = float(np.var(ys, ddof=0))
+    corr = float(np.corrcoef(xs, ys)[0,1])
+
+    muestras = [[float(px), float(py)] for px, py in zip(xs, ys)]
+
+    return {
+        "n": n,
+        "mx": mx,
+        "my": my,
+        "varx": varx,
+        "vary": vary,
+        "rho": rho,
+        "muestras": muestras,                         # lista de [x,y]
+        "inicio": {"x": float(muestras[0][0]), "y": float(muestras[0][1])},
+        "fin":    {"x": float(muestras[-1][0]), "y": float(muestras[-1][1])},
+        "grid": {                                     # datos para surface
+            "x": xs_grid.tolist(),
+            "y": ys_grid.tolist(),
+            "z": Z.tolist()
+        },
+        "stats": {
+            "mean_x": mean_x,
+            "mean_y": mean_y,
+            "var_x": var_x,
+            "var_y": var_y,
+            "corr": corr
+        }
+    }
+
+
+
