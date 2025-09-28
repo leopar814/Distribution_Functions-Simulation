@@ -70,21 +70,21 @@ export default function BivariadaSimulation() {
       .slice(0, maxToShow)
       .map((p, i) => (
         <p>
-          {`x${i + 1} = ${Number(p[0]).toFixed(maxDecimals)} | y${i + 1} = ${Number(p[1]).toFixed(maxDecimals)}`}
+          {`x${i + 1} = ${Number(p[0]).toFixed(maxDecimals)} , y${i + 1} = ${Number(p[1]).toFixed(maxDecimals)}`}
         </p>
       ))};
 
 
 
   return (
-    <div className="flex flex-col items-center h-screen bg-gray-50">
+    <div className="flex flex-col items-center min-h-screen bg-gray-50">
       
       <Header 
         distributionName={"Normal Bivariada"}
         formula={"\\; f(\\mathbf{x}) = \\frac{1}{2\\pi\\sqrt{|\\Sigma|}} \\exp\\left(-\\tfrac{1}{2}(\\mathbf{x}-\\mu)^T \\Sigma^{-1} (\\mathbf{x}-\\mu)\\right)"}  
       />
 
-      <div className="w-[95vw] bg-white shadow-lg rounded-lg p-6 grid grid-cols-3 gap-4">
+      <div className="w-[95vw] h-fit m-4 bg-white shadow-lg rounded-lg p-6 grid grid-cols-3 gap-4">
         {/* Panel izquierdo (2 filas: inputs y botones) */}
         <div className="col-span-1 flex flex-col gap-6">
           {/* Panel 1: Inputs */}
@@ -113,7 +113,7 @@ export default function BivariadaSimulation() {
                   />
                   <span>elementos</span>
                 </div>
-                <Accordion title={`Ver muestra (primeros ${maxToShow})`}>
+                <Accordion title={"Ver muestra"}>
                   <div className="text-sm">{renderMuestrasInline(4)}</div>
                 </Accordion>
 

@@ -4,7 +4,7 @@ import monedas from "/multiple_coins.png";
 import exponencial from "/decreasing_exponential.png";
 import normal from "/normal.png";
 import dado from "/dice.png";
-import gebbs from "/iteration.png";
+import gibbs from "/iteration.png";
 import bivariada from "/bivariada.png"
 
 
@@ -17,46 +17,46 @@ export default function MainMenu() {
         </h1>
         <div className="flex flex-col items-center gap-4">
           <Link to="/bernoulli">
-            <button className="flex w-[20vw] items-center justify-center gap-2 bg-green-200 hover:bg-green-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-80 items-center justify-center gap-2 bg-green-200 hover:bg-green-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               <img src={moneda} alt="icono bernoulli" className="w-6 h-6" />
               Bernoulli
             </button>
           </Link>
           <Link to="/binomial">
-            <button className="flex w-[20vw] items-center justify-center gap-2 bg-blue-200 hover:bg-blue-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-80 items-center justify-center gap-2 bg-blue-200 hover:bg-blue-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               <img src={monedas} alt="icono binomial" className="w-6 h-6" />
               Binomial
             </button>
           </Link>
           {/* Más botones para otras distribuciones */}
           <Link to="/exponential">
-            <button className="flex w-[20vw] items-center justify-center gap-2 bg-pink-200 hover:bg-pink-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-80 items-center justify-center gap-2 bg-pink-200 hover:bg-pink-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               <img src={exponencial} alt="icono exponencial" className="w-6 h-6" />
               Exponencial
             </button>
           </Link>
           <Link to="/normal">
-            <button className="flex w-[20vw] items-center justify-center gap-2 bg-purple-200 hover:bg-purple-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-80 items-center justify-center gap-2 bg-purple-200 hover:bg-purple-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               <img src={normal} alt="icono normal" className="w-6 h-6" />
               Normal
             </button>
           </Link>
           <Link to="/bivariada">
-            <button className="flex w-[20vw] items-center justify-center gap-2 bg-red-200 hover:bg-red-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-80 items-center justify-center gap-2 bg-red-200 hover:bg-red-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               <img src={bivariada} alt="icono bivariada" className="w-6 h-6" />
               Normal Bivariada
             </button>
           </Link>
           <Link to="/multinomial">
-            <button className="flex w-[20vw] items-center justify-center gap-2 bg-orange-200 hover:bg-orange-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-80 items-center justify-center gap-2 bg-orange-200 hover:bg-orange-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               <img src={dado} alt="icono multinomial" className="w-6 h-6" />
               Multinomial
             </button>
           </Link>
-          <Link to="/gebbs">
-            <button className="flex w-[20vw] items-center justify-center gap-2 bg-red-200 hover:bg-red-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
-              <img src={gebbs} alt="icono gebbs" className="w-6 h-6" />
-              Gebbs
+          <Link to="/gibbs">
+            <button className="flex w-80 items-center justify-center gap-2 bg-red-200 hover:bg-red-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+              <img src={gibbs} alt="icono gibbs" className="w-6 h-6" />
+              Gibbs
             </button>
           </Link>
           

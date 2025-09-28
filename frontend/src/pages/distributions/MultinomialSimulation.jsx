@@ -53,14 +53,14 @@ export default function MultinomialSimulation() {
   };
 
   return (
-    <div className="flex flex-col items-center h-screen overflow-auto bg-gray-50">
+    <div className="flex flex-col items-center min-h-screen overflow-auto bg-gray-50">
 
       <Header 
         distributionName={"Multinomial"}
         formula={"f(x) = \\frac{k!}{n_1!\\,n_2!\\, \\cdots \\, n_k!} \\quad \\theta_1^{n_1} \\, \\theta_2^{n_2} \\, \\cdots \\, \\theta_k^{n_k}"}  
       />
 
-      <div className="w-[95vw] bg-white shadow-lg rounded-lg p-6 grid grid-cols-3 gap-4">
+      <div className="w-[95vw] h-fit m-4 bg-white shadow-lg rounded-lg p-6 grid grid-cols-3 gap-4">
         {/* Paneles izquierdos*/}
         <div className="col-span-1 flex flex-col gap-6">
           {/* Panel 1: Inputs */}

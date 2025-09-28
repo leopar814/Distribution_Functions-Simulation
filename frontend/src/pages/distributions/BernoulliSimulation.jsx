@@ -16,7 +16,7 @@ export default function BernoulliSimulation() {
   const [data, setData] = useState(null);
 
   const params = [
-    { label: "Número de repeticiones", marker: "N", type: "number", value: repeticiones, setter: setRepeticiones },
+    { label: "Tamaño de muestra", marker: "N", type: "number", value: repeticiones, setter: setRepeticiones },
     { label: "Probabilidad de éxito", marker: "\\theta", type: "number", step: "0.01", min: 0, max: 1, value: proba_exito, setter: setProbaExito }
   ];
 
@@ -35,14 +35,14 @@ export default function BernoulliSimulation() {
 
 
   return (
-    <div className="flex flex-col items-center h-screen bg-gray-50">
+    <div className="flex flex-col items-center min-h-screen bg-gray-50">
       
       <Header 
         distributionName={"Bernoulli"}
         formula={"f(x) = \\theta^x \\, (1-\\theta)^{1-x}, \\quad x = 0,1"}  
       />
 
-      <div className="w-[95vw] bg-white shadow-lg rounded-lg p-6 grid grid-cols-3 gap-4">
+      <div className="w-[95vw] h-fit m-4 bg-white shadow-lg rounded-lg p-6 grid grid-cols-3 gap-4">
         {/* Panel izquierdo (2 filas: inputs y botones) */}
         <div className="col-span-1 flex flex-col gap-6">
           {/* Panel 1: Inputs */}

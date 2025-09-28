@@ -171,7 +171,7 @@ export default function DistributionChart({ type, data, selectedIndex, setSelect
     );
   }
 
-  else if (type === "gebbs") {
+  else if (type === "gibss") {
     return (
       <div className="flex flex-col p-4 h-full w-full justify-center items-center">
         <h2 className="w-full text-2xl font-bold mb-2">Muestreo por Gibbs</h2>

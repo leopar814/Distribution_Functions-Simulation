@@ -8,22 +8,43 @@ export default function Parametros({ params, fetchData, loading }) {
 
             {params.map((p, idx) => (
                 <div key={idx} className="mb-4">
-                    <label className="block text-xl text-gray-700 ">{p.label}</label>
-                    <div className="flex flex-row items-center">
-                        <span className={`${p.marker ? "text-lg mr-3" : "" }`}>
-                            {p.marker ? <BlockMath math={`${p.marker}=`} /> 
-                            : ""}
-                        </span>
-                        <input
-                            type={p.type}
-                            step={p.step}
-                            min={p.min}
-                            max={p.max}
-                            value={p.value}
-                            onChange={(e) => p.setter(p.type === "number" ? Number(e.target.value) : e.target.value)}
-                            className="border p-2 rounded w-full"
-                        />
-                    </div>
+
+                    {p.label && (
+                        <label className="block text-xl text-gray-700">{p.label}</label>
+                    )}
+
+                    {p.type === "radio" ? (
+                        <div className="flex gap-6 mb-4">
+                            {p.options.map((opt, i) => (
+                                <label key={i} className="flex items-center gap-2">
+                                <input
+                                    type="radio"
+                                    name={p.label}
+                                    value={opt.value}
+                                    checked={p.value === opt.value}
+                                    onChange={() => p.setter(opt.value)}
+                                />
+                                {opt.label}
+                                </label>
+                            ))}
+                        </div>
+                    ) : (
+                        <div className="flex flex-row items-center">
+                            <span className={`${p.marker ? "text-lg mr-3" : "" }`}>
+                                {p.marker ? <BlockMath math={`${p.marker}=`} /> 
+                                : ""}
+                            </span>
+                            <input
+                                type={p.type}
+                                step={p.step}
+                                min={p.min}
+                                max={p.max}
+                                value={p.value}
+                                onChange={(e) => p.setter(p.type === "number" ? Number(e.target.value) : e.target.value)}
+                                className="border p-2 rounded w-full"
+                            />
+                        </div>
+                    )}
                 </div>
             ))}
 

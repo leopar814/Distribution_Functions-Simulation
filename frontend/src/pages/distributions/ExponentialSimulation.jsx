@@ -1,6 +1,7 @@
 import { useState } from "react";
 import DistributionChart from "../../components/DistributionChart";
 import Header from "../../components/Header";
+import Accordion from "../../components/Accordion";
 import Swal from 'sweetalert2';
 import 'katex/dist/katex.min.css';
 import Parametros from "../../components/Parametros";
@@ -10,10 +11,12 @@ export default function BinomialSimulation() {
     const [n, setN] = useState(1000);
     const [lambda, setLambda] = useState(1.0);
     const [loading, setLoading] = useState(false);
+    const [maxToShow, setMaxToShow] = useState(10);
+
     const [data, setData] = useState(null);
 
     const params = [
-      { label: "Número de Muestras", marker: "N", type: "number",  min: 0, value: n, setter: setN },
+      { label: "Tamaño de muestra", marker: "N", type: "number",  min: 0, value: n, setter: setN },
       { label: "Lambda", marker: "\\lambda", type: "number", min: 0, value: lambda, setter: setLambda }
     ];
 
@@ -34,14 +37,14 @@ export default function BinomialSimulation() {
       }
   };
     return (
-      <div className = "flex flex-col  items-center h-screen bg-gray-50">
+      <div className = "flex flex-col  items-center min-h-screen bg-gray-50">
         
         <Header 
           distributionName={"Exponencial"}
           formula={"f(x) = \\lambda e^{-\\lambda x}, \\quad x \\geq 0"}  
         />
 
-        <div className="w-[95vw] bg-white shadow-lg rounded-lg p-6 grid grid-cols-3 gap-4">
+        <div className="w-[95vw] h-fit m-4 bg-white shadow-lg rounded-lg p-6 grid grid-cols-3 gap-4">
           {/* Panel izquierdo (2 filas: inputs y botones) */}
           <div className="col-span-1 flex flex-col gap-6">
               {/* Panel 1: Inputs */}
@@ -51,9 +54,36 @@ export default function BinomialSimulation() {
                 params={params} 
                 fetchData={fetchData}
                 loading={loading}
-              />
+              />  
 
             </div>
+
+            {/* Panel 2 */}            
+            {data && (
+              <div className="flex flex-col items-center bg-gray-100 p-4 rounder shadow gap-4 mb-4">
+                <div className="flex gap-2 justify-center items-center">
+                  <label>Mostrar primeros:</label>
+                  <input
+                    type="number"
+                    min={1}
+                    max={data.muestras.length}
+                    value={maxToShow}
+                    onChange={(e) => setMaxToShow(Number(e.target.value))}
+                    className="border px-2 py-1 rounded w-20"
+                  />
+                  <span>elementos</span>
+                </div>
+
+                <Accordion title="Ver muestra">
+                    {data.frecuencias.slice(0, maxToShow).map((p, idx) => (
+                      <p key={idx}>
+                        {`x${idx+1} = ${p.x.toFixed(5)}, y${idx+1} = ${p.y.toFixed(5)}`}
+                      </p>
+                    ))}
+                </Accordion>
+              </div>
+            )}
+            
           </div>
         
           

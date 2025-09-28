@@ -90,7 +90,7 @@ def mostrar_puntos(muestras, frame_detalles):
         label.pack(fill="x", padx=5, pady=1)
 
 
-def generar_gebbs(inFuncion, inXmin, inXmax, inYmin, inYmax, inN, frame_grafica, frame_detalles): 
+def generar_gibss(inFuncion, inXmin, inXmax, inYmin, inYmax, inN, frame_grafica, frame_detalles): 
     funcion_texto = inFuncion.get()
     xmin = float(inXmin.get())
     xmax = float(inXmax.get())

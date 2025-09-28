@@ -4,10 +4,10 @@ import Layout from "./components/Layout";
 import BernoulliSimulation from "./pages/distributions/BernoulliSimulation";
 import BinomialSimulation from "./pages/distributions/BinomialSimulation";
 import ExponentialSimulation from "./pages/distributions/ExponentialSimulation";
-import MultinomialSimulation from "./pages/distributions/MultinomialSimulation";
-import GebbsSimulation from "./pages/distributions/GebbsSimulation";
 import NormalSimulation from "./pages/distributions/NormalSimulation";
 import BivariadaSimulation from "./pages/distributions/BivariadaSimulation";
+import MultinomialSimulation from "./pages/distributions/MultinomialSimulation";
+import GibbsSimulation from "./pages/distributions/GibbsSimulation";
 
 export default function App() {
   return (
@@ -18,9 +18,9 @@ export default function App() {
         <Route path="/binomial" element={<BinomialSimulation />} />
         <Route path="/exponential" element={<ExponentialSimulation />} />
         <Route path="/normal" element={<NormalSimulation />} />
-        <Route path="/multinomial" element={<MultinomialSimulation />} />
-        <Route path="/gebbs" element={<GebbsSimulation />} />
         <Route path="/bivariada" element={<BivariadaSimulation />} />
+        <Route path="/multinomial" element={<MultinomialSimulation />} />
+        <Route path="/gibbs" element={<GibbsSimulation />} />
         {/* Más rutas aquí  */}
         <Route path="*" element={<div>Página no encontrada</div>} />
       </Route>

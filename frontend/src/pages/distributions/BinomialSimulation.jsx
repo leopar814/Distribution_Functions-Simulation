@@ -17,7 +17,7 @@ export default function BinomialSimulation() {
 
     const params = [
       { label: "Número de repeticiones", type: "number", value: repeticiones, setter: setRepeticiones },
-      { label: "Elementos en Muestra", marker: "N", type: "number", min: 0, value: muestra, setter: setMuestra },
+      { label: "Tamaño de muestra", marker: "N", type: "number", min: 0, value: muestra, setter: setMuestra },
       { label: "Probabilidad de éxito", marker: "\\theta", type: "number", step: 0.01, min: 0, max: 1, value: probaExito, setter: setProbaExito }
     ];
 
@@ -41,7 +41,7 @@ export default function BinomialSimulation() {
           formula={"f(x) = \\binom{k}{x} = \\theta^x \\, (1-\\theta)^{1-x}, \\quad x = 0, 1, 2, \\dots, k"}  
         />
 
-        <div className="w-[95vw] h-[95vh] bg-white shadow-lg rounded-lg p-6 grid grid-cols-3 gap-4">
+        <div className="w-[95vw] h-fit m-4 bg-white shadow-lg rounded-lg p-6 grid grid-cols-3 gap-4">
           {/* Panel izquierdo (2 filas: inputs y botones) */}
           <div className="col-span-1 flex flex-col gap-6">
             <div className="bg-gray-100 p-4 rounded shadow">
