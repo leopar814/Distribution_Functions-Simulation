@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Query, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 import numpy as np
 import sympy as sp
 import random   
@@ -87,7 +87,7 @@ def simular_exponencial(n : int, lambda_ : float):
     teorica = [{"x": float(x), "y": float(y)} for x, y in zip(theo_x, theo_y)]
 
     return {
-        "muestras": muestras[:100],   # Para detalle
+        "muestras": muestras,   # Para detalle
         "frecuencias": frecuencias,   # Histograma simulado
         "teorica": teorica,           # Curva teórica
         "lambda": lambda_
@@ -148,7 +148,7 @@ def generar_multinomial(
 
     
 # --------------------
-# Simulación Gebbs
+# Simulación Gibss
 # --------------------
     
 x, y, t = sp.symbols('x y t')
@@ -171,13 +171,27 @@ def Y(f, ymin, ymax, x_val):
     sol_real = [s for s in sol if s.is_real and ymin <= s <= ymax]
     return float(sol_real[0]) if sol_real else None
 
-@app.get("/gebbs")
-def generar_gibbs(funcion: str, xmin: float, xmax: float, ymin: float, ymax: float, n: int = 100):
+@app.get("/gibss")
+def generar_gibbs(
+    funcion: str, 
+    xmin: float, 
+    xmax: float, 
+    ymin: float, 
+    ymax: float, 
+    n: int = 100, 
+    xinicio: Optional[float] = None,
+    yinicio: Optional[float] = None
+):
     f = sp.sympify(funcion)
 
     muestras = []
-    xn = random.uniform(0, 10)
-    yn = random.uniform(0, 10)
+
+    if xinicio is not None and yinicio is not None:
+        xn, yn = xinicio, yinicio
+    else:
+        xn = random.uniform(0, 10)
+        yn = random.uniform(0, 10)
+    
     muestras.append((xn, yn))
 
     for _ in range(n - 1):
