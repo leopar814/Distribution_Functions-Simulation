@@ -28,33 +28,32 @@ export default function MainMenu() {
               Binomial
             </button>
           </Link>
-          {/* Más botones para otras distribuciones */}
-          <Link to="/exponential">
+          <Link to="/multinomial">
             <button className="flex w-80 items-center justify-center gap-2 bg-pink-200 hover:bg-pink-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+              <img src={dado} alt="icono multinomial" className="w-6 h-6" />
+              Multinomial
+            </button>
+          </Link>
+          <Link to="/exponential">
+            <button className="flex w-80 items-center justify-center gap-2 bg-purple-200 hover:bg-purple-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               <img src={exponencial} alt="icono exponencial" className="w-6 h-6" />
               Exponencial
             </button>
           </Link>
           <Link to="/normal">
-            <button className="flex w-80 items-center justify-center gap-2 bg-purple-200 hover:bg-purple-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-80 items-center justify-center gap-2 bg-red-200 hover:bg-red-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               <img src={normal} alt="icono normal" className="w-6 h-6" />
               Normal
             </button>
           </Link>
           <Link to="/bivariada">
-            <button className="flex w-80 items-center justify-center gap-2 bg-red-200 hover:bg-red-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-80 items-center justify-center gap-2 bg-orange-200 hover:bg-orange-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               <img src={bivariada} alt="icono bivariada" className="w-6 h-6" />
               Normal Bivariada
             </button>
           </Link>
-          <Link to="/multinomial">
-            <button className="flex w-80 items-center justify-center gap-2 bg-orange-200 hover:bg-orange-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
-              <img src={dado} alt="icono multinomial" className="w-6 h-6" />
-              Multinomial
-            </button>
-          </Link>
           <Link to="/gibbs">
-            <button className="flex w-80 items-center justify-center gap-2 bg-red-200 hover:bg-red-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-80 items-center justify-center gap-2 bg-yellow-300 hover:bg-yellow-500 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               <img src={gibbs} alt="icono gibbs" className="w-6 h-6" />
               Gibbs
             </button>

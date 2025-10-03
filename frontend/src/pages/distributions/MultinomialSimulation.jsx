@@ -5,6 +5,7 @@ import Swal from 'sweetalert2';
 import 'katex/dist/katex.min.css';
 import Parametros from "../../components/Parametros";
 import Accordion from "../../components/Accordion";
+import { BlockMath } from "react-katex";
 
 export default function MultinomialSimulation() {
 
@@ -74,7 +75,7 @@ export default function MultinomialSimulation() {
               <h2 className="text-gray-700 font-semibold text-xl mb-2">Probabilidades</h2>
               {probs.map((p, idx) => (
                 <div key={idx} className="flex items-center gap-2 mb-2">
-                  <label className="w-24 text-lg">Categoría {idx + 1}:</label>
+                  <label className="flex flex-row items-center justify-between text-lg mr-1">Categoría <BlockMath math={`\\; \\theta_${idx + 1} \\;`}/>:</label>
                   <input
                     type="number"
                     step="0.01"

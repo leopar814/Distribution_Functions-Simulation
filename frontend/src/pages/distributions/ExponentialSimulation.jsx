@@ -41,7 +41,7 @@ export default function BinomialSimulation() {
         
         <Header 
           distributionName={"Exponencial"}
-          formula={"f(x) = \\lambda e^{-\\lambda x}, \\quad x \\geq 0"}  
+          formula={"f(x) = \\lambda e^{-\\lambda x}, \\quad x \\geq 0, \\quad \\lambda > 0"}  
         />
 
         <div className="w-[95vw] h-fit m-4 bg-white shadow-lg rounded-lg p-6 grid grid-cols-3 gap-4">

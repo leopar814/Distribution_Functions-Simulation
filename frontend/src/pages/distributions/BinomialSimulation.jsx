@@ -8,23 +8,23 @@ import Accordion from "../../components/Accordion";
 
 export default function BinomialSimulation() {
     
-    const [repeticiones, setRepeticiones] = useState(10000);
-    const [muestra, setMuestra] = useState(10);
+    const [muestra, setMuestra] = useState(10000);
+    const [ensayos, setEnsayos] = useState(10);
     const [probaExito, setProbaExito] = useState(0.5);
     const [loading, setLoading] = useState(false);
     const [maxToShow, setMaxToShow] = useState(10);
     const [data, setData] = useState(null);
 
     const params = [
-      { label: "Número de repeticiones", type: "number", value: repeticiones, setter: setRepeticiones },
       { label: "Tamaño de muestra", marker: "N", type: "number", min: 0, value: muestra, setter: setMuestra },
+      { label: "Número de ensayos", marker: "k", type: "number", value: ensayos, setter: setEnsayos },
       { label: "Probabilidad de éxito", marker: "\\theta", type: "number", step: 0.01, min: 0, max: 1, value: probaExito, setter: setProbaExito }
     ];
 
     const fetchData = async () => {
     setLoading(true);
     try{
-      const res = await fetch(`http://localhost:8000/binomial?repeticiones=${repeticiones}&muestra=${muestra}&proba_exito=${probaExito}`);
+      const res = await fetch(`http://localhost:8000/binomial?muestra=${muestra}&ensayos=${ensayos}&proba_exito=${probaExito}`);
       const json = await res.json();
       setData(json);
     } catch(err) {

@@ -47,15 +47,15 @@ def generar_bernoulli(repeticiones: int, proba_exito: float):
 # Simulación Binomial
 # --------------------
 @app.get("/binomial")
-def simular_binomial(repeticiones : int, muestra : int, proba_exito : float):
+def simular_binomial(muestra : int, ensayos : int, proba_exito : float):
     secuencia = []  # Lista con el número de éxitos de cada repetición
-    for _ in range(repeticiones):  
-        resultado = generar_bernoulli(muestra, proba_exito)  # Reutilizamos Bernoulli k veces
+    for _ in range(muestra):  
+        resultado = generar_bernoulli(ensayos, proba_exito)  # Reutilizamos Bernoulli k veces
         num_Exitos = resultado["exitos"]
         secuencia.append(num_Exitos)  # Guardamos los éxitos de esta repetición
     conteo = Counter(secuencia)
 
-    frecuencias = [{"x" : i, "y" : conteo.get(i, 0)} for i in range(muestra + 1)]
+    frecuencias = [{"x" : i, "y" : conteo.get(i, 0)} for i in range(ensayos + 1)]
     return {
         "frecuencias": frecuencias,
         "secuencia" : secuencia
