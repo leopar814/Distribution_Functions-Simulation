@@ -1,5 +1,12 @@
+# requirements.txt
+
+# Framework principal para el backend
 fastapi[standard]
 uvicorn[standard]
+
+# Cálculo numérico y simbólico
 numpy
 sympy
+
+# Graficación (si llegas a generar figuras desde el backend)
 matplotlib

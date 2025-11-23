@@ -8,6 +8,8 @@ import NormalSimulation from "./pages/distributions/NormalSimulation";
 import BivariadaSimulation from "./pages/distributions/BivariadaSimulation";
 import MultinomialSimulation from "./pages/distributions/MultinomialSimulation";
 import GibbsSimulation from "./pages/distributions/GibbsSimulation";
+import LDA from "./pages/distributions/LDA";
+import MetropolisHastings from "./pages/distributions/MetropolisHastings";
 
 export default function App() {
   return (
@@ -21,6 +23,8 @@ export default function App() {
         <Route path="/bivariada" element={<BivariadaSimulation />} />
         <Route path="/multinomial" element={<MultinomialSimulation />} />
         <Route path="/gibbs" element={<GibbsSimulation />} />
+        <Route path="/lda" element={<LDA />} />
+        <Route path="/mH" element={<MetropolisHastings />} />
         {/* Más rutas aquí  */}
         <Route path="*" element={<div>Página no encontrada</div>} />
       </Route>

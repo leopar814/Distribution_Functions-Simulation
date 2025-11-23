@@ -6,6 +6,8 @@ import normal from "/normal.png";
 import dado from "/dice.png";
 import gibbs from "/iteration.png";
 import bivariada from "/bivariada.png"
+import lda from "/lda.png"
+import mH from "/mH.png"
 
 
 export default function MainMenu() {
@@ -41,24 +43,35 @@ export default function MainMenu() {
             </button>
           </Link>
           <Link to="/normal">
-            <button className="flex w-80 items-center justify-center gap-2 bg-red-200 hover:bg-red-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-80 items-center justify-center gap-2 bg-rose-200 hover:bg-rose-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               <img src={normal} alt="icono normal" className="w-6 h-6" />
               Normal
             </button>
           </Link>
           <Link to="/bivariada">
-            <button className="flex w-80 items-center justify-center gap-2 bg-orange-200 hover:bg-orange-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-80 items-center justify-center gap-2 bg-red-200 hover:bg-red-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               <img src={bivariada} alt="icono bivariada" className="w-6 h-6" />
               Normal Bivariada
             </button>
           </Link>
           <Link to="/gibbs">
-            <button className="flex w-80 items-center justify-center gap-2 bg-yellow-300 hover:bg-yellow-500 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+            <button className="flex w-80 items-center justify-center gap-2 bg-orange-200 hover:bg-orange-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
               <img src={gibbs} alt="icono gibbs" className="w-6 h-6" />
               Gibbs
             </button>
           </Link>
-          
+          <Link to="/lda">
+            <button className="flex w-80 items-center justify-center gap-2 bg-amber-200 hover:bg-amber-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+              <img src={lda} alt="icono lda" className="w-6 h-6" />
+              LDA
+            </button>
+          </Link>
+          <Link to="/mH">
+            <button className="flex w-80 items-center justify-center gap-2 bg-yellow-300 hover:bg-yellow-400 text-black text-xl font-semibold py-3 rounded-xl shadow-md transition duration-300">
+              <img src={mH} alt="icono metropolis hastings" className="w-6 h-6" />
+              Metropolis Hastings
+            </button>
+          </Link>
         </div>
       </div>
     </div>
