@@ -386,5 +386,389 @@ export default function DistributionChart({ type, data, selectedIndex, setSelect
     );
   
   }
+
+else if (type === "lda-topic-words") {
+    // Gráfica de palabras en un tópico
+    return (
+      <div className="flex flex-col p-4 h-full w-full justify-center items-center">
+        <h2 className="w-full text-xl font-bold mb-2">Distribución de Palabras</h2>
+        <Plot
+          data={[
+            {
+              x: data.probabilities,
+              y: data.words,
+              type: "bar",
+              orientation: "h",
+              marker: { 
+                color: data.probabilities,
+                colorscale: "Blues",
+                showscale: false
+              },
+              text: data.probabilities.map(p => (p * 100).toFixed(2) + "%"),
+              textposition: "outside",
+              textfont: { size: 12 },
+            },
+          ]}
+          layout={{
+            autosize: true,
+            margin: { t: 10, b: 50, l: 150, r: 50 },
+            xaxis: { 
+              title: { text: "Probabilidad", font: { size: 14 } },
+              tickformat: ".4f"
+            },
+            yaxis: { 
+              title: { text: "Palabras", font: { size: 14 } },
+              automargin: true
+            },
+          }}
+          useResizeHandler={true}
+          style={{ width: "100%", height: "100%" }}
+        />
+      </div>
+    );
+  }
+
+  else if (type === "lda-document-topics") {
+    // Gráfica de tópicos en un documento
+    return (
+      <div className="flex flex-col p-4 h-full w-full justify-center items-center">
+        <h2 className="w-full text-xl font-bold mb-2">Distribución de Tópicos en Documento</h2>
+        <Plot
+          data={[
+            {
+              x: data.topics,
+              y: data.probabilities,
+              type: "bar",
+              marker: { 
+                color: "#10B981",
+                line: { color: "#059669", width: 1.5 }
+              },
+              text: data.probabilities.map(p => (p * 100).toFixed(2) + "%"),
+              textposition: "outside",
+              textfont: { size: 14 },
+            },
+          ]}
+          layout={{
+            autosize: true,
+            margin: { t: 10, b: 80, l: 50, r: 30 },
+            xaxis: { 
+              title: { text: "Tópicos", font: { size: 14 } },
+              tickangle: -45
+            },
+            yaxis: { 
+              title: { text: "Probabilidad", font: { size: 14 } },
+              tickformat: ".4f"
+            },
+          }}
+          useResizeHandler={true}
+          style={{ width: "100%", height: "100%" }}
+        />
+      </div>
+    );
+  }
+
+  else if (type === "lda-documents-distribution") {
+    // Gráfica de tópicos dominantes en múltiples documentos
+    const colors = ['#3B82F6', '#EF4444', '#10B981', '#F59E0B', '#8B5CF6', '#EC4899', '#14B8A6'];
+    
+    return (
+      <div className="flex flex-col p-4 h-full w-full justify-center items-center">
+        <h2 className="w-full text-xl font-bold mb-2">Tópicos Dominantes por Documento</h2>
+        <Plot
+          data={[
+            {
+              x: data.documents,
+              y: data.probabilities,
+              type: "bar",
+              marker: { 
+                color: data.dominant_topics.map(t => colors[t % colors.length]),
+              },
+              text: data.dominant_topics.map((t, i) => 
+                `T${t}: ${(data.probabilities[i] * 100).toFixed(1)}%`
+              ),
+              textposition: "inside",
+              textfont: { size: 10, color: "white" },
+              customdata: data.dominant_topics,
+              hovertemplate: 
+                "<b>%{x}</b><br>" +
+                "Tópico Dominante: %{customdata}<br>" +
+                "Probabilidad: %{y:.4f}<br>" +
+                "<extra></extra>",
+            },
+          ]}
+          layout={{
+            autosize: true,
+            margin: { t: 10, b: 100, l: 50, r: 30 },
+            xaxis: { 
+              title: { text: "Documentos", font: { size: 14 } },
+              tickangle: -45,
+              tickfont: { size: 10 }
+            },
+            yaxis: { 
+              title: { text: "Probabilidad del Tópico Dominante", font: { size: 14 } },
+              tickformat: ".2f"
+            },
+          }}
+          useResizeHandler={true}
+          style={{ width: "100%", height: "100%" }}
+        />
+      </div>
+    );
+  }
+
+  if (type === "mh-histogram") {
+    const freqX = data.frecuencias.map(d => d.x);
+    const freqY = data.frecuencias.map(d => d.y);
+
+    return (
+      <div className="flex flex-col p-4 h-full w-full justify-center items-center">
+        <h2 className="w-full text-2xl font-bold mb-2">Distribución de las Muestras</h2>
+        <Plot
+          data={[
+            {
+              x: freqX,
+              y: freqY,
+              type: "bar",
+              marker: { color: "#3b82f6" },
+              opacity: 0.8,
+              name: "Frecuencia",
+            }
+          ]}
+          layout={{
+            autosize: true,
+            margin: { t: 10, b: 60, l: 60, r: 20 },
+            xaxis: { 
+              title: { text: "Valor", font: { size: 14 } },
+              showgrid: true,
+            },
+            yaxis: { 
+              title: { text: "Densidad", font: { size: 14 } },
+              showgrid: true,
+            },
+            showlegend: false,
+            hovermode: "closest",
+          }}
+          useResizeHandler={true}
+          style={{ width: "100%", height: "100%" }}
+        />
+        <p className="text-sm text-gray-600 mt-2 text-center">
+          Media: {data.statistics.mean.toFixed(4)} | 
+          Desv. Est.: {data.statistics.std.toFixed(4)}
+        </p>
+      </div>
+    );
+  }
+
+  if (type === "mh-trace") {
+    const traceX = data.trace.map(d => d.iteration);
+    const traceY = data.trace.map(d => d.value);
+
+    return (
+      <div className="flex flex-col p-4 h-full w-full justify-center items-center">
+        <h2 className="w-full text-2xl font-bold mb-2">Trace Plot - Evolución de la Cadena</h2>
+        <Plot
+          data={[
+            {
+              x: traceX,
+              y: traceY,
+              type: "scatter",
+              mode: "lines",
+              line: { color: "#3b82f6", width: 1 },
+              name: "Cadena",
+              hovertemplate: "Iter: %{x}<br>Valor: %{y:.4f}<extra></extra>",
+            }
+          ]}
+          layout={{
+            autosize: true,
+            margin: { t: 10, b: 60, l: 60, r: 20 },
+            xaxis: { 
+              title: { text: "Iteración", font: { size: 14 } },
+              showgrid: true,
+            },
+            yaxis: { 
+              title: { text: "Valor", font: { size: 14 } },
+              showgrid: true,
+            },
+            shapes: data.burnin > 0 ? [
+              {
+                type: "line",
+                x0: data.burnin,
+                x1: data.burnin,
+                y0: 0,
+                y1: 1,
+                yref: "paper",
+                line: {
+                  color: "red",
+                  width: 2,
+                  dash: "dash",
+                }
+              }
+            ] : [],
+            annotations: data.burnin > 0 ? [
+              {
+                x: data.burnin,
+                y: 1,
+                yref: "paper",
+                text: "Fin Burn-in",
+                showarrow: true,
+                arrowhead: 2,
+                ax: 40,
+                ay: -40,
+                font: { color: "red", size: 12 }
+              }
+            ] : [],
+            showlegend: false,
+          }}
+          useResizeHandler={true}
+          style={{ width: "100%", height: "100%" }}
+        />
+        <p className="text-sm text-gray-600 mt-2 text-center">
+          La cadena debe verse como "ruido" sin tendencias claras (buena mezcla)
+        </p>
+      </div>
+    );
+  }
+
+  if (type === "mh-autocorr") {
+    const lags = data.autocorrelation.map(d => d.lag);
+    const autocorr = data.autocorrelation.map(d => d.autocorr);
+
+    return (
+      <div className="flex flex-col p-4 h-full w-full justify-center items-center">
+        <h2 className="w-full text-2xl font-bold mb-2">Función de Autocorrelación</h2>
+        <Plot
+          data={[
+            {
+              x: lags,
+              y: autocorr,
+              type: "bar",
+              marker: { 
+                color: autocorr.map(ac => ac > 0.05 ? "#3b82f6" : "#93c5fd"),
+              },
+              name: "Autocorrelación",
+              hovertemplate: "Lag: %{x}<br>ACF: %{y:.4f}<extra></extra>",
+            }
+          ]}
+          layout={{
+            autosize: true,
+            margin: { t: 10, b: 60, l: 60, r: 20 },
+            xaxis: { 
+              title: { text: "Lag", font: { size: 14 } },
+              showgrid: true,
+            },
+            yaxis: { 
+              title: { text: "Autocorrelación", font: { size: 14 } },
+              showgrid: true,
+              range: [-0.2, 1.05],
+            },
+            shapes: [
+              {
+                type: "line",
+                x0: 0,
+                x1: Math.max(...lags),
+                y0: 0,
+                y1: 0,
+                line: { color: "black", width: 1 }
+              },
+              {
+                type: "line",
+                x0: 0,
+                x1: Math.max(...lags),
+                y0: 0.05,
+                y1: 0.05,
+                line: { color: "red", width: 1, dash: "dash" }
+              }
+            ],
+            annotations: [
+              {
+                x: Math.max(...lags) * 0.8,
+                y: 0.05,
+                text: "Umbral (0.05)",
+                showarrow: false,
+                font: { color: "red", size: 10 },
+                yshift: 10
+              }
+            ],
+            showlegend: false,
+          }}
+          useResizeHandler={true}
+          style={{ width: "100%", height: "100%" }}
+        />
+        <p className="text-sm text-gray-600 mt-2 text-center">
+          Debe decaer rápidamente hacia cero (muestras menos correlacionadas)
+        </p>
+      </div>
+    );
+  }
+
+  if (type === "mh-running") {
+    const iterations = data.running_mean.map(d => d.iteration);
+    const means = data.running_mean.map(d => d.mean);
+
+    return (
+      <div className="flex flex-col p-4 h-full w-full justify-center items-center">
+        <h2 className="w-full text-2xl font-bold mb-2">Media Acumulada</h2>
+        <Plot
+          data={[
+            {
+              x: iterations,
+              y: means,
+              type: "scatter",
+              mode: "lines",
+              line: { color: "#3b82f6", width: 2 },
+              name: "Media acumulada",
+              hovertemplate: "Iter: %{x}<br>Media: %{y:.4f}<extra></extra>",
+            }
+          ]}
+          layout={{
+            autosize: true,
+            margin: { t: 10, b: 60, l: 60, r: 20 },
+            xaxis: { 
+              title: { text: "Iteración", font: { size: 14 } },
+              showgrid: true,
+            },
+            yaxis: { 
+              title: { text: "Media Acumulada", font: { size: 14 } },
+              showgrid: true,
+            },
+            shapes: [
+              {
+                type: "line",
+                x0: 0,
+                x1: Math.max(...iterations),
+                y0: data.final_mean,
+                y1: data.final_mean,
+                line: {
+                  color: "green",
+                  width: 2,
+                  dash: "dash",
+                }
+              }
+            ],
+            annotations: [
+              {
+                x: Math.max(...iterations) * 0.9,
+                y: data.final_mean,
+                text: `Media final: ${data.final_mean.toFixed(4)}`,
+                showarrow: true,
+                arrowhead: 2,
+                ax: 0,
+                ay: -40,
+                font: { color: "green", size: 12 }
+              }
+            ],
+            showlegend: false,
+          }}
+          useResizeHandler={true}
+          style={{ width: "100%", height: "100%" }}
+        />
+        <p className="text-sm text-gray-600 mt-2 text-center">
+          Debe estabilizarse indicando convergencia de la cadena
+        </p>
+      </div>
+    );
+  }
+  
   return null;
 }
+  

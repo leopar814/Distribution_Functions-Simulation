@@ -1,7 +1,7 @@
 import { useState } from "react";
 import 'katex/dist/katex.min.css';
 import Header from "../../components/Header";
-import Accordion from "../../components/Accordion";
+import DistributionChart from "../../components/DistributionChart";
 
 export default function LDA() {
     const [file, setFile] = useState(null);
@@ -11,14 +11,18 @@ export default function LDA() {
     const [beta, setBeta] = useState(0.01);
     const [loading, setLoading] = useState(false);
     const [modelInfo, setModelInfo] = useState(null);
-    const [viewMode, setViewMode] = useState(null); // 'topics' | 'documents' | 'matrices' | null
-    const [selectedId, setSelectedId] = useState(0);
+    const [viewMode, setViewMode] = useState(null);
+    const [selectedIdTopic, setSelectedIdTopic] = useState(0);
+    const [selectedIdDoc, setSelectedIdDoc] = useState(0);
     const [topicData, setTopicData] = useState(null);
     const [documentData, setDocumentData] = useState(null);
     const [allTopics, setAllTopics] = useState(null);
     const [allDocuments, setAllDocuments] = useState(null);
     const [matrixTheta, setMatrixTheta] = useState(null);
     const [matrixPhi, setMatrixPhi] = useState(null);
+    
+    // Estados para controlar visualización de gráficas
+    const [showChart, setShowChart] = useState({});
 
     const handleFileChange = (e) => {
         const selectedFile = e.target.files[0];
@@ -37,7 +41,6 @@ export default function LDA() {
 
         setLoading(true);
         try {
-            // 1. Subir el archivo
             const formData = new FormData();
             formData.append("file", file);
 
@@ -50,19 +53,17 @@ export default function LDA() {
                 throw new Error("Error al subir el archivo");
             }
 
-            // 2. Entrenar el modelo
             const alphaParam = alpha ? `&alpha=${alpha}` : "";
             const trainRes = await fetch(
                 `http://localhost:8000/lda/train?K=${K}&iterations=${iterations}${alphaParam}&beta=${beta}`
             );
-            console.log(trainRes);
+
             if (!trainRes.ok) {
                 throw new Error("Error al entrenar el modelo");
             }
 
             const trainData = await trainRes.json();
 
-            // 3. Obtener información del modelo
             const infoRes = await fetch("http://localhost:8000/lda/info");
             const infoData = await infoRes.json();
 
@@ -87,6 +88,7 @@ export default function LDA() {
             const data = await res.json();
             setAllTopics(data);
             setViewMode("all-topics");
+            setShowChart({});
         } catch (err) {
             alert(`Error: ${err.message}`);
         }
@@ -99,10 +101,11 @@ export default function LDA() {
         }
 
         try {
-            const res = await fetch(`http://localhost:8000/lda/topic/${selectedId}?top_n=20`);
+            const res = await fetch(`http://localhost:8000/lda/topic/${selectedIdTopic}?top_n=20`);
             const data = await res.json();
             setTopicData(data);
             setViewMode("topic");
+            setShowChart({});
         } catch (err) {
             alert(`Error: ${err.message}`);
         }
@@ -115,10 +118,11 @@ export default function LDA() {
         }
 
         try {
-            const res = await fetch(`http://localhost:8000/lda/document/${selectedId}`);
+            const res = await fetch(`http://localhost:8000/lda/document/${selectedIdDoc}`);
             const data = await res.json();
             setDocumentData(data);
             setViewMode("document");
+            setShowChart({});
         } catch (err) {
             alert(`Error: ${err.message}`);
         }
@@ -135,6 +139,7 @@ export default function LDA() {
             const data = await res.json();
             setAllDocuments(data);
             setViewMode("all-documents");
+            setShowChart({});
         } catch (err) {
             alert(`Error: ${err.message}`);
         }
@@ -172,6 +177,13 @@ export default function LDA() {
         }
     };
 
+    const toggleChart = (id) => {
+        setShowChart(prev => ({
+            ...prev,
+            [id]: !prev[id]
+        }));
+    };
+
     const renderContent = () => {
         if (!viewMode) {
             return (
@@ -192,18 +204,39 @@ export default function LDA() {
                     <div className="h-full overflow-y-auto">
                         <h3 className="text-2xl font-bold mb-4">Todos los Tópicos</h3>
                         {allTopics?.topics.map((topic) => (
-                            <div key={topic.topic_id} className="mb-6 p-4 bg-white rounded shadow">
-                                <h4 className="text-xl font-semibold mb-2 text-blue-600">
-                                    Tópico {topic.topic_id}
-                                </h4>
-                                <div className="grid grid-cols-2 gap-2">
-                                    {topic.words.map((word, idx) => (
-                                        <div key={idx} className="flex justify-between text-sm">
-                                            <span className="font-medium">{word.word}</span>
-                                            <span className="text-gray-600">{word.percentage}%</span>
-                                        </div>
-                                    ))}
+                            <div key={topic.topic_id} className="mb-6 p-4 bg-white rounded shadow relative">
+                                <div className="flex justify-between items-center mb-2">
+                                    <h4 className="text-xl font-semibold text-blue-600">
+                                        Tópico {topic.topic_id}
+                                    </h4>
+                                    <button
+                                        onClick={() => toggleChart(`topic-${topic.topic_id}`)}
+                                        className="bg-indigo-500 text-white px-3 py-1 rounded text-sm hover:bg-indigo-600"
+                                    >
+                                        {showChart[`topic-${topic.topic_id}`] ? "Ver Tabla" : "Ver Gráfica"}
+                                    </button>
                                 </div>
+                                
+                                {showChart[`topic-${topic.topic_id}`] ? (
+                                    <div className="h-96">
+                                        <DistributionChart 
+                                            type="lda-topic-words"
+                                            data={{
+                                                words: topic.words.map(w => w.word),
+                                                probabilities: topic.words.map(w => w.probability)
+                                            }}
+                                        />
+                                    </div>
+                                ) : (
+                                    <div className="grid grid-cols-2 gap-2">
+                                        {topic.words.map((word, idx) => (
+                                            <div key={idx} className="flex justify-between text-sm">
+                                                <span className="font-medium">{word.word}</span>
+                                                <span className="text-gray-600">{word.percentage}%</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
                             </div>
                         ))}
                     </div>
@@ -212,36 +245,66 @@ export default function LDA() {
             case "topic":
                 return (
                     <div className="h-full overflow-y-auto">
-                        <h3 className="text-2xl font-bold mb-4">
-                            Tópico {topicData?.topic_id}
-                        </h3>
-                        <div className="space-y-2">
-                            {topicData?.words.map((word) => (
-                                <div key={word.rank} className="flex justify-between p-2 bg-white rounded">
-                                    <span className="font-medium">
-                                        {word.rank}. {word.word}
-                                    </span>
-                                    <div className="flex items-center gap-4">
-                                        <span className="text-gray-600">{word.percentage}%</span>
-                                        <div className="w-32 bg-gray-200 rounded-full h-2">
-                                            <div
-                                                className="bg-blue-500 h-2 rounded-full"
-                                                style={{ width: `${word.percentage}%` }}
-                                            />
+                        <div className="flex justify-between items-center mb-4">
+                            <h3 className="text-2xl font-bold">
+                                Tópico {topicData?.topic_id}
+                            </h3>
+                            <button
+                                onClick={() => toggleChart('single-topic')}
+                                className="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600"
+                            >
+                                {showChart['single-topic'] ? "Ver Tabla" : "Ver Gráfica"}
+                            </button>
+                        </div>
+
+                        {showChart['single-topic'] ? (
+                            <div className="h-[500px]">
+                                <DistributionChart 
+                                    type="lda-topic-words"
+                                    data={{
+                                        words: topicData.words.map(w => w.word),
+                                        probabilities: topicData.words.map(w => w.probability)
+                                    }}
+                                />
+                            </div>
+                        ) : (
+                            <div className="space-y-2">
+                                {topicData?.words.map((word) => (
+                                    <div key={word.rank} className="flex justify-between p-2 bg-white rounded">
+                                        <span className="font-medium">
+                                            {word.rank}. {word.word}
+                                        </span>
+                                        <div className="flex items-center gap-4">
+                                            <span className="text-gray-600">{word.percentage}%</span>
+                                            <div className="w-32 bg-gray-200 rounded-full h-2">
+                                                <div
+                                                    className="bg-blue-500 h-2 rounded-full"
+                                                    style={{ width: `${word.percentage * 10}%` }}
+                                                />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            ))}
-                        </div>
+                                ))}
+                            </div>
+                        )}
                     </div>
                 );
 
             case "document":
                 return (
                     <div className="h-full overflow-y-auto">
-                        <h3 className="text-2xl font-bold mb-4">
-                            Documento {documentData?.doc_id}
-                        </h3>
+                        <div className="flex justify-between items-center mb-4">
+                            <h3 className="text-2xl font-bold">
+                                Documento {documentData?.doc_id}
+                            </h3>
+                            <button
+                                onClick={() => toggleChart('single-document')}
+                                className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+                            >
+                                {showChart['single-document'] ? "Ver Tabla" : "Ver Gráfica"}
+                            </button>
+                        </div>
+
                         <div className="mb-4 p-4 bg-blue-50 rounded">
                             <p className="font-semibold">
                                 Tópico Dominante: Tópico {documentData?.dominant_topic}
@@ -250,50 +313,85 @@ export default function LDA() {
                                 Probabilidad: {(documentData?.dominant_probability * 100).toFixed(2)}%
                             </p>
                         </div>
-                        <div className="space-y-3">
-                            {documentData?.topics.map((topic) => (
-                                <div key={topic.topic_id} className="p-3 bg-white rounded shadow">
-                                    <div className="flex justify-between items-center mb-2">
-                                        <span className="font-medium">Tópico {topic.topic_id}</span>
-                                        <span className="text-gray-600">{topic.percentage}%</span>
+
+                        {showChart['single-document'] ? (
+                            <div className="h-[400px]">
+                                <DistributionChart 
+                                    type="lda-document-topics"
+                                    data={{
+                                        topics: documentData.topics.map(t => `Tópico ${t.topic_id}`),
+                                        probabilities: documentData.topics.map(t => t.probability)
+                                    }}
+                                />
+                            </div>
+                        ) : (
+                            <div className="space-y-3">
+                                {documentData?.topics.map((topic) => (
+                                    <div key={topic.topic_id} className="p-3 bg-white rounded shadow">
+                                        <div className="flex justify-between items-center mb-2">
+                                            <span className="font-medium">Tópico {topic.topic_id}</span>
+                                            <span className="text-gray-600">{topic.percentage}%</span>
+                                        </div>
+                                        <div className="w-full bg-gray-200 rounded-full h-3">
+                                            <div
+                                                className="bg-green-500 h-3 rounded-full"
+                                                style={{ width: `${topic.percentage}%` }}
+                                            />
+                                        </div>
                                     </div>
-                                    <div className="w-full bg-gray-200 rounded-full h-3">
-                                        <div
-                                            className="bg-green-500 h-3 rounded-full"
-                                            style={{ width: `${topic.percentage}%` }}
-                                        />
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
+                                ))}
+                            </div>
+                        )}
                     </div>
                 );
 
             case "all-documents":
                 return (
                     <div className="h-full overflow-y-auto">
-                        <h3 className="text-2xl font-bold mb-4">
-                            Resumen de Documentos ({allDocuments?.showing} de {allDocuments?.num_docs})
-                        </h3>
-                        <div className="space-y-3">
-                            {allDocuments?.documents.map((doc) => (
-                                <div key={doc.doc_id} className="p-3 bg-white rounded shadow">
-                                    <div className="flex justify-between items-center mb-2">
-                                        <span className="font-semibold">Documento {doc.doc_id}</span>
-                                        <span className="text-sm text-gray-600">
-                                            Dominante: Tópico {doc.dominant_topic} ({(doc.dominant_probability * 100).toFixed(1)}%)
-                                        </span>
-                                    </div>
-                                    <div className="flex gap-2 text-sm">
-                                        {doc.top_topics.map((topic, idx) => (
-                                            <span key={idx} className="bg-blue-100 px-2 py-1 rounded">
-                                                T{topic.topic_id}: {topic.percentage}%
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
-                            ))}
+                        <div className="flex justify-between items-center mb-4">
+                            <h3 className="text-2xl font-bold">
+                                Resumen de Documentos ({allDocuments?.showing} de {allDocuments?.num_docs})
+                            </h3>
+                            <button
+                                onClick={() => toggleChart('all-documents')}
+                                className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+                            >
+                                {showChart['all-documents'] ? "Ver Lista" : "Ver Gráfica"}
+                            </button>
                         </div>
+
+                        {showChart['all-documents'] ? (
+                            <div className="h-[500px]">
+                                <DistributionChart 
+                                    type="lda-documents-distribution"
+                                    data={{
+                                        documents: allDocuments.documents.map(d => `Doc ${d.doc_id}`),
+                                        dominant_topics: allDocuments.documents.map(d => d.dominant_topic),
+                                        probabilities: allDocuments.documents.map(d => d.dominant_probability)
+                                    }}
+                                />
+                            </div>
+                        ) : (
+                            <div className="space-y-3">
+                                {allDocuments?.documents.map((doc) => (
+                                    <div key={doc.doc_id} className="p-3 bg-white rounded shadow">
+                                        <div className="flex justify-between items-center mb-2">
+                                            <span className="font-semibold">Documento {doc.doc_id}</span>
+                                            <span className="text-sm text-gray-600">
+                                                Dominante: Tópico {doc.dominant_topic} ({(doc.dominant_probability * 100).toFixed(1)}%)
+                                            </span>
+                                        </div>
+                                        <div className="flex gap-2 text-sm">
+                                            {doc.top_topics.map((topic, idx) => (
+                                                <span key={idx} className="bg-blue-100 px-2 py-1 rounded">
+                                                    T{topic.topic_id}: {topic.percentage}%
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
                     </div>
                 );
 
@@ -487,8 +585,8 @@ export default function LDA() {
                                     type="number"
                                     min="0"
                                     max={modelInfo.K - 1}
-                                    value={selectedId}
-                                    onChange={(e) => setSelectedId(Number(e.target.value))}
+                                    value={selectedIdTopic}
+                                    onChange={(e) => setSelectedIdTopic(Number(e.target.value))}
                                     className="flex-1 border px-3 py-2 rounded"
                                     placeholder="ID"
                                 />
@@ -510,15 +608,15 @@ export default function LDA() {
                                 onClick={viewAllDocuments}
                                 className="w-full bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 mb-2"
                             >
-                                Resumen Documentos
+                                Todos los Documentos
                             </button>
                             <div className="flex gap-2">
                                 <input
                                     type="number"
                                     min="0"
                                     max={modelInfo.num_docs - 1}
-                                    value={selectedId}
-                                    onChange={(e) => setSelectedId(Number(e.target.value))}
+                                    value={selectedIdDoc}
+                                    onChange={(e) => setSelectedIdDoc(Number(e.target.value))}
                                     className="flex-1 border px-3 py-2 rounded"
                                     placeholder="ID"
                                 />
@@ -540,13 +638,13 @@ export default function LDA() {
                                 onClick={viewMatrixTheta}
                                 className="w-full bg-orange-600 text-white py-2 px-4 rounded hover:bg-orange-700 mb-2"
                             >
-                                Matriz THETA (Docs × Tópicos)
+                                Docs × Tópicos
                             </button>
                             <button
                                 onClick={viewMatrixPhi}
                                 className="w-full bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-700"
                             >
-                                Matriz PHI (Tópicos × Palabras)
+                                Tópicos × Palabras
                             </button>
                         </div>
                     )}

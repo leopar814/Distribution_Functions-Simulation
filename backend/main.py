@@ -13,7 +13,7 @@ import json
 import shutil
 
 # Importar funciones de LDA
-from lda_lib.LDA import (
+from lib.LDA import (
     generateUsableFiles,
     load_corpus_and_vocab, 
     LDA, 
@@ -776,22 +776,186 @@ def visualize_document_distribution():
         "distribution": distribution
     }
 
-
-# @app.post("/lda/load")
-# def load_lda_model(output_dir: str = Query("output", description="Directorio con los archivos del modelo")):
-#     """
-#     Carga un modelo LDA previamente entrenado desde archivos.
-#     """
-#     success, message = load_lda_results(output_dir)
+@app.get("/metropolis_hastings")
+def simular_metropolis_hastings(
+    target_function: str = Query(..., description="Función objetivo (debe ser > 0)"),
+    initial_state: float = Query(0.0, description="Estado inicial de la cadena"),
+    iterations: int = Query(10000, description="Número total de iteraciones"),
+    sigma: float = Query(1.0, description="Desviación estándar de la propuesta"),
+    burnin: int = Query(1000, description="Iteraciones de burn-in a descartar"),
+    thin: int = Query(1, description="Guardar cada 'thin' muestras (para reducir datos)")
+):
+    """
+    Ejecuta el algoritmo Metropolis-Hastings para simular de una distribución objetivo.
     
-#     if success:
-#         return {
-#             "success": True,
-#             "message": message,
-#             "num_docs": lda_state["num_docs"],
-#             "vocab_size": lda_state["V"],
-#             "K": lda_state["K"],
-#             "metadata": lda_state["metadata"]
-#         }
-#     else:
-#         raise HTTPException(status_code=404, detail=message)
+    Ejemplos de funciones objetivo:
+    - Normal estándar: "exp(-x**2/2)"
+    - Gamma: "x**(2-1) * exp(-x)" (para x > 0)
+    - Beta: "x**(2-1) * (1-x)**(3-1)" (para 0 < x < 1)
+    - Mezcla de normales: "0.3*exp(-(x+2)**2/2) + 0.7*exp(-(x-2)**2/2)"
+    """
+    
+    if iterations <= 0 or sigma <= 0 or burnin < 0:
+        raise HTTPException(
+            status_code=400,
+            detail="iterations y sigma deben ser positivos, burnin >= 0"
+        )
+    
+    if burnin >= iterations:
+        raise HTTPException(
+            status_code=400,
+            detail="burnin debe ser menor que iterations"
+        )
+    
+    if thin < 1:
+        raise HTTPException(status_code=400, detail="thin debe ser >= 1")
+    
+    try:
+        # Importar las funciones del módulo MH
+        from lib.metropolis_hastings import mH_Run
+        
+        # Ejecutar el algoritmo
+        result = mH_Run(
+            targetFunctionRaw=target_function,
+            InicialState=initial_state,
+            iterations=iterations,
+            sigma=sigma,
+            burnin=burnin
+        )
+        
+        # Aplicar thinning si es necesario (para reducir datos enviados al frontend)
+        samples_thinned = result["samples"][::thin]
+        raw_samples_thinned = result["raw_samples"][::thin]
+        
+        # Preparar datos para el histograma
+        counts, edges = np.histogram(samples_thinned, bins=30, density=True)
+        centers = (edges[:-1] + edges[1:]) / 2
+        frecuencias = [
+            {"x": float(c), "y": float(d)}
+            for c, d in zip(centers, counts)
+        ]
+        
+        # Preparar trace plot (thinned)
+        trace = [
+            {"iteration": i * thin, "value": float(v)}
+            for i, v in enumerate(raw_samples_thinned)
+        ]
+        
+        # Preparar autocorrelación para gráfica
+        autocorr_data = [
+            {"lag": i, "autocorr": float(ac)}
+            for i, ac in enumerate(result["diagnostics"]["autocorrelation"])
+        ]
+        
+        # Preparar running mean para diagnóstico
+        cumsum = np.cumsum(result["raw_samples"])
+        running_mean = cumsum / np.arange(1, len(cumsum) + 1)
+        running_mean_data = [
+            {"iteration": i, "mean": float(m)}
+            for i, m in enumerate(running_mean[::max(1, len(running_mean)//200)])
+        ]
+        
+        return {
+            "success": True,
+            "parameters": {
+                "target_function": target_function,
+                "initial_state": initial_state,
+                "iterations": iterations,
+                "sigma": sigma,
+                "burnin": burnin,
+                "thin": thin
+            },
+            "samples": samples_thinned[:1000],  # Limitar a 1000 para el frontend
+            "statistics": result["statistics"],
+            "diagnostics": {
+                **result["diagnostics"],
+                "accepted_ratio": result["accepted_ratio"]
+            },
+            "plots": {
+                "histogram": frecuencias,
+                "trace": trace[:2000],  # Limitar trace plot
+                "autocorrelation": autocorr_data,
+                "running_mean": running_mean_data
+            },
+            "recommendations": get_mh_recommendations(
+                result["accepted_ratio"],
+                result["diagnostics"]["ess_ratio"],
+                result["diagnostics"]["geweke_z"],
+                sigma
+            )
+        }
+        
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=f"Error en la función: {str(e)}")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error en la simulación: {str(e)}")
+
+
+def get_mh_recommendations(accepted_ratio, ess_ratio, geweke_z, current_sigma):
+    """Genera recomendaciones basadas en los diagnósticos"""
+    recommendations = []
+    
+    # Tasa de aceptación
+    if accepted_ratio < 0.15:
+        recommendations.append({
+            "type": "warning",
+            "category": "Tasa de aceptación",
+            "message": f"Tasa de aceptación baja ({accepted_ratio:.1%}). La cadena se mueve lentamente.",
+            "suggestion": f"Reduce sigma a ≈ {current_sigma * 0.6:.2f} para propuestas más conservadoras."
+        })
+    elif accepted_ratio > 0.50:
+        recommendations.append({
+            "type": "warning",
+            "category": "Tasa de aceptación",
+            "message": f"Tasa de aceptación alta ({accepted_ratio:.1%}). Propuestas demasiado conservadoras.",
+            "suggestion": f"Aumenta sigma a ≈ {current_sigma * 1.5:.2f} para explorar mejor el espacio."
+        })
+    else:
+        recommendations.append({
+            "type": "success",
+            "category": "Tasa de aceptación",
+            "message": f"Tasa de aceptación óptima ({accepted_ratio:.1%}).",
+            "suggestion": "La cadena está explorando bien el espacio."
+        })
+    
+    # ESS
+    if ess_ratio < 0.1:
+        recommendations.append({
+            "type": "warning",
+            "category": "Tamaño efectivo",
+            "message": f"ESS ratio bajo ({ess_ratio:.1%}). Alta autocorrelación en las muestras.",
+            "suggestion": "Aumenta el número de iteraciones o ajusta sigma."
+        })
+    elif ess_ratio > 0.3:
+        recommendations.append({
+            "type": "success",
+            "category": "Tamaño efectivo",
+            "message": f"ESS ratio bueno ({ess_ratio:.1%}). Muestras relativamente independientes.",
+            "suggestion": "La cadena está produciendo muestras eficientes."
+        })
+    
+    # Convergencia (Geweke)
+    if geweke_z is not None:
+        if abs(geweke_z) < 1:
+            recommendations.append({
+                "type": "success",
+                "category": "Convergencia",
+                "message": f"Geweke Z-score = {geweke_z:.2f}. Buena convergencia.",
+                "suggestion": "La cadena parece haber convergido a la distribución objetivo."
+            })
+        elif abs(geweke_z) < 2:
+            recommendations.append({
+                "type": "info",
+                "category": "Convergencia",
+                "message": f"Geweke Z-score = {geweke_z:.2f}. Convergencia aceptable.",
+                "suggestion": "Considera aumentar burn-in si tienes dudas."
+            })
+        else:
+            recommendations.append({
+                "type": "warning",
+                "category": "Convergencia",
+                "message": f"Geweke Z-score = {geweke_z:.2f}. Convergencia dudosa.",
+                "suggestion": "Aumenta burn-in o el número total de iteraciones."
+            })
+    
+    return recommendations
