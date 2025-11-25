@@ -475,7 +475,8 @@ export default function LDA() {
         <div className="flex flex-col items-center min-h-screen bg-gray-50">
             <Header
                 distributionName={"LDA - Latent Dirichlet Allocation"}
-                formula={"p(\\mathbf{w}, \\mathbf{z}, \\theta, \\phi | \\alpha, \\beta) = \\prod_{k=1}^{K} p(\\phi_k | \\beta) \\prod_{d=1}^{D} p(\\theta_d | \\alpha) \\prod_{n=1}^{N_d} p(z_{d,n} | \\theta_d) p(w_{d,n} | \\phi_{z_{d,n}})"}
+                // formula={"p(\\mathbf{w}, \\mathbf{z}, \\theta, \\phi | \\alpha, \\beta) = \\prod_{k=1}^{K} p(\\phi_k | \\beta) \\prod_{d=1}^{D} p(\\theta_d | \\alpha) \\prod_{n=1}^{N_d} p(z_{d,n} | \\theta_d) p(w_{d,n} | \\phi_{z_{d,n}})"}
+                formula={""}
             />
 
             <div className="w-[95vw] h-fit m-4 bg-white shadow-lg rounded-lg p-6 grid grid-cols-3 gap-4">
