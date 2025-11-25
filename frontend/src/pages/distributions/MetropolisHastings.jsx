@@ -209,12 +209,12 @@ export default function MetropolisHastings() {
                   </span>
                 </div>
                 
-                <div className="flex justify-between">
+                {/* <div className="flex justify-between">
                   <span className="font-medium">ESS:</span>
                   <span>{data.diagnostics.ess.toFixed(0)}</span>
-                </div>
+                </div> */}
                 
-                <div className="flex justify-between">
+                {/* <div className="flex justify-between">
                   <span className="font-medium">ESS ratio:</span>
                   <span className={
                     data.diagnostics.ess_ratio < 0.1 ? "text-red-600 font-bold" :
@@ -223,9 +223,9 @@ export default function MetropolisHastings() {
                   }>
                     {(data.diagnostics.ess_ratio * 100).toFixed(1)}%
                   </span>
-                </div>
+                </div> */}
                 
-                {data.diagnostics.geweke_z !== null && (
+                {/* {data.diagnostics.geweke_z !== null && (
                   <div className="flex justify-between">
                     <span className="font-medium">Geweke Z:</span>
                     <span className={
@@ -236,12 +236,12 @@ export default function MetropolisHastings() {
                       {data.diagnostics.geweke_z.toFixed(3)}
                     </span>
                   </div>
-                )}
+                )} */}
               </div>
             </div>
           )}
 
-          {/* Panel 4: Recomendaciones */}
+          {/* Panel 4: Recomendaciones
           {data && data.recommendations && (
             <div className="bg-gray-100 p-4 rounded shadow">
               <h3 className="text-lg font-bold mb-3">Diagnósticos</h3>
@@ -266,7 +266,7 @@ export default function MetropolisHastings() {
                 ))}
               </div>
             </div>
-          )}
+          )} */}
 
           {/* Panel 5: Muestra de valores */}
           {data && (
@@ -308,8 +308,8 @@ export default function MetropolisHastings() {
                 {[
                   { id: "histogram", label: "Histograma" },
                   { id: "trace", label: "Trace Plot" },
-                  { id: "autocorr", label: "Autocorrelación" },
-                  { id: "running", label: "Media Acumulada" }
+                  // { id: "autocorr", label: "Autocorrelación" },
+                  // { id: "running", label: "Media Acumulada" }
                 ].map(tab => (
                   <button
                     key={tab.id}
