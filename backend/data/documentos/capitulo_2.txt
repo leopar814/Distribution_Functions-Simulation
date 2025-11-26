@@ -1,0 +1,101 @@
+1
+                                            El ADN
+
+
+¿Dónde empieza todo?
+Es difícil establecer un punto de partida cuando quieres explicar algo tan complejo como el ser
+humano. Aun así, estarás de acuerdo conmigo en que tiene sentido empezar por uno de los
+elementos más pequeños que nos componen: la célula. Mientras que la mayoría de los seres
+vivos están formados por una sola célula (como las bacterias) otros organismos (como el
+nuestro) están formados por muchísimas más. Tu cuerpo es, a fin de cuentas, un conjunto
+organizado de células de distintos tipos que se agrupan para formar tejidos especializados en
+desempeñar una función concreta. Por ejemplo, las células de la retina captan la luz para que
+podamos ver; las del páncreas sintetizan sustancias que facilitan la digestión; y las de la piel nos
+protegen del medio que nos rodea. Pero toda esta orquesta sería imposible sin el que vendría a
+ser su director. ¿Te has parado alguna vez a pensar que, a pesar de los millones de células que te
+forman, surgiste a partir de una sola? ¿Quién le dijo a esa primera célula lo que tenía que hacer?
+Si queremos encontrar una respuesta, tenemos que mirar en el interior de la célula en busca de
+una molécula llamada ADN. En ella está escrita nuestra información genética, que define cómo
+funcionan nuestras células, cuándo se tienen que dividir o cómo responder a un estímulo
+externo. Básicamente, define cómo somos. Y es precisamente esta información genética, este
+ADN, el que se transmite de generación en generación y, por tanto, es el responsable de que te
+parezcas a tus progenitores y de que tus hijos se parezcan a ti.
+   Si tuvieses que buscar el ADN dentro de la célula, lo encontrarías en dos sitios: en las
+mitocondrias, unas estructuras celulares increíbles que ya conocerás más adelante; y en el
+núcleo, que actúa como el centro de control de la célula. Dentro de estos compartimentos, la
+molécula de ADN está constituida por dos cadenas de información unidas y enroscadas sobre sí
+mismas formando una doble hélice. Pero ¿qué hay escrito en estas cadenas que nos defina
+como individuos? Seguramente hayas oído decir que el ADN está formado por cuatro letras: A,
+T, C y G, pero ¿qué significa esto? ¿Tenemos literalmente letras dentro de nuestras células? En
+realidad, el ADN es algo más que eso. El ADN o ácido desoxirribonucleico es uno de los dos tipos
+de ácidos nucleicos que existen, junto con el ARN o ácido ribonucleico, del que hablaremos más
+adelante. Se llaman ácidos nucleicos porque están formados por una secuencia de moléculas
+más pequeñas denominadas nucleótidos. O sea, que los nucleótidos son las piezas a partir de las
+cuales se construye la cadena de ADN. Una forma fácil de imaginárselo sería pensar en un collar
+de perlas, colocadas en fila una tras otra, del mismo modo que la secuencia de nucleótidos
+forma el ADN. Pero el ADN no está hecho de una sola cadena, sino de dos cadenas enroscadas,
+por lo que el símil sería más acertado si imaginamos dos collares de perlas enrollados entre sí.
+   Esta analogía es bonita, pero los nucleótidos son algo más complejos que una perla. En
+realidad, cada uno de ellos está formado por tres elementos: una pentosa (un tipo de azúcar), un
+grupo fosfato (un átomo de fósforo unido a cuatro de oxígeno) y una base nitrogenada (que le
+da la «personalidad» al nucleótido, ahora entenderás por qué). La pentosa y el grupo fosfato se
+unen intercalándose entre sí (pentosa-fosfato-pentosa-fosfato...), formando el esqueleto de ADN,
+la base sobre la cual se construye la cadena. Volviendo a la metáfora anterior, vendrían a ser el
+hilo del collar de perlas. Pero un hilo sin perlas no es un collar, nos falta un elemento clave: las
+bases nitrogenadas, que se van a ir uniendo en secuencia sobre este esqueleto de pentosas y
+grupos fosfato. Siendo más precisos, podríamos decir que las perlas del collar son, más que los
+nucleótidos, las bases nitrogenadas. Existen cuatro tipos de bases, y son las que van a distinguir
+cada tipo de nucleótido: adenina (A), timina (T), citosina (C) y guanina (G). ¿Te suenan? Las
+cuatro letras que componen el ADN son, en realidad, el nombre de las cuatro bases que forman
+los nucleótidos, a los que llamamos por las letras A, T, C y G según la base nitrogenada que
+tengan. Nuestro ADN es una secuencia larguísima de estos cuatro nucleótidos (cada uno
+formado por su base nitrogenada, pentosa y grupo fosfato), en plan A-A-C-T-G-T-T-T-G-A...
+   Pero las bases cumplen, además, otra misión: mantener unidas las dos cadenas de ADN. Esto
+lo consiguen gracias a una propiedad muy peculiar, ya que las bases de ambas cadenas son
+capaces de unirse las unas con las otras, pero no de cualquier modo: las adeninas (A) se unen
+con las timinas (T), y las citosinas (C) se unen con las guaninas (G). Como un match de Tinder,
+pero por narices. Este es el motivo por el que ambas cadenas del ADN son complementarias, de
+modo que, si una cadena tiene la secuencia AATTCG, la otra cadena tendrá la secuencia
+complementaria TTAAGC.
+La estructura del ADN y sus nucleótidos. El ADN es una secuencia de unas moléculas más pequeñas llamadas
+nucleótidos. Estos, a su vez, están formados por tres partes: una pentosa (un tipo de azúcar), un grupo fosfato
+(un átomo de fósforo unido a cuatro de oxígeno) y una base nitrogenada que da nombre al nucleótido (A, T, C,
+G).
+
+
+  EN RESUMEN... Un azúcar, un grupo fosfato y una base nitrogenada forman un nucleótido (A, C, T,
+  G); la combinación de nucleótidos constituye cada una de las cadenas del ADN; ambas cadenas,
+  con sus secuencias complementarias de nucleótidos, se unirán y enrollarán entre sí y darán lugar a
+  la doble hélice de ADN.
+
+
+   Es posible que sientas cierta decepción. O sea, que la base de la vida, la información que
+contienen todas y cada una de tus células y que define quién eres, ¿está contenida en cuatro
+letras? ¿Cómo puede ser que a partir de esta secuencia de cuatro nucleótidos se forme un
+organismo entero y funcional? ¿Cómo es capaz la célula de leer esa información?
+
+Sin genes no hay proteínas
+Hay que entender el ADN como un libro de recetas que contiene las instrucciones para
+sintetizar las moléculas «obreras» de la célula: las proteínas. Suelen llamarse así porque lo
+hacen prácticamente todo: forman las estructuras de la célula, facilitan las reacciones químicas,
+transportan moléculas por el organismo, regulan la división celular y nos ayudan a defendernos
+contra las infecciones, entre tantas otras cosas. Por eso decimos que «el ADN contiene la
+información necesaria para el funcionamiento y desarrollo de la célula», porque sirve para
+sintetizar las proteínas que llevan a cabo estas funciones.
+   La secuencia de ADN se puede dividir en fragmentos más pequeños que sirven para producir
+un tipo de proteína: los genes. Si el ADN fuese aquel libro de recetas del que hablábamos, cada
+gen sería uno de sus capítulos, y contendría la información necesaria para sintetizar una
+proteína. Por eso, la pregunta que hay que hacerse es: ¿qué ingredientes lleva una proteína?
+Pues igual que el ADN está formado por pequeñas piezas llamadas nucleótidos, las piezas que
+forman las proteínas son los aminoácidos. Solo que, en lugar de cuatro (como los nucleótidos),
+existen ni más ni menos que veinte tipos de aminoácidos que se combinan de una forma u otra
+para dar lugar a todas las distintas proteínas de la célula. Existen miles y miles de ellas, y sin
+embargo cada una está formada por una secuencia única de aminoácidos. Como cada
+aminoácido tiene unas propiedades químicas distintas, es precisamente esta secuencia la que
+determina las características de una proteína, es decir, qué estructura tiene y cuál es su función.
+   Pero para cocinar una receta necesitas no solo saber qué ingredientes utilizar, sino qué hacer
+con ellos. Si un gen es un fragmento de ADN con la información para sintetizar una proteína,
+podríamos decir que la secuencia de nucleótidos del gen describe la secuencia de aminoácidos
+que tendrá la proteína. Pero aquí hay algo que no cuadra: ¿cómo pasamos del alfabeto de cuatro
+letras del ADN al alfabeto de veinte letras de las proteínas? Pues de la misma forma en que se
+pasa de un idioma a otro: traduciendo.

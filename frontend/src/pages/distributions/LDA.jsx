@@ -516,8 +516,9 @@ export default function LDA() {
                                 </label>
                                 <input
                                     type="number"
-                                    min="50"
-                                    step="50"
+                                    min="150"
+                                    max="200"
+                                    step="10"
                                     value={iterations}
                                     onChange={(e) => setIterations(Number(e.target.value))}
                                     className="w-full border px-3 py-2 rounded"

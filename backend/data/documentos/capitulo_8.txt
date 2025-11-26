@@ -1,0 +1,145 @@
+2
+                                        Fármacos
+
+
+¿Por qué me afectan las drogas?
+Nuestro entorno no es inofensivo, eso ha quedado claro. Existe una infinita variedad de
+sustancias químicas capaces de interaccionar con nuestro cuerpo, de producir cambios en él y
+modificarlo. Algunos cambios son positivos y otros dañinos. A veces se producen de forma
+temporal y otras veces son para siempre. Probablemente sea algo que no te venga de nuevo,
+porque cuando hablamos de mutágenos ya vimos que existen sustancias capaces de introducir
+cambios permanentes en el ADN, las mutaciones. Pero no hace falta ser mutágeno para alterar
+algo en nuestro cuerpo.
+   Hay muchísimas sustancias químicas capaces de producir un efecto en nuestras células, ya
+sean fármacos, medicamentos, drogas o tóxicos. Entonces, ¿en qué se diferencian estas
+sustancias? Nos referimos con fármaco a toda sustancia química que al interaccionar con un
+organismo vivo produce una respuesta (beneficiosa o tóxica). Cuando un fármaco se utiliza para
+prevenir, diagnosticar o tratar enfermedades, lo llamamos medicamento. Utilizamos el término
+droga para denominar las sustancias psicoactivas, es decir, aquellas que modifican factores
+psicológicos como la conciencia, el estado de ánimo o los procesos de pensamiento, y que son
+susceptibles de crear dependencia. Por último, un tóxico es una sustancia capaz de producir una
+respuesta nociva en nuestro organismo. Se utilice el término que se utilice, todas ellas son
+sustancias intrusas que modifican moléculas de nuestro cuerpo, el cual luchará por desarmarlas
+y deshacerse de ellas lo antes posible.
+   El paso de un fármaco por nuestro cuerpo es toda una aventura y se divide en cuatro fases: la
+absorción, en la que la sustancia pasa a la sangre; la distribución del fármaco por todo el
+organismo; el metabolismo o transformación del fármaco; y, por último, la excreción, en la que
+se elimina del cuerpo.
+   Todo empieza con la entrada del fármaco a nuestro organismo. La vía en que es administrado
+es un factor importante que tener en cuenta, ya que de ella va a depender que se absorba en
+mayor o menor medida, o que llegue más o menos intacto a su lugar de acción. Normalmente se
+administra por vía oral, aunque también se utilizan otras como la respiratoria (por inhalación) o
+la intravenosa (por inyección, que permite que su efecto sea más inmediato). Una vez
+administrado, el fármaco se absorbe y llega al torrente sanguíneo, que utilizará como vía de
+transporte para distribuirse por todos los tejidos del cuerpo... hasta encontrar su diana.
+
+De paseo por el cuerpo
+Si los fármacos producen un efecto en nuestro organismo es porque interaccionan con algo
+dentro de él. Llamamos diana a aquella molécula de nuestro cuerpo sobre la que actúa un
+fármaco para producir su efecto. Las moléculas diana suelen ser proteínas, como por ejemplo las
+enzimas que intervienen en las reacciones químicas, o los llamados receptores de membrana.
+Son unas estructuras en la membrana de las células que, cuando se activan, desencadenan una
+serie de reacciones hacia el interior. Pero para que se activen, se les tienen que unir unas
+moléculas llamadas ligandos. Como una llave con su cerradura, los ligandos encajan a la
+perfección con sus receptores, y cuando lo hacen, los activan. Y en resumen, la célula responde.
+Los ligandos y sus receptores. Los receptores de membrana son unas estructuras de la membrana de las células
+que, cuando se les une su ligando, se activan y desencadenan una serie de reacciones hacia el interior: activan o
+inhiben ciertos genes o proteínas. El ligando es una molécula que puede ser un fármaco, una hormona o una
+proteína, entre otras cosas.
+
+
+   Este sistema de receptores y ligandos es la forma en la que las células se comunican entre
+ellas y con su entorno. Por ejemplo, tras una ingesta de alimentos, las células del páncreas
+liberan insulina, una hormona que estimu​la que las células del múscu​lo y del tejido adiposo
+capten las moléculas de glucosa que circulan por la sangre, y las usen para llenar las reservas de
+grasa y glucógeno. Esto ocurre gracias a que estas células musculares y adiposas tienen en su
+membrana receptores para la insulina, de forma que cuando se les une esta hormona (su
+ligando), se activan y captan azúcar hacia su interior. Con este método, el cuerpo se asegura de
+aprovechar bien los alimentos que ingerimos. Pero aparte de este pequeño ejemplo, existen
+miles de receptores en la superficie de cada célula, para muchísimas sustancias distintas, lo cual
+permite recibir señales del entorno y actuar en consecuencia.
+   Muchas veces, los fármacos son capaces de activar o inhibir estos receptores, a menudo
+porque tienen una estructura similar a la de su ligando, lo que les permite hacerse pasar por él.
+Por ejemplo, los antihistamínicos son medicamentos que impiden la acción de la histamina, una
+molécula que interviene en las reacciones alérgicas. Lo hacen uniéndose a sus receptores,
+bloqueándolos, de forma que la histamina no pueda cumplir su función y disminuyan los
+síntomas de alergia.
+
+
+  EN RESUMEN... Los fármacos interaccionan con una molécula diana dentro del organismo, que
+  suele ser una enzima o un receptor de membrana. Cuando se les une su ligando, los receptores de
+  membrana activan una serie de reacciones químicas dentro de la célula. De esta forma, las células
+  reaccionan al fármaco.
+
+
+   Aun así, la mayoría de los fármacos que tomamos no vienen solos. Por ejemplo, un jarabe
+para la tos puede contener agua, azúcar y aroma de naranja. Pero de entre todo ese mejunje,
+habrá una sustancia que interaccione con los receptores adecuados para calmar la tos. A esta
+sustancia la llamamos principio activo: es la que interactúa con nuestras moléculas, y, por tanto,
+la responsable del efecto de un fármaco. Y para que no te quedes con la curiosidad: el principio
+activo del jarabe de la tos es, a menudo, un componente que recibe el nombre de
+dextrometorfano.
+   Por suerte, por mucho efecto que nos produzcan, los fármacos no se quedan en nuestro
+cuerpo para siempre: al final, nos las apañamos para echarlos fuera. Esto es así gracias a
+nuestras enzimas, que a través de varias reacciones químicas transforman los fármacos en
+sustancias más fáciles de expulsar. La familia de enzimas más importante en el metabolismo de
+los fármacos se encuentra en el hígado, nuestro órgano detoxificador por excelencia. En
+conjunto, llamamos a estas enzimas citocromo p450, y su objetivo es modificar el fármaco lo
+suficiente como para que sea más fácil expulsarlo del cuerpo. El problema es que el resultado no
+es ideal, porque a través de las reacciones químicas que realizan para transformar los fármacos,
+los citocromo p450 liberan especies reactivas de oxígeno (las ROS, ¡esas viejas conocidas!) y
+otros productos tóxicos para la célula. ¿Te suena lo de que el paracetamol es malo para el
+hígado? Eso es porque su toxicidad, como la de otros fármacos, se asocia a la formación de estas
+sustancias dañinas al metabolizarse.
+   ¿Y qué pasa cuando el fármaco ya está listo para ser expulsado? A partir de aquí, podrá seguir
+por dos caminos: el del riñón, que lo eliminará a través de la orina (la vía más común); o el del
+hí​gado, que produce la bilis, un líquido verde que envía los fármacos hacia el intestino para que
+sean expulsados con las heces.
+   Podría hablarte de muchos fármacos distintos, pero sus aventuras por el cuerpo terminarían
+siendo muy parecidas. Al final, nuestro organismo cuenta con las mismas herramientas para
+absorberlos, metabolizarlos y eliminarlos. Es lo mismo que le ocurre a una cocinera: por muchos
+platos diferentes que prepare, utiliza los utensilios que tiene a mano. Por eso no es ninguna
+sorpresa que las distintas sustancias que entran en nuestro cuerpo puedan interaccionar entre sí
+en cualquiera de los procesos mencionados anteriormente (motivo por el que la sección de
+«Interacciones medicamentosas» en los prospectos es tan importante). Por ejemplo, algunos
+fármacos tienen un efecto mucho mayor cuando se administran juntos, como el alcohol y los
+antihistamínicos. Estos últimos (además de utilizarse para tratar alergias, como te he
+mencionado antes) se usan para el insomnio ocasional porque tienen un efecto sedante. Cuando
+se mezclan con alcohol, se potencia mucho más ese efecto depresor en nuestro sistema
+nervioso, con lo que nos da una bajona importante.
+   Pero también se da el caso contrario, en el que dos fármacos producen efectos totalmente
+opuestos. Cosa que podemos, incluso, usar a nuestro favor. Por ejemplo, la intoxicación por
+barbitúricos (un tipo de fármacos sedantes) produce una bajada de la tensión muy grave, pero
+podemos contrarrestarla con la norepinefrina, una sustancia que causa la contracción de
+nuestros vasos sanguíneos, y que por tanto aumenta de nuevo la tensión.
+   Otras veces administramos fármacos que bloquean la absorción de otros, como el carbón
+activo (que se administra cuando has tomado algo tóxico, para evitar que se absorba), o los
+diuréticos (que estimu​lan la eliminación de otros productos a través de la orina).
+   Como ves, por muchos beneficios que nos traigan algunos fármacos, hay que andarse con
+ojo. Estamos acostumbrados a tomarlos a la ligera y olvidamos que, a fin de cuentas, siguen
+siendo fármacos. Y como tales, desde el momento en que entran en el organismo, tienen el
+poder de cambiar las cosas... y no siempre a nuestro favor.
+
+Mismo fármaco, distintos efectos
+En realidad, no todos respondemos igual a un mismo fármaco. Quieras que no, tenemos
+pequeñas diferencias genéticas que nos hacen tolerar más o menos ciertos tipos de alimentos,
+de fármacos, e incluso de personas. Por ejemplo, el nivel en que expresas algunas enzimas,
+como los citocromo p450, tiene un impacto directo en cómo metabolizas los fármacos, y por
+tanto en la dosis que necesitas. Si produces más enzimas, es probable que metabolices más
+rápido algunos fármacos y, por tanto, también que necesites dosis más grandes para un mismo
+efecto.
+Pero no todo es cuestión de genética, porque la edad, por ejemplo, también influye en la
+respuesta a los fármacos. Los neonatos todavía tienen los sistemas de detoxificación inmaduros,
+mientras que en la vejez estos se vuelven imperfectos, por lo que es más frecuente que en
+ambos casos los fármacos causen toxicidad. Por eso es tan importante adaptar el tipo de
+medicamento y la dosis según la persona. Y si estas diferencias existen entre individuos de la
+misma especie, ya ni te cuento entre especies distintas. ¿Sabías que el ibuprofeno es tóxico para
+los perros? Puede que para nosotros sea un antiinflamatorio muy útil, pero a ellos les causa
+daños graves en el riñón y úlceras en el tracto digestivo, nada que tomarse a la ligera.
+   Pero bueno, seas de la especie que seas, el recorrido de un fármaco por tu cuerpo desde que
+entra hasta que es expulsado es un largo camino en el que se deconstruye y se transforma una
+y otra vez. Es cierto que nuestro cuerpo está expuesto a miles de sustancias que tienen todo tipo
+de efectos sobre él, buenos o malos, pero también es cierto que cuenta con el apoyo de todo un
+ejército de enzimas e incluso órganos enteros que, juntos, conseguirán expulsar al intruso.
+Siempre dependiendo del tipo de fármaco, claro, porque el panorama cambia cuando hablamos
+de tóxicos.

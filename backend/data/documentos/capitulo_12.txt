@@ -1,0 +1,176 @@
+2
+                                 Infecciones víricas
+
+Pequeño pero matón
+Si las bacterias ya eran seres con habilidades sorprendentes a pesar de su reducido tamaño,
+espérate a conocer los virus, cien veces más pequeños... pero no por ello menos puñeteros. Se
+miden en nanómetros, unidades ¡un millón de veces más pequeñas que un milímetro! Es decir,
+si comparamos una bacteria (algo ya de por sí minúscu​lo) con un virus, su diferencia de tamaño
+sería la misma que entre una canica y un granito de arena. Así que, imagínate ahora la
+diferencia entre un virus y una de nuestras células: tendríamos que comparar ese granito de
+arena (el virus) con un aro de baloncesto (la célula). Son tan diminutos que, para poder
+observarlos, necesitamos microscopios incluso más potentes que los usados para las bacterias.
+   De todos modos, la característica más diferencial de los virus sea probablemente que
+dependen de una célula para poder multiplicarse, puesto que ellos mismos no tienen la
+maquinaria de replicación necesaria. Este es el motivo por el que los científicos llevan
+debatiendo desde hace años sobre si los virus son seres vivos o simplemente estructuras que
+interactúan con organismos, y te adelanto que la respuesta no es fácil. Los virus tienen genes y
+evolucionan por selección natural, como cualquier ser vivo. A lo largo del tiempo sufren
+mutaciones genéticas que les permiten sobrevivir mejor en los organismos a los que infectan.
+Además, se reproducen creando muchas copias de sí mismos, que al fin y al cabo es lo que
+hacen las especies, propagar sus genes a través de la descendencia... Y, sin embargo, no llegan a
+ser una célula. Entonces, ¿de qué están hechos? Pues, a pesar de ser potencialmente mortales, la
+estructura de los virus es bastante simple. Contienen lo estrictamente esencial para infectar una
+célula: material genético, algunas proteínas clave y algo que lo envuelva todo.
+   Ya se trate de una bacteria o de una célula humana, hasta ahora nos hemos acostumbrado a
+relacionar el material genético con la molécula de ADN. Pero, curiosamente, la información
+genética de los virus puede estar tanto en forma de ADN como de ARN. Además del material
+genético, el interior de los virus también contiene algunas proteínas que le ayudarán a
+replicarse dentro de la célula infectada. En conjunto, este contenido está rodeado y protegido
+por un envoltorio u otro que conferirá unas habilidades u otras al virus. Por ejemplo, algunos
+contienen una cubierta de proteínas llamada cápside. Se trata de una estructura rígida y muy
+resistente que confiere a los virus la capacidad de resistir a sustancias agresivas como los
+detergentes o nuestros ácidos gástricos. Por eso, los virus rodeados por cápside se propagan con
+facilidad a través de objetos o de una mano a otra, como los rinovirus (que causan el resfriado
+común). Otros virus (ya sean con o sin cápside) contienen otro tipo de recubrimiento: la
+envoltura, una membrana formada por lípidos, proteínas y azúcares. A diferencia de la cápside,
+la envoltura es sensible a ácidos, a detergentes y al calor, y necesita un medio húmedo para
+mantenerse. ¿Y en qué se traduce eso? Pues en que los virus rodeados solo por envoltura suelen
+transmitirse a través de fluidos como la saliva o la sangre, como el coronavirus o el virus de la
+inmunodeficiencia humana (VIH) que causa el sida.
+
+
+
+
+Tamaño y estructura de dos virus: el VIH y un bacteriófago. Los virus tienen una estructura más simple que las
+bacterias y que nuestras células: principalmente están formados por material genético (ADN o ARN), proteínas
+(que les permiten infectar las células y replicarse en su interior) y una o más estructuras que lo rodean todo
+(cápside y envoltura).
+
+
+  EN RESUMEN... Los virus tienen una estructura bastante simple, formada por su material genético
+  (que puede ser ADN o ARN), las proteínas, y algo que lo envuelva: cápside, envoltura o ambas.
+   Y esto es básicamente todo. Piensa por un momento en lo ridícu​lo que parece que un
+microorganismo tan potencialmente dañino esté formado por apenas una envoltura, algunas
+proteínas y unos cuantos genes. Así que, siendo tan simples, ¿cómo se las apaña un virus para
+infectar una célula muchísimo más grande y compleja que él?
+
+¡A la carga!
+Un virus tiene como «objetivo» replicarse y propagarse por miles de células. Como no puede
+hacerlo por sí solo, utiliza la célula a la que infecta como una fábrica, que le aportará la energía
+y maquinaria necesarias para dar lugar a nuevas partículas de virus. Es como si el virus tuviese
+toda la materia prima para elaborar un bizcocho: aunque contase con harina, yogur, huevos y
+azúcar, necesitaría un horno en el que cocinarlo.
+   Para infectar una célula, lo primero que debe hacer el virus es reconocerla y unirse a su
+superficie. Esto lo consigue gracias a las proteínas del exterior del virus, que se unen a los
+receptores de la membrana de la célula. El siguiente paso es entrar en ella. A veces es la propia
+célula la que lo absorbe, tal como hace de forma natural para captar moléculas del exterior que
+se unan a sus receptores. Pero con los virus con envoltura, al ser parecida a la membrana de
+nuestras células, se produce una fusión entre ambas, algo así como cuando se unen dos gotas
+de lava dentro de una lámpara. Al fusionarse las membranas, el contenido del virus pasa al
+interior de la célula, y comienza lo que será toda una cadena de producción de nuevas partículas
+víricas llamadas viriones.
+   Así, se comienzan a fabricar todas las partes del virus: se sintetizan las proteínas de la cápside
+de los futuros viriones y se replican muchas copias de su material genético. Una vez fabricadas
+todas las partes por separado, se ensamblan, como en un puzle, y se construye un virión tras
+otro. Cuando están todos listos, son expulsados al exterior, por ejemplo al provocar la rotura de
+la célula, y así es como consiguen esparcirse, infectando más y más células, y propagando la
+infección al mayor número posible de víctimas.
+
+
+  EN RESUMEN... Los virus necesitan las células para poder replicarse. Cuando las infectan, las
+  proteínas del virus activan un proceso dentro de la célula en el que comienzan a fabricarse los
+  componentes del virus: su material genético y sus proteínas. Una vez producidas, las distintas
+  partes se ensamblan y forman nuevos viriones, que saldrán al exterior para infectar más células.
+
+
+
+  Pero, aunque la intención de los virus sea extender al máximo la infección, curiosamente no
+todos tienen la misma prisa por salir. Algunos, como el virus de la inmunodeficiencia humana o
+VIH, son capaces de infectar una célula y quedarse en un estado «durmiente» durante años,
+pasando desapercibidos, sin causar síntomas. El VIH funciona como un hacker, infiltrándose a
+escondidas en tu sistema, en tu material genético, introduciendo cambios... solo que en este
+caso se quedan de por vida.
+El famoso VIH
+El VIH es probablemente uno de los virus más conocidos por ser el causante del síndrome de la
+inmunodeficiencia adquirida o sida, una enfermedad que continúa siendo uno de los mayores
+problemas de salud pública mundial y que se ha cobrado ya más de treinta millones de vidas.
+   El VIH es un retrovirus, es decir, un tipo de virus capaz de insertar su material genético en el
+nuestro, aprovechándose de la transcripción natural de nuestras células para producir sus
+propias proteínas. Es un pequeño hacker genético.
+   Cuando el VIH encuentra la célula a la que infectar, se fusiona con ella e introduce su material
+genético y proteínas en el interior. Y sí, su intención es insertar su cadena de información
+genética en la nuestra, pero se encuentra con un primer obstácu​lo: su material genético está
+hecho de ARN, y el nuestro de ADN. Así que lo primero que debe hacer es traducirlo al lenguaje
+correcto. Una de las proteínas con las que venía el virus es la transcriptasa inversa o
+retrotranscriptasa (de ahí el nombre de retrovirus), que se llama así porque hará la transcripción
+que ya conocemos (de ADN a ARN) pero al revés: convertirá el ARN del virus en ADN. Una vez
+termine, entrará en juego una segunda proteína del virus, la integrasa, que se llama así porque
+integra el ADN intruso en nuestro ADN, camuflándolo sin que haya vuelta atrás.
+   Cuando la célula inicie la lectura de nuestro ADN para sintetizar proteínas, no diferenciará
+entre el ADN vírico y el propio, por lo que transcribirá ambos por igual... y sintetizará los dos
+tipos de proteína por igual. De esta forma, el pequeño hacker se aprovecha de la maquinaria de
+la célula para su propio bien, sintetizando nuevos viriones que, una vez ensamblados,
+provocarán la rotura de la célula y serán expulsados al exterior, listos para infectar muchas más.
+   Concretamente, el VIH infecta un tipo de células de nuestro sistema inmunitario, los llamados
+linfocitos T CD4. Se llaman así porque el VIH los reconoce al unirse a un receptor de su
+membrana, el CD4. Desde el momento en que una persona se infecta, y en caso de que no se
+trate, el virus puede ir replicándose a lo largo de los años, infectando y destruyendo poco a poco
+nuestras células de defensa. Hasta que llega un momento, aproximadamente a los diez años del
+inicio de la infección, en el que las células inmunitarias que quedan son tan pocas que se
+diagnostica el síndrome de la inmunodeficiencia adquirida, o sida.
+Ciclo de replicación del VIH. El VIH infecta los linfocitos T CD4, un tipo de células de nuestro sistema
+inmunitario. 1) Fusión: el VIH se fusiona con la membrana de la célula e introduce su material genético y
+proteínas en el interior. 2) Transcripción inversa: una de las proteínas del virus, la transcriptasa inversa,
+convierte el ARN del virus en ADN. 3) Integración: otra proteína del virus, la integrasa, inserta el ADN del virus
+en nuestro ADN. 4) Transcripción y traducción: se sintetizan nuevas proteínas y nuevo material genético del
+virus. 5) Ensamblaje: se ensamblan todas las partes y se forman nuevas partículas de virus llamadas viriones. 6)
+Gemación: los viriones recién formados salen al exterior, listos para infectar más células.
+
+
+   El sida es peligroso porque el sistema inmunitario está tan debilitado que comienzan a
+aparecer lo que se llaman infecciones oportunistas. Se trata de infecciones que aparecen
+también en personas sanas, pero que son mucho más frecuentes y dañinas en estos pacientes,
+porque no van a poder combatirlas como es debido. Una de estas infecciones es la tubercu​losis,
+causada por la bacteria Mycobacterium tubercu​losis y que provoca un tercio de las muertes por
+sida a nivel mundial.
+
+
+  EN RESUMEN... El VIH es el virus que causa el sida. Infecta los linfocitos T CD4, provocando su
+  muerte y una destrucción del sistema inmunitario que hace aparecer infecciones oportunistas (como
+  la tubercu​losis), que pueden ser mortales.
+  El sida es una enfermedad muy conocida por el impacto que tiene en la salud. Sabemos de
+sobra el daño que los virus pueden producir en el cuerpo humano, e incluso en otros animales.
+Pero lo que mucha gente no sabe es que también son capaces de infectar a otras pequeñas
+conocidas: las bacterias.
+
+Si no puedes con tu enemigo, únete a él
+A pesar de no ser muy populares, los virus que infectan las bacterias son ni más ni menos que
+la entidad biológica más abundante del planeta, ya que se encuentran prácticamente en
+cualquier ecosistema. Se llaman bacteriófagos (de bacteria y fago, que significa «ingestión») y
+tienen una estructura muy graciosa y reconocible, porque parecen un pequeño robot con patas.
+Pero siguen siendo virus, y, como tales, son bastante simples: están formados por el material
+genético, la cápside proteica que lo envuelve y una vaina de la que salen sus patas.
+   Los bacteriófagos, o simplemente fagos, son capaces de reconocer y unirse a los receptores de
+la membrana de las bacterias, inyectar su material genético, producir muchísimos viriones y,
+una vez terminada la tarea, reventar la bacteria para que los libere al exterior y... ¡Espera! Te
+acabo de decir que tenemos unos virus capaces de petar las bacterias como quien estalla
+pompas de jabón y hace unas páginas hemos hablado de nuestros problemas para matar
+bacterias cada vez más resistentes..., ¿no habrá forma de hacer un trato aquí?
+   Ante el problemón de la resistencia a los antibióticos, la comunidad científica se ha visto
+obligada a buscar alternativas para combatir las infecciones bacterianas. La fagoterapia intenta
+aprovechar esta capacidad que tienen los bacteriófagos de destruir las bacterias para tratar las
+infecciones. Y no solo eso, sino que además presenta algunas ventajas muy interesantes. Por
+ejemplo, los fagos contienen unas proteínas en su cápside capaces de degradar y atravesar la
+matriz que recubre los biofilms, esas poblaciones bacterianas superresistentes al ataque de los
+antibióticos que te mencioné en el apartado anterior. El problema es que al sistema inmunitario
+no le hace mucha gracia que entren virus extraños en el cuerpo. De hecho, se ha visto que los
+reconoce como agentes invasores e intenta eliminarlos lo antes posible, haciendo que lleguen
+en menores cantidades al tejido infectado y disminuyendo la eficacia de la fagoterapia.
+   De todos modos, es algo que vale la pena estudiar a fondo, porque no cabe duda de que la
+fagoterapia nos ha abierto una nueva puerta a la hora de abordar el problema de la resistencia a
+los antibióticos..., aunque lo más probable es que no sea una solución definitiva. No solo se trata
+de encontrar un remedio al problema actual, sino del uso que se le da. Los antibióticos fueron
+en su día la solución a los millones de muertes producidas por infecciones de estar por casa,
+pero su uso irresponsable a lo largo de la historia nos ha llevado a una situación crítica. Ojalá
+los fagos, en cambio, estén siempre de nuestro lado.

@@ -1,0 +1,151 @@
+2
+                                     Las proteínas
+
+
+Charlie y la fábrica de proteínas
+¿Te imaginas una biblioteca sin libros? ¿Un museo sin obras de arte? ¿Un equipo sin sus
+jugadores? Sería igual de absurdo que una célula sin sus proteínas, y todavía más sin la
+molécula que la ayuda a construirlas. Gracias al ADN, la célula tiene a mano las instrucciones
+para sintetizar las proteínas que necesita en cada momento. La pregunta es: ¿cómo se «lee» esa
+información? ¿Cómo se «lee» el ADN? Pues siguiendo dos pasos: transcribir y traducir.
+   Como hemos dicho, la información genética de la célula consiste esencialmente en
+instrucciones para producir proteínas. Más concretamente, cada gen del ADN contiene la
+información necesaria para sintetizar un tipo de proteína. El primer paso para la síntesis de
+proteínas es convertir la secuencia de ADN del gen en una secuencia de ARN. ¿Y cuál es la
+diferencia entre el ADN y el ARN? El ARN es el otro tipo de ácido nucleico, como comentamos en
+el capítulo anterior. También está formado por una secuencia de nucleótidos, pero con dos
+ligeros cambios. El primero es que los azúcares de sus nucleótidos son algo distintos: en lugar
+de estar compuestos por una desoxirribosa como en el ADN, contienen una ribosa (por eso el
+ADN se llama ácido desoxirribonucleico y el ARN, ácido ribonucleico). El segundo cambio es que
+en lugar de timina (T) contiene el nucleótido uracilo (U), aunque el resto de las bases
+nitrogenadas son las mismas: adenina (A), citosina (C) y guanina (G). Por tanto, el ARN es una
+secuencia de los nucleótidos A, U, C, G y, de forma parecida al ADN, las bases tienen el poder de
+unirse con sus complementarias: las adeninas (A) se unen con los uracilos (U), y las citosinas
+(C) con las guaninas (G). Así, para pasar de un gen a una proteína, primero hay que generar una
+secuencia de ARN a partir de la secuencia de ADN, de forma que si tenemos una secuencia
+AATTCCGC, pasemos a la secuencia UUAAGGCG. Este primer paso de la receta se denomina
+transcripción y lo hace una proteína llamada ARN polimerasa, que desenrolla la doble hélice de
+ADN, se coloca sobre una de las cadenas y va leyendo el ADN nucleótido a nucleótido,
+construyendo una secuencia complementaria de ARN. Es decir, que si lee una A añade una U, si
+lee una G añade una C, y así con toda la secuencia del gen, hasta tener la molécula completa de
+ARN.
+   El segundo paso es la traducción, que se llama así porque consiste en traducir la secuencia de
+nucleótidos del ARN a la secuencia de aminoácidos de la proteína. Pero plantea un pequeño reto
+que resolver. La transcripción de ADN a ARN es relativamente fácil porque ambos son una
+secuencia de cuatro nucleótidos. Pero si existen veinte tipos distintos de aminoácidos..., ¿cómo
+se las apaña la célula? La clave para resolver este problema es que los nucleótidos, para formar
+aminoácidos, se van a leer de tres en tres, en tripletes. Es decir, las distintas combinaciones de
+tres nucleótidos darán lugar a un aminoácido específico (por ejemplo, AAA dará lugar a una
+lisina, AAC a una asparagina, AGC a una serina, etc.). Este código que utiliza la célula para
+traducir la información de nucleótidos a aminoácidos es el código genético, que define qué
+combinaciones de tres nucleótidos dan lugar a qué aminoácidos. Cada uno de los tripletes de
+nucleótidos del ARN que codifican un aminoácido se llama codón, y el responsable de traducir
+los nucleótidos a aminoácidos es una estructura dentro de la célula, denominada ribosoma.
+Cuando le toca traducir, el ribosoma se une al ARN y va leyendo los tripletes de nucleótidos o
+codones de este, añadiendo el aminoácido correspondiente a la cadena de la futura proteína, que
+va creciendo con cada aminoácido que se le añade. Cuando el ribosoma lee un co​dón UGC
+añade una cisteína, cuando lee un codón GCU añade una alanina, y así sucesivamente. Para que
+lo entiendas mejor, es como seguir una receta. Imagina que quieres cocinar una sopa y que cada
+ingrediente viene codificado por tres letras: AAC es agua, GCU es pollo y CAC es sal. El ribosoma
+vendría a ser el cocinero, que lee los ingredientes y los añade; el código genético sería la receta
+que sigue el cocinero; y los ingredientes, los aminoácidos. Solo que en este caso, en lugar de
+una sopa, cocinamos una proteína.
+Cómo fabricar una proteína a partir del ADN. Este proceso requiere dos pasos: la transcripción (se pasa de
+ADN a ARN) y la traducción (de ARN a proteína). Después, la proteína se pliega adoptando su forma
+característica.
+
+
+  EN RESUMEN... El ADN nos dice cómo construir las proteínas, pero para ello se necesitan dos
+  pasos: la transcripción (se pasa de ADN a ARN) y la traducción (de ARN a proteína).
+
+
+
+   Pero las proteínas son más que su secuencia de aminoácidos. Se trata, ni más ni menos, de
+una de las moléculas más complejas y sofisticadas que se conocen, pues cada proteína contiene
+una estructura tridimensional única. Por eso, una vez terminadas la transcripción y la
+traducción, la proteína debe plegarse sobre sí misma. Este plegamiento depende de los
+aminoácidos de la cadena, ya que, según cuáles tengamos, se unirán entre ellos de una forma u
+otra, haciendo que la proteína adopte su forma característica. Es parecido a la globoflexia, solo
+que en lugar de construir perritos a partir de globos, construimos proteínas únicas a partir de
+una cadena de aminoácidos que, una vez plegadas, están listas para la acción.
+   En resumen, la transcripción y la traducción son los mecanismos por los cuales las células
+leen la información genética de sus genes, pasando de ADN a ARN, y de este a proteínas. Esto es
+lo que se conoce como expresión génica; es decir, cuando un gen da lugar a la proteína que
+codifica, decimos que se está expresando. Al final, la célula es una fábrica de proteínas que, en
+lugar de producirlo todo en masa, consigue producir las proteínas que necesita en cada
+momento regulando qué genes se expresan, y cuáles no. Como si encendiese unas máquinas
+hoy y otras máquinas mañana.
+
+¿Dónde se mete toda esta información?
+Del mismo modo que el resto de los seres humanos, surgiste a partir de una sola célula. Eso
+significa que esa célula contenía toda la información genética necesaria para dar lugar a una
+persona como tú. De hecho, todas tus células contienen esa misma información, la misma copia
+de ADN en su núcleo. ¿Cómo puede caber en un espacio tan pequeño toda la información
+necesaria para desarrollar y mantener un organismo entero?
+   A pesar de que se habla mucho de la «molécula de ADN», no te la imagines como una larga
+estructura que contiene toda la secuencia de información. En realidad, el ADN está repartido en
+varios fragmentos dentro del núcleo de la célula llamados cromosomas. Cada cromosoma
+contiene una parte de la secuencia de ADN con unos genes concretos, como los libros de una
+saga completa. En total, las células humanas tienen 46 cromosomas en su núcleo. O mejor
+dicho, 23 pares, ya que en realidad tenemos dos copias de cada tipo de cromosoma: una
+heredada del padre y otra de la madre. De los 23 pares de cromosomas, hay 22 que son iguales
+para todo el mundo. La diferencia está precisamente en el último par, el 23. Se trata de una
+pareja de cromosomas sexuales: el famoso XX del sexo femenino y XY del masculino. Todos
+nuestros genes se reparten entre estos 23 pares de cromosomas. Puede que no te impresione,
+pero ¿eres consciente de la cantidad de información genética que supone eso? Es una locura: si
+sumáramos todos los fragmentos de ADN de los cromosomas, acabaríamos teniendo unos 2
+metros de cadena. Y no solo eso, sino que si escribiéramos en papel toda la secuencia de
+nucleótidos del ADN, llenaríamos libros de miles de páginas. ¿Cómo narices consigue una
+célula, algo tan diminuto, meter 2 metros de ADN en su incluso más minúscu​lo núcleo? Pues de
+la misma forma en que guardamos el hilo de coser: en ovillos.
+El ADN en la célula. Nuestras moléculas de ADN se encuentran empaquetadas en los 23 pares de cromosomas
+que se guardan en el núcleo de la célula.
+
+
+  Dentro de la célula existen unas proteínas llamadas histonas especializadas en empaquetar
+muchísimo el ADN, tanto que consiguen compactarlo ¡hasta diez mil veces más pequeño que su
+medida original! Es por eso por lo que, en realidad, los cromosomas no están formados solo por
+ADN, sino también por las proteínas que ayudan a mantenerlo empaquetado. Llamamos
+cromatina a este conjunto de ADN y proteínas del que está compuesto el cromosoma.
+  Así que ADN y proteínas, pero ¿cómo? O sea, si pudieras verlo directamente, ¿qué forma
+tendría un cromosoma? Estoy segura de que si lo buscas en Google, prácticamente todos los
+resultados te enseñarán una estructura en forma de X. Aunque esta es la forma típica en la que
+solemos imaginarnos los cromosomas, estos solo adoptan forma de X durante la división de una
+célula. Durante el resto del tiempo, la cromatina de los cromosomas está mucho menos
+compactada, más «suelta». Por eso, si echases un vistazo al núcleo de la célula, no verías más
+que un gurruño de material genético y no distinguirías unos cromosomas de otros. Como una
+mezcla de ovillos deshilachados.
+  EN RESUMEN... El ADN está empaquetado dentro de las células en 23 pares de fragmentos, los
+  cromosomas. Por eso, cada cromosoma tiene una parte de la secuencia total del ADN, es decir, una
+  parte de todos los genes.
+
+
+
+   Estas diferencias en la forma de los cromosomas, que a veces tienen forma de X y otras de
+gurruño, se deben a que son estructuras dinámicas. Es decir, los cromosomas se van enrollando
+y desenrollando según las necesidades de la célula. Por ejemplo, si la célula necesita transcribir
+un gen, los cromosomas deben estar preparados para desenrollarse y permitir así la lectura de
+ese fragmento. Si el ADN estuviese siempre superempaquetado, la célula no podría leer bien esa
+información, igual que tú tendrías dificultades para leer una hoja de instrucciones hecha una
+bola. Por eso, los cromosomas deben empaquetarse de tal modo que permita acceder fácilmente
+al ADN cuando se necesite, como una biblioteca siempre dispuesta a prestar sus libros.
+
+El ADN es más que genes
+Hay algo sobre el ADN que lleva tiempo desconcertando a la comunidad científica: nuestra
+información genética contiene, además de genes, fragmentos de ADN que no sabemos muy bien
+para qué sirven. Tanto es así que hasta se le llegó a llamar ADN basura. Hoy sabemos que parte
+de este ADN son secuencias reguladoras que permiten la expresión correcta de los genes,
+asegurándose de que se activan o desactivan cuando la célula lo necesita, se expresan en el
+nivel que toca y solo en el tipo de célula apropiada.
+   Pero ¿significa eso que conocemos nuestra secuencia de ADN? Pues sí. Desde 2004, gracias al
+Proyecto Genoma Humano, conocemos la secuencia genética de todo nuestro genoma, es decir,
+de todos nuestros genes. Pero, por desgracia, esto no significa que sepamos exactamente cuál es
+cuál y para qué proteína codifica cada gen, porque esto no es una tarea tan fácil. Es como
+descubrir un jeroglífico egipcio pero no saber qué significa. Por eso, seguramente se necesiten
+varias décadas más para que esta información genética sea analizada al completo y podamos
+desentrañar todo lo que todavía nos falta por conocer.
+   Es increíble la cantidad de información que conseguimos almacenar en estas moléculas y
+toda la maquinaria que se mueve a su alrededor con un objetivo final: hacer funcionar una
+célula. Pero una célula es mucho más que un saquito de ADN y proteínas, porque tiene una
+organización interna tan estructurada, tan coordinada y tan bien pensada que despertaría la
+envidia de más de un arquitecto.

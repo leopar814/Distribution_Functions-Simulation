@@ -1,57 +1,96 @@
 import spacy
 import random
 import math
+import os
 import numpy as np
 from collections import defaultdict
 from pathlib import Path
 
-def generateUsableFiles(file_path: str): 
-    """Genera archivos de corpus lematizado y vocabulario."""
+def generateUsableFiles(file_path: str):
+    """
+    Genera archivos de corpus lematizado y vocabulario.
+    Cada capítulo será un documento.
+    Además, guarda cada capítulo en data/documentos/capitulo_X.txt
+    """
     nlp = spacy.load("es_core_news_md")
 
+    # Leer libro completo
     with open(file_path, "r", encoding="utf-8") as f:
         texto = f.read()
 
-    parrafos = [p.strip() for p in texto.split("\n\n") if p.strip()]
+    # Detectar capítulos por líneas que contienen solo un número
+    lineas = texto.split("\n")
+    capitulos = []
+    cap_actual = []
+    
+    import re
+    for linea in lineas:
+        if re.fullmatch(r"\d+", linea.strip()):
+            if cap_actual:
+                capitulos.append("\n".join(cap_actual).strip())
+                cap_actual = []
+            cap_actual.append(linea)
+        else:
+            cap_actual.append(linea)
+
+    if cap_actual:
+        capitulos.append("\n".join(cap_actual).strip())
+
+    # Crear carpetas necesarias
+    Path("data").mkdir(exist_ok=True)
+    Path("data/documentos").mkdir(exist_ok=True)
 
     documentos_lematizados = []
     vocab_set = set()
 
-    for parrafo in parrafos:
-        doc = nlp(parrafo)
+    # Procesar cada capítulo
+    for i, cap in enumerate(capitulos, start=1):
+
+        # Guardar capítulo crudo en archivo independiente (opcional pero útil)
+        raw_path = f"data/documentos/capitulo_{i}.txt"
+        with open(raw_path, "w", encoding="utf-8") as f:
+            f.write(cap)
+
+        # Procesamiento lingüístico
+        doc = nlp(cap)
         palabras = [
             token.lemma_.lower()
             for token in doc
             if token.is_alpha and not token.is_stop
         ]
-        
-        if palabras:  # Solo agregar si hay palabras
+
+        if palabras:
             documentos_lematizados.append(palabras)
             vocab_set.update(palabras)
-    vocab_list = sorted(vocab_set)
 
+    # Crear vocabulario global
+    vocab_list = sorted(vocab_set)
     vocab = {w: i for i, w in enumerate(vocab_list)}
     inv_vocab = {i: w for w, i in vocab.items()}
-    
+
+    # Guardar diccionario
     with open("data/diccionario.txt", "w", encoding="utf-8") as f:
         for idx, palabra in inv_vocab.items():
             f.write(f"{idx}\t{palabra}\n")
 
-
+    # Guardar documentos convertidos a índices
     with open("data/documentos.txt", "w", encoding="utf-8") as f:
         for palabras in documentos_lematizados:
-            indices = [str(vocab[t]) for t in palabras]
+            indices = [str(vocab[w]) for w in palabras]
             f.write(" ".join(indices) + "\n")
 
-    # Convert tokenized docs to index lists; ignore tokens not in vocab (shouldn't happen)
-    documents_idx = [[vocab[t] for t in doc if t in vocab] for doc in documentos_lematizados]
-    # Filter any empty docs (defensive)
+    # Lista final de documentos en índices
+    documents_idx = [
+        [vocab[w] for w in doc if w in vocab]
+        for doc in documentos_lematizados
+    ]
     documents_idx = [doc for doc in documents_idx if len(doc) > 0]
 
-    print("Archivos generados:")
-    print(f"  {len(documentos_lematizados)} documentos (párrafos)")
-    print(f"  {len(vocab)} palabras en el vocabulario")
-    
+    print("✔ Corpus generado correctamente")
+    print(f"  - {len(documents_idx)} capítulos procesados")
+    print(f"  - {len(vocab)} palabras únicas en el vocabulario")
+    print("  Archivos generados en la carpeta /data")
+
     return documents_idx, vocab, inv_vocab
 
 

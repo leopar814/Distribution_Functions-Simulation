@@ -1,0 +1,158 @@
+5
+                                       Reparación
+
+
+Un as en la manga
+La molécula de ADN recibe por todos lados. Ya sean errores en la replicación, radiaciones
+ionizantes o sustancias tóxicas del medio ambiente, sufre lesiones constantemente. Teniendo en
+cuenta la tremenda importancia de mantener el ADN intacto, estas lesiones deben repararse de
+inmediato: un solo cambio en la secuencia puede ser muy dañino e incluso letal. La importancia
+de esta reparación es tal que, cuando no se produce de forma correcta, surgen enfermedades
+como la Xeroderma pigmentosum (XP), que provoca que los individuos sean supersensibles a la
+radiación ultravioleta, precisamente porque no son capaces de reparar los daños que esta causa
+en el ADN. Este defecto en la reparación hace que las mutaciones sean más frecuentes, lo que
+produce lesiones graves en la piel y una mayor predisposición a algunos tipos de cáncer.
+   Para evitar que las mutaciones vayan a más, la célula cuenta con todo un equipo de proteínas
+reparadoras del ADN que permiten corregir de inmediato la mayoría de los errores. ¿Te has
+preguntado alguna vez por qué el ADN tiene dos cadenas en lugar de una? Pues porque a la
+hora de reparar un error es muy práctico contar con dos cadenas, ya que, si una de las dos
+resulta dañada, la otra mantendrá una copia intacta de la secuencia de nucleótidos. Si se
+produce un cambio de nucleótido, la célula tiene dos formas de corregirlo: una más precisa y
+otra un poco más bruta. Por ejemplo, la célula puede eliminar tan solo la base nitrogenada del
+nucleótido alterado e introducir la correcta utilizando la otra cadena como patrón. Sería como si
+te equivocases en una letra al escribir una carta, la borrases con típex y escribieses la correcta
+encima. Este método es bastante preciso porque se elimina la base incorrecta, sí, pero también
+se puede ir un poco más a saco. A veces, en lugar de eliminar una sola base, se corta un
+fragmento de la cadena en la que se ha producido la alteración, lo que deja un hueco que es
+rellenado por la ADN polimerasa. Es como si, en vez de eliminar la letra incorrecta con típex,
+arrancases la página entera y la escribieses de nuevo. Este último mecanismo es útil para
+eliminar lesiones que generan un cambio importante en la estructura del ADN, como los
+dímeros de timina (la unión de dos timinas producida por la radiación ultravioleta) o la inserción
+de un benzopireno en la cadena (el agente intercalante presente en el tabaco y en los alimentos
+tostados).
+   El problema viene cuando la lesión en el ADN es más aparatosa y, en lugar de una cadena, se
+ven afectadas las dos, como ocurre en las roturas de doble cadena causadas por las radiaciones
+ionizantes. Aquí el marrón está en que no tenemos una cadena patrón que se pueda usar de
+molde, porque ambas están rotas. Pero lejos de quedarse sin hacer nada, en esos casos la célula
+todavía cuenta con dos mecanismos de reparación que, aunque no den lugar a resultados
+perfectos, consiguen hacer un apaño. El más sencillo es la llamada unión de extremos no
+homólogos, en la cual los extremos rotos de la cadena vuelven a unirse con la pérdida inevitable
+de algunos nucleótidos. Es como si partieses una barra de pan y volvieses a pegarla, se
+perderían algunas migas de por medio.
+   En casos como el anterior, al haberse roto ambas cadenas, no quedaría ninguna cadena de
+referencia para la reparación. Sin embargo, en la vida de la célula hay un momento, justo
+después de la replicación del ADN, en el que esta contiene una copia entera de cada una de las
+cadenas. Por eso, si se produce una rotura de doble cadena, las proteínas tienen que aprovechar
+antes de que la célula se divida en dos y reparta cada copia entre sus células hijas. Este tipo de
+reparación en la que se utiliza la copia de la doble cadena para corregir el error se llama
+recombinación homóloga, y a diferencia de la anterior es bastante más precisa y no conlleva la
+pérdida de nucleótidos. ¡Un punto para ella!
+   Si se produce un error en el ADN, la célula manda parar las rotativas enseguida y detiene el
+ciclo celular. Así se asegura de que todo se repare correctamente antes de dividirse y transmitir
+una mutación a las células hijas. Es lo mismo que cuando hay que retocar el maquillaje de un
+actor en mitad del rodaje: se detiene la grabación, los maquilladores se encargan de que no
+queden brillos, y se reanuda el rodaje en cuanto estos hayan terminado su trabajo. Nuestra
+información genética se mantiene de forma estable a lo largo de la vida gracias a toda esta
+compleja maquinaria, que garantiza que nada se vaya de madre. Existen proteínas reparadoras
+que actúan como una patrulla, desplazándose a lo largo de la cadena en busca de alteraciones
+que deban ser reparadas, y activando las alarmas en caso de encontrar alguna incidencia. Más
+vale prevenir que curar.
+
+
+  EN RESUMEN... La célula cuenta con todo un equipo de proteínas reparadoras del ADN que
+  permiten corregir de inmediato la mayoría de los errores que se produzcan, como una mutación en
+  una base o la rotura de la doble cadena.
+
+
+
+La guardiana del genoma
+Ya que nos hemos puesto a hablar de patrullas, no podía tratar este tema sin mencionar la
+proteína que se ha ganado el nombre de guardiana del genoma. Ella es p53 y es la encargada de
+detener el ciclo celular cuando se produce un daño en el ADN, para dar tiempo a que se repare
+antes de reanudarlo. La función de p53 es vital para nuestro organismo, porque si no
+reaccionase ante las lesiones en el ADN, la célula iría transmitiéndolas a sus hijas, que con el
+tiempo acumu​larían daños y mutaciones que podrían dar lugar a una célula cancerosa. Tanto es
+así que la mitad de los cánceres humanos tienen p53 defectuosa, de forma que no cuentan con
+una proteína que les «pare los pies» ante todas las aberraciones que acumu​lan en el ADN.
+   Reparar la lesión del ADN y que todo siga su curso normal es una situación idílica, pero ¿qué
+pasa si el daño es tan grave que no se puede solucionar? Curiosamente, cuando algunos
+organismos unicelulares como las levaduras sufren una lesión en su ADN, detienen su división e
+intentan reparar el daño, pero si no pueden, reanudan su ciclo celular a pesar de todo. Al
+tratarse de organismos de una sola célula, les vale más vivir con mutaciones antes que no vivir,
+así que siguen hacia delante.
+   En cambio, cuando hablamos de organismos como el nuestro, con miles y miles de células, la
+cosa cambia. En este caso se antepone la salud del individuo a la vida de una sola célula. Total,
+tenemos muchas más y, dado que una célula con daños genéticos graves corre el riesgo de
+provocar un cáncer si se sigue dividiendo, lo mejor es eliminarla. Por eso, las células pasan de
+liarla y se autoeliminan en un proceso de suicidio celular llamado apoptosis. Cuando p53
+detiene el ciclo celular, primero comprueba que no haya forma de reparar el daño que se ha
+producido en el ADN, y entonces activa la apoptosis para que la célula se suicide y muera con
+ella la mutación. Y es precisamente a través de esta función activadora de la apoptosis como p53
+nos protege de la aparición de un cáncer, ganándose una vez más el nombre de la guardiana del
+genoma.
+
+
+  EN RESUMEN... Una proteína muy importante para la célula es p53, que detiene el ciclo celular
+  cuando se produce un daño en el ADN y, en caso de no poder repararse, induce la muerte de la
+  célula. Por eso, su papel es vital para evitar la formación de células cancerosas.
+
+
+  Somos lo que somos gracias a todos estos mecanismos, que trabajan en equipo para cumplir
+sus funciones, coordinándose con el fin de alcanzar un objetivo: mantener vivo el organismo
+con todas sus células. Al menos hasta que la muerte las separe, claro.
+
+Antes muerta que chunguilla
+A veces, cuando la cosa se pone fea, la célula prefiere suicidarse antes que liarla. La apoptosis es
+también conocida como muerte celular programada, ya que las células activan todo un
+protocolo que concluye con su autoeliminación de una forma limpia y ordenada. Cuando una
+célula muere por apoptosis, experimenta una serie de cambios físicos muy característicos. La
+célula se encoge y se condensa, la membrana que recubre su núcleo se desensambla, la
+cromatina que contiene el ADN se condensa para luego romperse en pedacitos y, finalmente, la
+célula se descompone en unos fragmentos llamados cuerpos apoptóticos. Para asegurarse de
+que se trata de un proceso impoluto, la célula emite señales al exterior para reclutar unas
+células del sistema inmunitario denominadas macrófagos, encargadas de engullir los cuerpos
+apoptóticos antes de que derramen su contenido y monten un cristo. En realidad, esto es
+esencial, porque si la célula expulsase su contenido al exterior, provocaría una inflamación
+importante.
+  Precisamente esto es lo que pasa en la necrosis, otro tipo de muerte celular bastante menos
+pulcra. Es el caso de las células que mueren de forma súbita y accidental a causa de una lesión,
+como un golpe, o por la falta de riego sanguíneo, ya que necesitan un aporte constante de
+sangre que les lleve el oxígeno necesario para vivir. Las células que mueren por necrosis se
+hinchan y se rompen liberando todo su contenido al exterior y provocando inflamación y dolor.
+
+
+  EN RESUMEN... Nuestras células pueden morirse principalmente de dos maneras: una tiene lugar
+  de forma natural y es ordenada (apoptosis), mientras que la otra se produce accidentalmente y es
+  caótica y dañina (necrosis).
+
+
+
+   Lo cierto es que es de agradecer que el organismo tenga un sistema tan limpio y organizado
+para eliminar sus células. Sin reacciones ni efectos colaterales indeseados (como la inflamación)
+y que nos permita mantener nuestros tejidos en orden. Aunque, en realidad, la apoptosis va más
+allá de evitar la propagación de mutaciones: gracias a ella, las células de nuestro cuerpo se
+mantienen en equilibrio. Cuando somos adultos, nuestro número de células se mantiene
+relativamente constante gracias a que existe un equilibrio entre las células que se multiplican y
+las que mueren para dejar hueco a las nuevas. Al final, nuestro cuerpo funciona como una
+sociedad de células que trabajan en conjunto para mantenerse con vida, creciendo, dividiéndose
+o muriéndose siempre que sea necesario para el bien del organismo. ¿A que no sabías que le
+debíamos tanto a la muerte?
+Mejor fuera que dentro
+Hasta ahora te he contado algunos de los mecanismos más fundamentales que permiten que
+nuestro cuerpo funcione. Sin embargo, toda máquina necesita energía para mover sus
+engranajes, igual que nosotros necesitamos el agua, el oxígeno o la comida para sobrevivir.
+Dicho de otro modo, necesitamos obtener recursos del exterior que van a entrar en nuestro
+cuerpo, y aunque nuestro interior es un entorno más o menos seguro, el mundo de ahí fuera es
+otra historia. Al final, actividades tan vitales como comer o respirar conllevan el riesgo de dejar
+entrar en nuestro organismo cosas que no nos hacen tanta gracia. Podríamos decir que es «el
+precio que pagar».
+   De todos modos, no solo se trata de qué entra en nuestro cuerpo, sino de la cantidad en la
+que lo hace. Ya lo dijo el alquimista Paracelso: «Todo es veneno y nada es veneno, solo la dosis
+hace el veneno». Alimentarse es necesario para seguir con vida, pero comer demasiado puede
+traerte problemas de salud como el sobrepeso, del mismo modo en que un paracetamol te hace
+más llevadero el resfriado, pero tomarte cien es sinónimo de no contarlo. Nos exponemos
+constantemente a sustancias que pueden ser perjudiciales para nuestra salud, ya sean
+cantidades exageradas de comida, alcohol, tabaco o incluso toxinas producidas por otros seres
+vivos que, como nosotros, solo buscan sobrevivir. Algunas son sustancias que no vienen a
+hacernos precisamente cosquillas, pero no siempre podemos controlar cuándo entran y cuándo
+no, y al final, qué quieres que te diga: mejor tenerlas fuera que dentro.

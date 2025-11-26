@@ -1,0 +1,178 @@
+3
+                            Infecciones parasitarias
+
+
+Los organismos que viven del cuento
+Probablemente, los más aventureros de todos los microorganismos sean los parásitos. Llevan
+vidas trepidantes donde juegan a ser agentes dobles que se infiltran en nuestro cuerpo, se
+ocultan de nuestras defensas e incluso empiezan a aprovecharse de nosotros dándole la vuelta a
+la partida.
+   Son capaces de cambiar de forma a lo largo de su vida, haciendo más difícil su rastreo, y de
+pasar de un hospedador a otro para sacar el provecho que necesitan de cada uno. Porque eso es
+exactamente lo que hace un parásito: ser un caradura y aprovecharse de otro organismo para
+sobrevivir, y, por desgracia, no sin pasarle factura al que lo hospeda.
+   Y así como la estructura de las bacterias y los virus era relativamente simple y fácil de
+explicar, los parásitos son todo un reto. No solo son organismos más complejos
+estructuralmente, sino también exageradamente variopintos. Mientras que algunos parásitos
+miden 1 o 2 µm de diámetro, como muchas bacterias, otros llegan a los 10 m de longitud, como
+la famosa tenia (Taenia saginata). De todos ellos, algunos están formados por una sola célula,
+mientras que otros están compuestos de muchas más.
+   Son sin duda seres más sofisticados que las bacterias o los virus que hemos visto hasta ahora.
+Su interior es mucho más parecido al nuestro: conservan su material genético dentro de un
+núcleo y tienen varios orgánulos que realizan las distintas funciones. El problema es que este
+parecido de los parásitos con nuestras células no trae nada bueno, porque eso es, precisamente,
+lo que los vuelve tan difíciles de tratar sin dañarnos a nosotros mismos. Por eso los fármacos
+antiparasitarios son más tóxicos y menos eficaces que los antibióticos.
+   Pero si hay algo que de verdad dificulta el tratamiento, es la capacidad de los parásitos para
+cambiar de forma a lo largo de su ciclo vital, e incluso dentro del mismo hospedador. O sea: que
+un mismo fármaco puede ser efectivo contra una de sus formas y totalmente inocuo para el
+resto. Imagina un fugitivo de la ley que, además de cambiar de ciudad cada dos por tres, tuviese
+el poder de transformar radicalmente su aspecto cada cierto tiempo... A ver quién es el listo que
+lo encuentra.
+
+El parásito de las mil caras
+Así como otros microorganismos son capaces de replicarse de principio a fin dentro de un
+mismo organismo, muchos parásitos necesitan saltar de unos hospedadores a otros para
+completar su ciclo vital: nacer, crecer, reproducirse y morir. Esto lo sabe bien uno de los
+parásitos más conocidos y que provoca más muertes al año en el mundo: el Plasmodium.
+Probablemente te hayas quedado un poco igual, pero si te digo que se trata del parásito que
+causa la malaria, tal vez empiece a sonarte. De entre las cuatro especies de Plasmodium que
+causan la malaria en humanos, la más estudiada es la Plasmodium falciparum, y su ciclo vital es
+todo un viaje que te aseguro que no tiene desperdicio.
+   Para empezar, este parásito necesita dos hospedadores para sobrevivir: el mosquito
+Anopheles y el ser humano. La aventura del parásito comienza cuando infecta a la hembra del
+mosquito y se aloja en sus glándulas salivales. En realidad, esconderse en la saliva del mosquito
+es muy buena estrategia, porque es un transporte fácil y eficaz hasta su próximo hospedador, el
+ser humano. Así, cuando el mosquito pica a alguien, inyecta el parásito directamente en su
+torrente sanguíneo.
+   Una vez en la sangre de su hospedador humano, el Plasmodium se dirige al hígado y se
+instala en sus células. Dentro de ellas, el parásito va desarrollándose y cambiando de forma,
+hasta llegar a un punto en el que provoca la rotura de la célula hepática y queda liberado de
+nuevo a la sangre. Hay que imaginar el parásito como un pokemon, solo que más turbio y con
+unas cuantas evoluciones extra. Ahora, en la sangre, el objetivo del parásito ha cambiado: está
+sediento de hemoglobina, la proteína que transporta el oxígeno en nuestros glóbulos rojos. Así
+que se mete dentro de estas células sanguíneas y comienza a alimentarse de su hemoglobina,
+momento en el que se vuelve a desarrollar y a cambiar de forma, hasta que provoca la rotura del
+glóbulo rojo. Y así se liberan más parásitos al torrente sanguíneo, sedientos de más
+hemoglobina, que destruyen cada vez más células a su paso. En este momento de descontrol y
+destrucción, algunos parásitos evolucionan a gametocitos: son las formas del parásito listas para
+la reproducción.
+   Ahora que ya pueden tener descendencia, es hora de volver al mosquito, y lo harán del
+mismo modo en que llegaron al cuerpo humano: a través de la picadura de un insecto. Cuando
+un mosquito pica a la persona infectada y, por tanto, entra en contacto con su sangre, el parásito
+se introduce de nuevo en el mosquito. Dentro, se dirige a su intestino, donde los parásitos
+gametocitos se reproducirán, lo que da lugar a miles de descendientes listos para infectar de
+nuevo a más personas, con lo que se cierra el ciclo.
+   Así, desde que un parásito Plasmodium nace hasta que vuelve a su lugar de origen para
+reproducirse, pasa de un hospedador al otro, cambiando de forma, destruyendo glóbulos rojos y
+células hepáticas según le conviene, y dejando a su paso graves anemias y daños importantes
+en el hígado.
+   Por suerte, contamos con unos medicamentos llamados antipalúdicos para tratar y prevenir la
+malaria, que actúan en distintos puntos del ciclo del parásito. Pero, a veces, combatir la malaria
+no es cosa de los antipalúdicos, sino de trastornos genéticos de la persona que le confieren una
+protección natural contra esta enfermedad. Me refiero a la anemia falciforme, una enfermedad
+causada por una mutación en el gen que interviene en la formación de la hemoglobina. Debido
+a esta mutación, la hemoglobina es defectuosa y se acumu​la en unos agregados dentro del
+glóbulo rojo que lo deforman, haciendo que, en lugar de la clásica forma bicóncava, tenga forma
+de hoz. Por una parte, esta deformación de los glóbulos rojos conlleva problemas de circulación
+y de transporte de oxígeno. Pero, curiosamente, algunas formas menos graves de esta
+enfermedad confieren una protección contra la malaria, debido a que a los parásitos
+Plasmodium les cuesta más crecer dentro de los glóbulos rojos con forma de hoz.
+   Por eso esta enfermedad es tan común en algunas regiones de África, donde hay muchos
+casos de malaria. Es un ejemplo de cómo, curiosamente, mutaciones genéticas que pueden dar
+lugar a una enfermedad suponen también una protección frente a otras. Una cosa por la otra.
+
+
+  EN RESUMEN... El parásito Plasmodium es el que causa la malaria. Su ciclo de infección pasa por
+  dos hospedadores, el mosquito Anopheles y el ser humano, al que le destruye los glóbulos rojos y
+  las células hepáticas, y acaba causándole fuertes anemias y daños en el hígado.
+
+
+
+   El Plasmodium es el fugitivo perfecto: es microscópico, capaz de moverse de un hospedador a
+otro, esconderse en sus células, destruirlas y cambiar de forma una, y otra, y otra vez. Pero no
+por ser un parásito más grande se tiene una vida menos movidita.
+
+Y los parásitos más grandes, ¿dónde se esconden?
+Existen tantos tipos de parásitos tan distintos entre ellos que es imposible resumir en un solo
+apartado la cantidad de estrategias que han desarrollado para colarse, esconderse y multiplicarse
+dentro de sus hospedadores. Podrías pensar que si son capaces de hacer todo eso es porque son
+seres diminutos que pasan desapercibidos, pero hay parásitos que pueden verse a simple vista, y
+que aun así se las apañan para meterse en nuestro cuerpo y vivir a costa de nuestra salud.
+   El Plasmodium forma parte de uno de los cuatro reinos de parásitos que existen: el de los
+protozoos, microorganismos que miden de 2 µm a apenas 100 µm. Pero también existen
+animales parásitos, como los helmintos o gusanos, que pueden medir desde 1 mm hasta más de
+1 m. Un ejemplo (además de la tenia, que hemos comentado al principio) es el del Anisakis
+simplex, un gusano que puede ingerirse al comer pescado o marisco crudo o poco hecho, como
+el sushi o los boquerones en vinagre. Y agárrate, porque si te sorprendió cómo el Plasmodium
+era capaz de ir pasando de un hospedador a otro y conseguir lo que quería de cada uno, espera a
+que te cuente el largo viaje que recorre el anisakis durante su vida, pasando de unos organismos
+marinos a otros, hasta llegar accidentalmente a nuestros platos.
+   La aventura de este gusano comienza en el estómago de los mamíferos marinos, como las
+focas o los delfines, donde crece y va haciendo su vida. Un día, el gusano hembra pone huevos,
+que serán expulsados al mar a través de las heces del animal. Una vez fuera, en el mar, los
+huevos son fecundados y nacen las larvas del gusano, que crecen y nadan libremente... hasta
+que son ingeridas por crustáceos despistados (gambas, cangrejos, etc.) que solo buscaban algo
+que cenar.
+   Ahora, dentro del crustáceo, las larvas tienen un lugar calentito en el que desarrollarse, al
+menos hasta que su hospedador sea ingerido por algún pez o cefalópodo, como el calamar o el
+pulpo. En el interior de este nuevo hospedador, la larva del parásito se aloja en las paredes de los
+intestinos, en los múscu​los e incluso en la piel del animal. Por último, la larva volverá a los
+mamíferos marinos cuando estos ingieran peces o calamares infectados, y crecerá hasta
+convertirse en un gusano adulto, con lo que se cierra el ciclo. Hasta el día en que ese gusano
+ponga huevos... y se reinicie la historia.
+   Es increíble cómo el gusano, desde que es un huevo hasta que se vuelve adulto, va escalando
+en la cadena alimentaria y sobreviviendo en el interior de organismos que se comen unos a
+otros. Pero ahora te preguntarás: ¿dónde queda aquí el ser humano? Pues lo cierto es que el
+ciclo natural del parásito es ese. A diferencia del parásito de la malaria, que necesita al ser
+humano, el ciclo del anisakis tiene lugar en los animales marinos y punto. Aunque los
+humanos, que somos un poco metomentodo, nos entrometemos en ese ciclo al comer peces y
+calamares infectados por las larvas del gusano. Lo más curioso de todo es que la larva no está
+hecha para sobrevivir en nuestro cuerpo, por lo que finalmente morirá... pero no sin hacernos
+pasar un mal rato.
+   Ingerimos la larva al comer pescado o marisco infectados, ya sean crudos o poco hechos. Por
+eso es importante cocinar bien el pescado antes de servirlo o, en caso de quererlo crudo,
+congelarlo antes de su consumo. Sin embargo, a veces se nos pasa, y cuando ingerimos uno de
+estos alimentos infectados, las larvas de anisakis se introducen en la pared de nuestro estómago
+o intestino y nos producen una anisakiasis. Sus síntomas son dolor abdominal, náuseas,
+vómitos, diarrea y fiebre leve. Pero, sin duda, uno de los más impactantes es la reacción alérgica
+que provoca, que puede ser muy potente. Debido a esta alergia, las personas que han sido
+infectadas por anisakis no pueden comer pescado durante largos períodos y en algunos casos
+incluso ¡para siempre! Más que nada porque si hubiese una segunda exposición al parásito, vivo
+o muerto, cocinado o congelado, se produciría una reacción alérgica tan potente que podría ser
+incluso mortal.
+
+
+  EN RESUMEN... Los parásitos, además de seres microscópicos, pueden ser gusanos como la tenia
+  o el anisakis, entre otros. Este último crece y vive en los organismos de distintos animales marinos,
+  y llega al ser humano cuando ingerimos pescado o marisco infectados y que están poco cocinados, o
+  directamente crudos.
+
+
+
+   Apenas te he contado las historias de un par de parásitos, y es sorprendente lo distintos que
+pueden llegar a ser: uno más grande y el otro más pequeño, uno que infecta a un par de
+hospedadores y el otro a muchos más... y, sin embargo, ambos se las apañan para darnos un
+buen quebradero de cabeza. Y por supuesto no son ni de lejos los únicos: los parásitos causan
+enfermedades que afectan a millones de personas en todo el mundo. Por ejemplo, los del género
+Leishmania causan la leishmaniasis, que afecta a las poblaciones más pobres del planeta, en las
+que abunda la malnutrición y las malas condiciones de vivienda, y que, al igual que la malaria,
+se transmite a través de los mosquitos.
+   Pero los parásitos, tan variados, pueden infectarnos de muchas más formas. El Trypanosoma
+cruzi, por ejemplo, se transmite a través de la picadura de la chinche. Causa la enfermedad de
+Chagas, que si no se trata puede dar lugar a graves problemas cardíacos y digestivos. Este
+bichito es, hoy en día, uno de los problemas de salud más importantes de América Latina.
+   Pero a pesar de que las infecciones parasitarias son más frecuentes en zonas tropicales y
+subtropicales o en lugares con problemas de acceso al agua potable y al saneamiento, los
+parásitos se están volviendo una preocupación mucho más global. Cada vez hay más turistas
+internacionales que cruzan el globo y actúan como portadores de algunos parásitos, tal como lo
+hacen los mosquitos o las chinches. Pero hay otro problema que aún se nos está yendo más de
+las manos: el cambio climático. Con la temperatura global en aumento, para muchos parásitos
+es cada vez más fácil crecer en otros países, con temperaturas que se acercan más y más a las de
+zonas tropicales y subtropicales.
+   Resulta chocante ver cómo la forma de vida de nuestra sociedad tiene un impacto tan fuerte
+sobre la salud pública a nivel mundial. Mientras todo cambia, los parásitos seguirán tan
+tranquilos, aprovechándose de nosotros hasta el último minuto, usando cada mínima
+oportunidad para meterse en nuestro organismo, instalarse y sacar todo el provecho que
+necesiten. Con lo sencillo que lo tienen para entrar y lo difícil que es echarlos, tal vez
+deberíamos tener más cuidado con lo que hacemos y no ponérselo todavía más fácil.

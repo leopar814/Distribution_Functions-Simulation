@@ -1,0 +1,221 @@
+5
+                               Sistema inmunitario
+
+
+El sistema inmunitario es algo más que células
+Espero que no hayas llegado a esta parte del libro temblando. Más que nada porque, después de
+tantas historias sobre los miles de microorganismos infecciosos, sus formas tan distintas de
+invadirnos y la gran variedad de daños que nos producen, puede que te sientas un poco
+vulnerable ante los millones de seres microscópicos de tu alrededor. Pero si realmente
+estuviésemos tan desprotegidos, sería raro que la especie humana hubiese llegado hasta aquí,
+¿no?
+   La verdad es que te he ido haciendo un poco de spoiler a lo largo de estas páginas, pero sería
+raro terminar este capítulo sobre las enfermedades infecciosas sin dedicar un apartado a nuestro
+sistema inmunitario, ese defensor incondicional que está detrás de cada uno de los ataques a
+todo asaltante que se atreva a invadirnos; ese defensor que enciende las alertas cuando detecta
+que un intruso ha entrado en nuestro cuerpo. Pero este mundo hostil no nos lo iba a poner tan
+fácil, porque al mismo tiempo que nuestro sistema inmunitario lucha contra los invasores, estos
+recurren a miles de estrategias que les permiten escapar, esconderse e incluso contraatacar, los
+malnacidos. Al final, se produce una lucha entre ambos que pasa factura, porque, muchas veces,
+el daño que causan las infecciones en nuestros tejidos es consecuencia de una guerra entre
+estos dos bandos.
+   El sistema inmunitario está formado principalmente por células, que atacan, devoran y
+destruyen a los invasores, y al final son las que protagonizan en gran medida el ataque. Pero
+esta embestida comprende un entramado con tantos elementos, tan bien organizados y
+estructurados, que sería impensable sin que las células se comunicasen entre ellas. En realidad,
+las células se cuentan constantemente lo que está pasando: se avisan unas a otras cuando entra
+el invasor, cuando lo destruyen, cuando lo expulsan y cuando pueden dar por terminada la
+batalla. Esta comunicación tiene lugar gracias a las interacciones entre los receptores de su
+superficie y unas moléculas especializadas que, al unirse a ellos, transmiten una señal a la
+célula. Algunas de estas sustancias son, por ejemplo, las citocinas y los interferones, proteínas
+que activan y regulan la respuesta inmunitaria, o las quimiocinas, proteínas muy pequeñas que
+atraen las células inmunitarias a los sitios donde se produce la infección. Incluso en una escala
+tan pequeña, la comunicación es la clave. Pero nuestras defensas comienzan mucho antes de
+que actúen estas pequeñas mensajeras.
+
+Nuestras murallas de defensa
+Si eres un microorganismo que quiere entrar en el cuerpo humano, la primera prueba a la que
+tendrás que enfrentarte será traspasar sus barreras de defensa naturales. Aunque no seamos
+conscientes de ello, nuestro organismo está protegido por la piel, las mucosas, el ácido y la bilis
+del tubo digestivo, los cuales impiden la entrada de agentes externos y los destruyen.
+   La piel y las mucosas, por lo general, sirven de barrera contra la mayoría de los
+microorganismos infecciosos (a pesar de que algunos como el virus del papiloma humano
+consiguen infectar precisamente las células de estas superficies, pero bueno). Por ejemplo,
+nuestra piel tiene una serie de características que los microorganismos odian: es un ambiente
+seco, su pH es bajo y secreta ácido láctico con el sudor, entre otras cosas. Pero además de las
+superficies que nos recubren, también es importante blindar las puertas de acceso. Los orificios
+del cuerpo, como el interior de la boca, el estómago, la cavidad nasal o la vagina, podrían ser
+una vía de entrada perfecta para cualquier microorganismo. Por eso están recubiertos por las
+mucosas, que secretan lágrimas, saliva o moco, y que, además de hidratar, contienen sustancias
+antimicrobianas que se cargan a (casi) todo aquel que entre sin ser invitado.
+   Incluso nuestra temperatura corporal es un elemento clave. ¿Por qué nuestro cuerpo
+reacciona con fiebre a las infecciones? Pues por dos motivos: por un lado, porque las
+temperaturas altas limitan el crecimiento de muchos microorganismos, especialmente de los
+virus; y, por otro lado, porque la fiebre hace más eficiente la respuesta inmunitaria.
+   Seguramente te han soltado alguna vez lo de «Abrígate, ¡que te vas a resfriar!». En realidad,
+en contra de la creencia popular, el frío por sí solo no provoca el resfriado. Es decir, para coger
+un resfriado es necesaria sí o sí la presencia del virus del resfriado: por mucho frío que haga, sin
+virus no hay infección. Aun así, es cierto que el frío puede propiciar que, si nos topamos con el
+virus, sea más fácil infectarnos. Primero, porque las temperaturas bajas favorecen la replicación
+del virus, y, segundo, porque dificultan la acción del sistema inmunitario. Así que sí, mejor
+prevenir que curar, y si vas a pasar frío, cógete algo de abrigo.
+
+
+  EN RESUMEN... En una infección, el primer obstácu​lo con el que se encuentran los
+  microorganismos son nuestras barreras de defensa naturales, como la piel (que tiene unas
+  condiciones desagradables para ellos), las mucosas (que contienen sustancias antimicrobianas) o la
+  temperatura (que limita su crecimiento).
+
+
+  Lo malo es que, a pesar del esfuerzo, a veces estas barreras se deterioran o se rompen, como
+cuando nos hacemos un corte en la piel. En ese momento, los microorganismos del exterior
+aprovecharán para meterse directamente en nuestra sangre. Una vía de entrada perfecta, si no
+fuese porque el cuerpo no se deja vencer por tan poco.
+
+Todo un ejército de células
+Si el invasor consigue atravesar las barreras, le estará esperando toda una tropa de células listas
+para atacar y evitar a toda costa que la infección se expanda. Estas primeras células con las que
+entra en contacto el microorganismo, junto con las barreras naturales y las sustancias
+antimicrobianas comentadas anteriormente, son lo que se denomina la respuesta inmunitaria
+innata. Se llama así porque es congénita (la tenemos todos al nacer) y ataca a todos los
+invasores de una forma muy parecida. A menudo, esta primera respuesta es suficiente para
+controlar la infección. Pero a veces esta persiste, por lo que se activa toda una marea de células
+y sustancias mucho más específicas y dirigidas hacia el invasor, y que en su conjunto forman el
+segundo tipo de respuesta: la respuesta inmunitaria específica. Pero vayamos por orden.
+   Del mismo modo en que un ejército tiene muchos soldados distintos, nuestro sistema
+inmunitario está formado por muchísimos tipos de células, cada una con sus propias armas y
+con su rol dentro de esta defensa. Cuando se produce una infección, las primeras que entran en
+acción son las denominadas células fagocíticas. Se llaman así porque engullen (o como se dice
+en biología: fagocitan) el agente infeccioso para destruirlo en su interior. Un ejemplo de este tipo
+de células son los neutrófilos, las células más abundantes del sistema inmunitario, que están
+especializados en destruir bacterias y son clave para la fagocitosis de los microorganismos y
+para la inflamación. ¿Te has fijado alguna vez en que, cuando se nos infecta una zona del
+cuerpo, esta se calienta, se enrojece, se hincha y nos duele? En conjunto, llamamos a esta
+respuesta del organismo inflamación, y no ocurre por capricho: su objetivo es aumentar la
+cantidad de sangre que llega a la zona de infección para que las células inmunitarias puedan
+acceder más rápido y destruir lo antes posible el patógeno. Además de la inflamación, algunas
+moléculas del sistema inmunitario, como las quimiocinas (mencionadas antes), atraen los
+neutrófilos al lugar de la infección, donde se concentran, fagocitan las bacterias y las destruyen
+en su interior, y a continuación mueren y acaban convirtiéndose en pus. Así que, si alguna vez
+te has preguntado de dónde sale el pus, ahora ya lo sabes: son neutrófilos muertos tras la
+batalla.
+   Pero, por muy idílica que suene toda esta estrategia, a veces hasta los mejores ejércitos
+necesitan refuerzos.
+
+Las células «chivatas»
+De todas las células fagocíticas que tenemos, hay algunas que hacen algo más que cargarse el
+microorganismo y punto. Son células que, una vez han ingerido y destruido el intruso, cogen las
+proteínas que lo formaban y las colocan en su superficie, como si fueran banderines. Es una
+forma de avisar al resto de las células de que hay un invasor que intenta entrar y de que es hora
+de activar una respuesta todavía mayor.
+   Estas proteínas que formaban parte del agente infeccioso y que se exponen en la membrana
+de estas células se llaman antígenos. Un antígeno es una molécula que no forma parte de
+nuestro organismo y que el cuerpo reconoce como sustancia extraña, por lo que activa la
+respuesta inmunitaria. Por eso este tipo de células se llaman células fagocíticas presentadoras de
+antígeno, porque fagocitan el microorganismo y presentan sus antígenos a otras células
+inmunitarias para activarlas. Un ejemplo de estas células son los macrófagos, que hacen
+principalmente tres cosas: fagocitan bacterias y virus, presentan sus antígenos a las células
+necesarias para potenciar la respuesta inmunitaria y secretan sustancias que estimu​lan la fiebre.
+   Hasta aquí ha quedado claro que estos tipos de células, además de fagocitar agentes
+infecciosos, presentan sus antígenos a «otras células»... ¿Pero qué células son estas? ¿Cuáles
+son las que continúan la respuesta inmunitaria? Concretamente, las células presentadoras de
+antígeno activan un tipo de células llamadas linfocitos T, que iniciarán la siguiente fase de la
+respuesta inmunitaria.
+   Si te fijas, esta respuesta es como una cadena, en la que unas células alertan y activan a otras,
+y estas a otras, y así sucesivamente hasta expandir la respuesta de defensa. Hasta aquí, todos los
+mecanismos que hemos visto (las barreras naturales y las células fagocíticas) forman parte de la
+respuesta inmunitaria innata. Se trata de una primera respuesta rápida y genérica, similar ante
+todos los patógenos. No obstante, cuando se presentan los antígenos a los linfocitos T, se activa
+una segunda respuesta mucho más potente, dirigida y eficaz: la respuesta inmunitaria
+específica.
+   Los linfocitos T se llaman así porque se desarrollan en el timo (un órgano situado en el
+pecho, entre el corazón y el esternón), y tienen dos tipos de funciones principales. Algunos de
+ellos se encargan de destruir todo tipo de células que consideren extrañas o alteradas, como las
+células infectadas por virus (así evitan que el virus se expanda), las células foráneas (por
+ejemplo, las que provienen de un trasplante), e incluso las células tumorales. Son como una
+especie de «cuerpo de policía» que patrulla por el organismo en busca de células sospechosas.
+   Pero, por otro lado, hay linfocitos que más que ejecutar la respuesta la regulan. Se encargan
+de activar, controlar y, cuando es necesario, suprimir la respuesta inmunitaria. Actúan como
+mediadores: reciben la «alerta de infección» de las células presentadoras de antígeno y activan
+otras células para que resuelvan el problema; estas iniciarán la siguiente etapa de la respuesta
+inmunitaria. Una respuesta incluso más potente, protagonizada por unas de las moléculas más
+famosas e importantes de la inmunología: las inmunoglobulinas, más conocidas como
+anticuerpos.
+
+Quien tuvo retuvo
+Los linfocitos T son el tipo más abundante, de acuerdo, pero no son el único. Existe otro tipo de
+linfocitos igual de esenciales para la respuesta inmunitaria: los linfocitos B. En este caso, se
+llaman así porque se desarrollan en la médula ósea (bone marrow, en inglés).
+   Cuando las células presentadoras de antígeno alertan a los linfocitos T sobre la presencia de
+un intruso, estos activan los linfocitos B. Al recibir la señal, comienzan a fabricar y secretar
+anticuerpos, unas moléculas con forma de tirachinas que se unen a los agentes infecciosos para
+que se les localice y elimine más fácilmente.
+   Por ejemplo, son capaces de detectar y unirse a los antígenos que tienen los microorganismos
+en su membrana, a modo de marcador, de forma que las células fagocíticas los encuentren y los
+destruyan lo antes posible. Pero hacen algo más que actuar como simples banderines, porque
+pueden incluso rodear e inmovilizar un microorganismo para que no escape, o aglutinar varias
+bacterias a la vez para que puedan fagocitarse más fácilmente. Los anticuerpos no son células
+de por sí, pero sí un gran apoyo para el resto del equipo.
+   En realidad, no se comienzan a sintetizar anticuerpos así, a bote pronto. Cuando los linfocitos
+T activan los B, los estimu​lan para que evolucionen a dos tipos distintos de células: unas
+pensadas para actuar al momento y otras como reserva a largo plazo.
+   Por un lado, algunos linfocitos B se diferenciarán en células plasmáticas, que secretarán
+anticuerpos para destruir lo antes posible el agente infeccioso. En cambio, otros linfocitos B
+evolucionarán en células de memoria, encargadas de guardar la información sobre ese
+microorganismo y acordarse de él. Así, si algún día se atreve a volver a infectarnos, tendremos
+todo un equipo de células ya preparadas para secretar anticuerpos que lo reconocerán
+específicamente a él, y producirán una respuesta inmunitaria mucho más rápida y masiva que la
+primera. Esto es lo que se conoce como memoria inmunitaria y es la base del funcionamiento de
+las vacunas.
+
+
+  EN RESUMEN... La respuesta innata del sistema inmunitario es una primera respuesta genérica,
+  similar para todos los microorganismos, y la forman las barreras de defensa naturales y las células
+  fagocíticas. Cuando estas activan los linfocitos T, comienza la respuesta específica, mucho más
+  dirigida: los T activan los B, y estos se diferencian en células que producen anticuerpos contra el
+  invasor.
+La respuesta del sistema inmunitario frente a una infección. Cuando un microorganismo consigue traspasar las
+barreras naturales que protegen nuestro cuerpo, el sistema inmunitario entra en acción. Las células fagocíticas
+engullen el microorganismo y exponen sus antígenos en la membrana para presentarlos a los linfocitos T. A su
+vez, los linfocitos T activan los linfocitos B, que se diferenciarán en dos tipos de células: las células de memoria
+(que actuarán en caso de una segunda infección por el patógeno) y las células plasmáticas, que actúan al
+momento. Ambas secretan anticuerpos, esas estructuras proteicas que reconocen los antígenos de los
+microorganismos y que facilitan su eliminación.
+
+
+   Las vacunas consisten en un preparado de microorganismos que han sido atenuados o
+inactivados, es decir, a los que se les ha disminuido o quitado su capacidad de infección.
+También hay vacunas formadas por alguna parte del virus, como sus proteínas o su cápsula, en
+lugar del bicho entero. Al inyectar una vacuna, y por tanto al poner en contacto nuestro sistema
+inmunitario con un agente infeccioso, estamos forzando el cuerpo para que produzca una
+respuesta inmunitaria y para que fabrique células de memoria, de forma que, si alguna vez
+entramos en contacto con el microorganismo real, nuestro cuerpo pueda contraatacar
+rápidamente y de forma eficaz. ¡Es como un entrenamiento!
+   Con todo lo que te he contado, es probable que hayas puesto el sistema inmunitario en un
+pedestal, pero siento tener que ser una aguafiestas: el sistema inmunitario no es perfecto. En
+ocasiones, la respuesta a una infección se queda corta, mientras que en otras se pasa de la raya.
+Y en ambos casos se produce un daño. Nuestro cuerpo es como un equilibrista en la cuerda
+floja: impresionante cuando está estable, pero fácil de desequilibrar. Y si pierde el equilibrio, cae.
+Ni tanto ni tan poco
+Es frecuente oír eso de que la virtud está en el punto medio, y puede que suene a tópico, pero
+me viene perfecto para explicar uno de los conceptos más importantes acerca de nuestro
+cuerpo: el equilibrio. Teniendo en cuenta los cambios constantes que suceden en nuestro
+interior, todas las reacciones químicas, las células que se dividen y las moléculas que van de
+aquí para allá e interaccionan entre ellas..., funcionamos dentro de una estabilidad
+tremendamente compleja. Cuando se rompe este equilibrio, la enrevesada red de la que estamos
+formados se descontrola y da lugar a más problemas de los que nos gustaría.
+   Nuestras defensas son un ejemplo de la importancia del término medio. Todo ejército tiene
+que estar atento a cualquier ataque que pueda llegarle, y eso supone estar preparado para
+contraatacar si es necesario. Pero eso no significa que esté atacando a diestro y siniestro a todo
+lo que se le cruza por delante. Con nuestro sistema inmunitario ocurre lo mismo: necesita estar
+al loro para que no nos entre nada extraño en el cuerpo. El problema es que a veces se pasa de
+la raya y comienza a liarla, atacando a sustancias que no son siquiera peligrosas, o incluso ¡a
+nosotros mismos!, a quienes se supone que debería defender. Eso sí, tampoco nos sirve que se
+relaje demasiado, porque en ese caso podría perdonar la vida a pequeños intrusos que pueden
+traernos grandes problemas.
+   Esta misma lógica puede aplicarse a otros sistemas de nuestro organismo, como por ejemplo
+al endocrino, que secreta las hormonas; o al propio metabolismo, que nos ayuda a construir y
+destruir las moléculas que nos forman. Cuando falla alguno de ellos, surgen enfermedades
+como la diabetes, las alergias o los déficits de nutrientes. Aplicable a tantas otras situaciones de
+la vida, parece que «todo en su justa medida» también sea el eslogan de la biomedicina, y ya de
+paso de nuestro propio cuerpo, que parece pedir a gritos: «Ni tanto ¡ni tan poco!».

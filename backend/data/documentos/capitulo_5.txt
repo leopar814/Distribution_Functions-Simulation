@@ -1,0 +1,255 @@
+4
+                                           Mutación
+
+
+¿Qué es una mutación?
+Hasta aquí todo ha ido de perlas. Entiendo que pueda dar la sensación de que he exagerado un
+poco y que nada puede torcerse, que el cuerpo se las apaña bastante bien y que todo está
+pensado al detalle, milimetrado. En parte es cierto, pero hasta las cosas mejor planeadas a veces
+salen mal, y el ADN lo sabe bien.
+   Todos los organismos somos susceptibles de sufrir cambios accidentales en nuestro ADN, ya
+sea debido al propio metabolismo de la célula o a causas ambientales que no podemos controlar.
+Los cambios en nuestros genes se denominan mutaciones (del latín mutare, que significa
+«cambiar»), y pueden deberse tanto a una variación de la secuencia del ADN como de la forma
+en la que esta se lee. El problema de que se produzca un cambio en un gen es que la proteína
+para la que codifica también cambia, lo cual puede tener consecuencias muy graves para la
+célula, y ya ni te cuento para el individuo. El resultado de una mutación es como una lotería.
+Dependiendo del sitio donde se produzca, puede ser inocuo y dejarte igual, o que te toque el
+gordo y sea mortal.
+   En contra de lo que se suele pensar, por mucho que una mutación sea un cambio en nuestra
+información genética, no tiene por qué transmitirse a la descendencia. Todo depende del tipo de
+célula en la que se produce la mutación. Básicamente, nuestras células pueden ser de dos tipos.
+Por un lado están las células germinales o sexuales (los óvulos y los espermatozoides), que
+transmiten la información genética de padres a hijos y, al unirse, forman el cigoto, la primera
+célula del individuo. Por otro lado, están las células somáticas, que son todo el resto, es decir, las
+que forman nuestros tejidos y órganos, las mainstream.
+   Nuestras células somáticas tienen un total de 46 cromosomas o, mejor dicho, 23 pares. Esto es
+así porque los óvulos y los espermatozoides tienen solo 23 cromosomas, de forma que cuando
+se fusionan en la fecundación dan lugar a una célula con su «pack» completo de cromosomas:
+los 46 totales. Por eso decimos que la mitad de nuestra información genética la heredamos de
+nuestro padre y la otra mitad de nuestra madre. La fecundación da lugar al cigoto, que se irá
+dividiendo y desarrollando para formar un organismo completo. Pero no siempre es todo tan
+idílico. Si una de esas dos células que se unen en la fecundación lleva consigo una mutación, la
+transmitirá irremediablemente al cigoto y podría dar lugar a una enfermedad en el futuro
+individuo. Es decir, las mutaciones que se transmiten a la descendencia son aquellas que se
+producen en las células sexuales.
+   En cambio, cuando la mutación tiene lugar en una de las células somáticas, se queda en el
+individuo y muere con él. Pero, aunque no se transmita a la descendencia, la mutación pasará a
+las células que se originen a partir de la célula mutada. El clásico ejemplo de mutación somática
+es el cáncer, en el cual se produce una mutación en alguno de los genes que regulan la
+proliferación de la célula, dando como resultado una división descontrolada y la formación de
+un cúmulo anormal de células, lo que denominamos tumor. En fin, tanto si se trata de células
+somáticas como sexuales, es vital conservar el material genético intacto, ya sea para
+protegernos a nosotros mismos o a los que están por venir.
+
+
+  EN RESUMEN... Una mutación es un cambio en nuestro ADN. Cuando se produce en las células
+  somáticas (las que forman los órganos y tejidos) se queda en el individuo, pero si se produce en las
+  células sexuales (óvulos y espermatozoides), se transmite a la descendencia.
+
+
+
+¿Todas las mutaciones son iguales?
+No hay una única forma de que se produzca una mutación. Mientras unas tienen consecuencias
+fatales, otras pasan desapercibidas. Un ejemplo de estas últimas son las «mutaciones
+silenciosas», en las que, a pesar de que cambie un nucleótido en la secuencia del ADN, la
+secuencia de aminoácidos resultante no se altera. O sea, que la proteína se forma sin problemas
+y aquí no ha pasado nada. ¿Cómo es posible? Esto se debe a que en el código genético hay
+varios tripletes de nucleótidos (o codones) que dan lugar a un mismo aminoácido. Por ejemplo,
+tanto el codón UUA como el UUG dan lugar a un aminoácido llamado leucina. Por tanto, si el
+codón UUA mutase a UUG, el resultado sería el mismo y la célula seguiría tan pancha. Es como si
+a una receta le echases edulcorante en lugar de azúcar: el resultado seguiría siendo dulce. Pero
+no siempre tenemos tanta suerte, porque como el nuevo codón codifique un aminoácido
+totalmente distinto, se alterará la secuencia y dará lugar a una proteína defectuosa. Ahora sí que
+sería como echarle sal a la receta en lugar de azúcar. Por eso, una mutación en uno de nuestros
+genes, por mucho que afecte a uno solo de los miles que tenemos en nuestro ADN, puede dar
+lugar a enfermedades tan graves como la fibrosis quística, en la que los afectados producen un
+moco mucho más espeso de lo normal que se acumu​la en zonas como el pulmón o el intestino
+y provoca infecciones mortales. Otro ejemplo de enfermedad producida por una mutación es la
+enfermedad de Huntington, en la que algunas neuronas del cerebro degeneran, lo que produce
+al principio movimientos descontrolados y problemas de equilibrio, y termina causando
+dificultades para caminar, hablar o incluso tragar.
+   Pero las mutaciones pueden ser todavía más bestias y afectar no solo a un gen, ¡sino a partes
+enteras de un cromosoma! Por ejemplo, puede pasar que un cromosoma pierda un fragmento
+que, al soltarse, acabe adherido a otro cromosoma. Este tipo de mutación, que a priori puede
+parecer algo sin mucha importancia, es causante de enfermedades como el síndrome de Prader-
+Willi, que se relaciona con la discapacidad intelectual y problemas en el comportamiento, entre
+muchas otras cosas. Pero a veces las mutaciones van incluso más allá y se dan cambios en
+cromosomas enteros, o dicho de otro modo: en el número total de cromosomas. El caso más
+conocido es probablemente el síndrome de Down, en el que existe una triploidía del cromosoma
+21: tres cromosomas 21 donde debería haber dos. El resultado es, por lo general, problemas en el
+desarrollo intelectual y enfermedades del corazón, sistema digestivo y sistema endocrino, debido
+al exceso de proteínas sintetizadas por el cromosoma extra.
+   Hay muchos motivos por los que se puede producir una mutación. No quiero alarmarte, pero
+a tu alrededor, e incluso dentro de tu propio cuerpo, existen elementos capaces de modificar el
+ADN de las células e incrementar la frecuencia con la que ocurren las mutaciones. Estos
+elementos se denominan mutágenos, y los hay de muchos tipos. Pueden ser agentes químicos,
+como algunos fármacos o partículas presentes en el tabaco; agentes físicos, como en el caso de
+las radiaciones; o incluso agentes biológicos, como algunos virus capaces de mutar tu ADN. Sea
+como sea, una mutación es un billete de lotería que es mejor no jugar, aunque la elección no
+siempre esté en tus manos.
+
+Cuando tu mayor enemigo eres tú mismo
+Te sorprendería la gran cantidad de sustancias mutágenas a las que, sin darte cuenta, expones
+tus células cada día. Podrías incluso pensar que, si consiguiésemos aislar completamente una
+célula, impedir que cualquier mutágeno del exterior la encontrase, la célula estaría segura y
+exenta del peligro... Pero no es así. Incluso en un entorno libre de mutágenos, nuestro ADN
+sufrirá mutaciones de forma inevitable. ¿Cómo es posible?
+   Dentro de la propia célula también ocurren procesos y reacciones químicas que pueden
+inducir cambios en el ADN. Un ejemplo es el de la ADN polimerasa, la proteína que construye
+una nueva cadena de ADN en la replicación. Trabaja a una velocidad y precisión sorprendentes,
+sí, pero no es perfecta: cada 100.000 nucleótidos que incorpora a la nueva cadena, comete un
+error y coloca uno que no toca. Por suerte, la célula está al tanto y cuenta con proteínas que, a
+medida que se replica el ADN, van comprobando que los nucleótidos que se añaden a la nueva
+cadena sean los mismos que los de la cadena molde, de forma que si se produce un error, se
+detiene la replicación, se elimina el nucleótido erróneo y se añade el correcto. Gracias a estos
+sistemas de verificación que van revisando y corrigiendo los cambios que sufre el ADN, la
+mayoría de los errores se arreglan, y pasamos de un error cada 100.000 nucleótidos a tan solo
+uno cada 10.000.000. No está mal la reducción, pero ese error quedará de forma permanente
+como una mutación. Al final, los cambios que sufre la célula son el resultado del equilibrio entre
+mutación y reparación. Cuanto más se divide una célula, más probabilidades tiene de sufrir una
+mutación en su ADN. Por eso es más frecuente un cáncer de piel que un cáncer de corazón.
+  Necesitamos células que se repliquen constantemente, que renueven nuestros tejidos, que
+nos aporten nuevas células sanguíneas cuando las necesitemos o que reparen una herida
+cuando nos hagamos daño. De algún modo, que se cometan errores es un precio que pagar.
+Pero quien no arriesga no gana, y lo que te explico a continuación me viene como anillo al dedo
+para demostrártelo.
+
+¿El oxígeno es peligroso?
+¿Te has parado a pensar alguna vez en lo dependientes que somos de la comida? ¿En la
+loquísima cantidad de nutrientes que necesitamos ingerir al año? Para que las células puedan
+llevar a cabo todas las funciones que te he explicado hasta ahora necesitan un aporte constante
+de energía. Así que, lo menos que podemos hacer por ellas, ya que nos mantienen vivos, es
+darles de comer.
+   Para obtener energía, nuestro organismo degrada en moléculas más pequeñas los azúcares,
+grasas y proteínas que contienen los alimentos que comemos gracias a la ayuda de unas
+proteínas llamadas enzimas, que ayudan a que tengan lugar las reacciones químicas del cuerpo.
+El objetivo final de degradar todo esto es producir ATP (adenosín trifosfato), una molécula
+formada por enlaces químicos que contienen mucha energía. Esto significa que, cuando la
+célula los rompe, esos enlaces liberan energía que se puede aprovechar para otras reacciones
+químicas. El ATP es clave para la vida, ya que es la principal fuente de energía de la célula y
+permite que se realicen funciones en nuestro cuerpo como la contracción de los múscu​los, la
+digestión o el impulso nervioso entre neuronas. La pregunta es: ¿cómo se obtiene ATP a partir
+de la comida que ingerimos? La respuesta tiene lugar en las mitocondrias.
+   Cuando los nutrientes se han degradado lo suficiente en moléculas más pequeñas, estas
+entran en la mitocondria, donde son sometidas a una serie de reacciones químicas que, en su
+conjunto, se llaman fosforilación oxidativa, y que servirán para dar lugar a grandes cantidades
+de ATP. Para que estas reacciones ocurran, la célula necesita utilizar oxígeno (por eso
+respiramos, misterio resuelto), lo cual tiene cosas buenas y cosas malas. Por una parte, el
+oxígeno nos permite que tenga lugar la fosforilación oxidativa, que extrae la máxima energía de
+los alimentos, lo cual es bueno. Pero, por otra parte, en las reacciones en las que se utiliza
+oxígeno se producen de forma inevitable unas sustancias tóxicas para la célula llamadas
+especies reactivas de oxígeno, comúnmente conocidas como ROS (reactive oxygen species).
+Cuesta creer que algo tan natural como respirar sea un arma de doble filo, ¿verdad?
+   Pero ¿por qué son tan dañinas estas sustancias? Las ROS son moléculas que tienen un
+electrón (una partícula con carga eléctrica) desapareado, lo cual las hace extremadamente
+inestables. Para ganar estabilidad y que el electrón deje de darles dolores de cabeza, las ROS
+necesitan aparearlo con otro. Podría compararse con un niño pequeño que da la lata cuando se
+aburre. ¿Cómo podemos tranquilizarlo? Pues buscándole un amiguito. Decimos que las ROS son
+altamente reactivas porque, con tal de robarles el electrón que les falta, reaccionan
+prácticamente con cualquier molécula con la que se encuentran: ADN, proteínas, lípidos... lo que
+caiga. El proceso por el cual una molécula pierde un electrón se llama oxidación, por eso
+decimos que las ROS son agentes oxidantes, porque hacen que otras moléculas se oxiden. El
+problema es que el robo de un electrón resulta bastante dañino para la molécula oxidada, ya que
+produce un cambio en su estructura y por tanto en su función. Y si te cuento esto en un
+capítulo sobre mutaciones es porque a las ROS les encanta robar electrones a las bases
+nitrogenadas del ADN, igual que a los matones robar el dinero del almuerzo. Por ejemplo, con
+frecuencia oxidan la guanina y la convierten en una base defectuosa que llamamos oxoguanina.
+En condiciones normales, la guanina se aparearía con la citosina, pero esta oxidación la deja un
+tanto confusa y termina uniéndose de forma incorrecta con la adenina, generando ni más ni
+menos que una de las mutaciones más comunes en el cáncer.
+   Es cierto que las ROS son un producto natural del metabolismo de la célula, pero hay factores
+que pueden estimu​lar su formación, como la radiación ultravioleta del sol o algunas sustancias
+tóxicas como los contaminantes, el tabaco o las drogas. Por suerte, la célula está preparada para
+prácticamente cualquier cosa que le echen encima. Lejos de dejar que las ROS se salgan con la
+suya, la célula guarda en la recámara unas enzimas especializadas en combatir a estas pequeñas
+ladronas. Son los antioxidantes, que reaccionan químicamente con las ROS, cediéndoles el
+electrón que les falta y evitando así que ataquen a otras moléculas y las oxiden (¡por eso se
+llaman antioxidantes!). Son como pequeños superhéroes enfrentándose al villano para salvar al
+pueblo.
+
+
+  EN RESUMEN... Las mitocondrias, para darle a la célula energía en forma de ATP, degradan las
+  moléculas de los nutrientes en una serie de reacciones químicas. Como utilizan oxígeno, estas
+  reacciones producen de forma inevitable unas moléculas muy dañinas y reactivas llamadas ROS, que
+  atacan a moléculas de la célula como el ADN y las proteínas.
+
+
+
+El mundo es un lugar hostil
+Como si para la pobre célula no fuese suficiente tener que lidiar con todas las cosas que se le
+desmadran a diario, ya sea la metedura de pata de una proteína o una especie reactiva de
+oxígeno con muy mala baba, ahí fuera hay todo un ejército de mutágenos que aprovecharán la
+mínima oportunidad para infiltrarse entre sus estructuras hasta llegar al ADN, y no precisamente
+para hacerle mimitos.
+   Muchos de estos mutágenos son sustancias químicas que reaccionan con el ADN de mil
+formas distintas. Por ejemplo, los análogos de bases son moléculas que tienen una estructura
+química tan parecida a nuestras bases nitrogenadas que la célula no distingue entre unas y
+otras. Si alguno de estos análogos se infiltra en la célula durante la replicación, puede que la
+ADN polimerasa la incorpore a nuestras moléculas de ADN sin darse cuenta. Si por lo menos
+estas bases fake se apareasen con la base complementaria correcta, pues todavía, pero lo cierto
+es que se enlazan con la base que les da la gana y, al final, terminan provocando una mutación.
+Es como si en una obra de teatro necesitases reemplazar a la actriz principal y cogieses a una
+persona que se parece mucho físicamente, pero que no se sabe el guion: probablemente
+acabaría liándola.
+   Otros mutágenos químicos increíblemente dañinos son los agentes intercalantes, que se
+llaman así por su capacidad de intercalarse entre las bases del ADN, lo que distorsiona su
+estructura tridimensional y provoca que la ADN polimerasa se líe durante la replicación. Es
+decir, que elimine o añada nucleótidos de más, lo que da como resultado una proteína
+totalmente distinta a la que debería ser. Por desgracia, estos mutágenos están presentes en
+productos bastante comunes. Un ejemplo es el benzopireno, una sustancia que se encuentra en
+los gases de escape de los automóviles, en el humo del tabaco o en alimentos demasiado
+tostados, como el café o la carne a la parrilla.
+   Aun así, no todos los mutágenos nos los encontramos en forma de sustancias químicas.
+Otros, por ejemplo, son agentes físicos, como la radiación ionizante. El término ionizante es
+importante porque sirve para explicar por qué no toda la radiación es mala, a pesar de que nos
+asuste esta última palabra. Las radiaciones ionizantes son aquellas que contienen suficiente
+energía como para ionizar las moléculas con las que se encuentran. O dicho de otra forma:
+arrancarles electrones, cambiando su estructura y causándoles un daño.
+   Algunos ejemplos de radiación ionizante son los rayos X (los de las radiografías) y los rayos
+gamma. Son mutagénicos porque causan roturas en la doble cadena del ADN, algo que puede
+ser letal para la célula. Es más, este tipo de radiaciones puede incluso interactuar con otras
+moléculas de la célula, como las moléculas de agua, y convertirlas en ROS, que también dañan el
+ADN. Teniendo en cuenta que la célula está compuesta principalmente por agua, la probabilidad
+de que se generen ROS en presencia de radiación ionizante es bastante elevada. Un ejemplo
+tristemente célebre protagonizado por este tipo de radiaciones es el del accidente de Chernóbil,
+en el que la explosión de una central nuclear dejó expuesto material radioactivo que afectó a la
+salud de muchísimas personas, produciendo mutaciones de muy distinta gravedad en su ADN, y
+que dio lugar a una de las mayores catástrofes por radiación de la historia.
+   Puede ser que este caso te suene como algo lejano e improbable, pero hay un tipo de
+radiación también dañina que forma parte de nuestro día a día y a la que nos sometemos
+incluso con gusto: la radiación ultravioleta que emite el sol. Si bien es cierto que la radiación
+ultravioleta tiene menos energía que la ionizante, aun así es altamente mutagénica. Los rayos
+ultravioleta atraviesan las estructuras de la célula hasta llegar a nuestro ADN, donde son
+absorbidos por las bases nitrogenadas, lo que da lugar a lesiones como, por ejemplo, la fusión de
+dos bases de timina, lo que se conoce como dímero de timina. El problema de estos dímeros es
+que distorsionan la estructura del ADN, lo cual puede suponer un cambio mortal para la célula.
+Tal vez a partir de ahora ya no te sorprenda tanto la cantidad de campañas que se hacen en
+verano para que, de una vez, nos protejamos del sol.
+   Las radiaciones no ionizantes, en cambio, no tienen energía suficiente como para alterar la
+estructura de la materia con la que interaccionan, y por tanto no son peligrosas. Radiaciones de
+este tipo son las que emiten el wifi, la radio o el microondas. Así que, en contra de lo que (por
+desgracia) mucha gente cree, las ondas del wifi y del microondas no son cancerígenas,
+básicamente porque son demasiado débiles como para producir alguna alteración en tus células.
+Siempre me resultará paradójico ver a personas que se alejan del microondas cuando lo ponen
+en marcha pero que luego compiten por ver quién consigue la piel más morena en verano.
+   Más allá de las sustancias químicas y las radiaciones, a veces son otros seres los que se meten
+con nuestro ADN. Un ejemplo serían los retrovirus, un tipo de virus que se aprovecha de la
+propia maquinaria de nuestras células para fabricar con ellas copias de sí mismos. Los retrovirus
+insertan su material genético en nuestro ADN, de forma que, a la hora de la transcripción,
+nuestra célula no distinguirá entre su propio ADN y el ADN viral, y lo transcribirá todo por igual,
+lo que da lugar a proteínas víricas que formarán nuevos virus e infectarán más células. Son
+pequeños «hackers genéticos».
+
+
+  EN RESUMEN... Los mutágenos son sustancias que incrementan la frecuencia con la que ocurren
+  las mutaciones, y los encontramos en forma de sustancias químicas (como el benzopireno), agentes
+  físicos (radiación ultravioleta) u otros seres (retrovirus).
+
+
+
+  Con la cantidad de retos que nos presenta el peligroso mundo en el que vivimos, me parece
+increíble que sobrevivamos a ellos cada día. Al final, nuestras células necesitan estar preparadas
+para enfrentarse a todas estas amenazas si quieren evitar que nos aparezcan mutaciones cada
+dos por tres. Pero no te preocupes, porque incluso cuando se produce una mutación en nuestro
+ADN, la célula guarda un par de ases en la manga que no dudará en usar si el juego lo requiere.

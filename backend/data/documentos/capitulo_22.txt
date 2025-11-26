@@ -1,0 +1,203 @@
+4
+                                   Envejecimiento
+
+
+Nadie se salva
+Es posible que, después de toda una vida superando un sinfín de obstácu​los, hayas llegado
+relativamente entero a la vejez, la última etapa de tu vida. Aun así, hay algo inevitable: tus
+células habrán envejecido durante todo este tiempo, porque, desde el momento en que nacieron,
+estaban condenadas a morir.
+   Los años pasan factura a nuestras células, que van acumu​lando daños y funcionan cada vez
+peor, por lo que aumentan la probabilidad de sufrir enfermedades cardiovasculares,
+neurodegenerativas, diabetes o cáncer. Suena bastante grave, pero verás que es más familiar de
+lo que crees, porque a este proceso lo llamamos envejecimiento.
+   Hay muchísimas enfermedades que se han descubierto relativamente tarde en la historia; sin
+embargo, me parece curioso que, aunque el ser humano ha conocido el envejecimiento desde el
+comienzo de sus días, miles de años después todavía no sabemos del todo bien a qué se debe.
+¿Qué lleva a nuestras células a deteriorarse de ese modo? ¿Qué marca ese reloj biológico? Pues
+lo cierto es que no lo sabemos. O, al menos, no tenemos una sola respuesta.
+   Hoy en día se barajan varias posibles causas del envejecimiento, que contribuyen
+conjuntamente a ese deterioro progresivo. Algunos ejemplos son la acumu​lación de daños en el
+ADN, el agotamiento de las células madre o las alteraciones epigenéticas, que veremos más
+adelante. El problema es que hasta el momento se ha investigado mucho sobre cada una de
+estas causas por separado, pero todavía queda desentrañar cómo están conectadas entre sí, es
+decir, cómo intervienen en conjunto para dar lugar a lo que conocemos como envejecimiento.
+Pero por algo hay que empezar, claro.
+
+El ADN sale mal parado, y mucho
+A lo largo de la vida, nuestro ADN es alterado constantemente por la radiación ultravioleta del
+sol, por las especies reactivas de oxígeno (ROS) y por los errores en la replicación. Por suerte,
+nuestras células tienen mecanismos de reparación que consiguen minimizar las lesiones, pero,
+aun así, es inevitable que el ADN acumule algunos daños.
+   En concreto, hay unas zonas de las moléculas de ADN especialmente sensibles al paso del
+tiempo, y que por ello han dado mucho de qué hablar en el estudio del envejecimiento. Se trata
+de los telómeros, unas secuencias especiales de ADN situadas en los extremos de los
+cromosomas. ¿Te acuerdas de ellos? Los cromosomas son esas estructuras dentro de la célula
+en las que se encuentra nuestro ADN superempaquetado; al contener la mayor parte de la
+información genética, son un tesoro muy valioso para la célula. Y, como a cualquiera que tiene
+un tesoro, le interesa mucho protegerlo. Pero la célula se encuentra con un pequeño conflicto:
+cuando se divide, la célula necesita duplicar su ADN de manera que cada copia se reparta en una
+de las dos células resultantes. El problema es que nuestra biología está diseñada de tal modo
+que, cada vez que se replica el ADN, perdemos un poquito de sus extremos, al igual que las
+puntas de una mecha se extinguen con la llama del fuego. Y esto es un drama, porque una
+célula se divide muchísimas veces en su vida, y si pierde todo su ADN, puede perder su función.
+Da algo de «yuyu» pensar que no hay vuelta atrás y que estamos perdiendo ADN poco a poco,
+pero, por suerte, las células guardan un pequeño as en la manga.
+   Para hacernos una idea, es como si la célula pensase: «Oye, si voy a perder ADN de los
+extremos cada vez que me replico, ¿por qué no meter ahí una secuencia fake? Y si la pierdo,
+pues mira, para eso estaba». Pues esas secuencias fake son precisamente los telómeros:
+secuencias de nucleótidos TTAGGG vacías de información genética en sí, y que se repiten un
+montón de veces en los extremos de los cromosomas para que estos no pierdan su información
+genética. El concepto es parecido al de los cordones de nuestros zapatos: del mismo modo que
+estos están formados por fragmentos de hilo enrollados y compactados, los cromosomas
+contienen nuestro ADN superempaquetado. Para evitar que los cordones se deshilachen,
+contienen en sus extremos unas puntas de plástico llamadas herretes, algo muy parecido a lo
+que hacen los telómeros: protegen los extremos de los cromosomas para evitar que pierdan el
+valioso ADN.
+   ¿Y qué tiene que ver todo esto con envejecer? La cuestión es que se ha visto que el
+acortamiento de los telómeros es un factor determinante del envejecimiento. En otras palabras,
+funcionan como un reloj biológico: la longitud de los telómeros determinaría de algún modo la
+esperanza de vida. A medida que envejecemos y se acortan los telómeros de una célula, llega un
+punto crítico en el que son tan cortos que se pone en peligro la integridad del ADN. Y esto es
+mal asunto, porque puede provocar alteraciones genéticas que den lugar a células cancerosas.
+Los telómeros. Nuestra biología funciona de tal modo que, con cada división, nuestras células pierden un poco
+de ADN de los extremos de los cromosomas. Para evitar la pérdida de información genética, los extremos de los
+cromosomas contienen cadenas repetitivas de nucleótidos, llamadas telómeros. A medida que nuestras células
+se dividen, los telómeros se van acortando, hasta que llegan a un punto crítico que pone en peligro nuestra
+información genética, con lo que la célula deja de dividirse permanentemente. En otras palabras, se vuelve
+senescente.
+
+
+   Para evitar esto, pueden pasar dos cosas: o bien la célula se suicida y se acabó el problema, o
+bien detiene su proliferación para siempre, activando lo que se llama senescencia celular. Se
+trata de un estado «durmiente» en el que entra la célula de forma permanente al producirse un
+daño grave; por ejemplo, cuando los telómeros se vuelven demasiado cortos; o cuando se
+acumu​lan demasiadas lesiones en el ADN. En estos casos, la célula decide no dividirse más para
+evitar la propagación de células dañadas y potencialmente cancerosas.
+
+
+  EN RESUMEN... En el envejecimiento intervienen muchos factores distintos que todavía se
+  estudian hoy en día. Dos de los más conocidos son el acortamiento de los telómeros (secuencias de
+  ADN que protegen los extremos de los cromosomas) y la senescencia celular (detención de la
+  replicación celular de forma permanente).
+
+
+
+   La situación ideal sería que el sistema inmunitario eliminase estas células senescentes, y que
+el resto de las compañeras del tejido se multiplicasen para suplir esa pérdida. Pero, con la edad,
+la renovación de los tejidos se vuelve más ineficiente, y se acumu​lan cada vez más células
+senescentes que contribuyen a que el tejido, incapaz de regenerarse bien, envejezca. Por eso, la
+pérdida de telómeros y la senescencia celular son dos factores clave del envejecimiento. Los
+telómeros son, al fin y al cabo, el motivo por el que la célula puede replicarse un número
+limitado de veces en su vida: son el reloj que comienza su «tictac» ya desde su primera división.
+
+¿Y si alargamos los telómeros?
+Pero vamos a ver... Si el acortamiento de los telómeros es una de las causas del envejecimiento,
+¿por qué no inventamos algo para alargarlos? Buen intento, pero la naturaleza se te ha
+adelantado: existe una proteína llamada telomerasa que es capaz de hacerlo. Esta proteína añade
+más repeticiones teloméricas (TTAGGG) al extremo de los cromosomas, con lo que se mantiene
+la longitud de los telómeros y por tanto la capacidad de las células de replicarse.
+   Pero hay truco: esta proteína solo está totalmente activa durante nuestro desarrollo
+embrionario. En la etapa adulta también tenemos un poco de telomerasa, pero únicamente en
+algunas células muy concretas, como por ejemplo las células madre, que necesitan dividirse
+constantemente para renovar nuestros órganos y tejidos.
+   Es por eso por lo que el organismo adulto está condenado a envejecer, porque, con los miles y
+miles de divisiones celulares que ocurren en nuestro cuerpo a lo largo de los años, los telómeros
+se van acortando, y al final... se termina el chollo. Aun así, hay un tipo de células que son
+capaces de reactivar su telomerasa y volverse inmortales: las células cancerosas. Ni más ni
+menos que el 90 % de las células malignas consiguen reactivar la telomerasa, con lo que
+adquieren el poder de replicarse ilimitadamente y ser inmortales.
+   Por eso, encontrar el «elixir de la eterna juventud» no es fácil. No podemos simplemente
+reactivar la telomerasa en nuestras células, porque estaríamos dándoles una capacidad
+replicativa que se nos podría ir de las manos. Al final, mantener la longitud de los telómeros
+requiere un equilibrio entre el acortamiento y el alargamiento, de forma que no se acorten
+demasiado y causen daños en el genoma, ni tengamos una actividad de la telomerasa aberrante
+que favorezca la inmortalidad de células malignas.
+   Con la edad, este y tantos otros equilibrios se rompen, y muchos sistemas dejan de funcionar
+como lo hacían años atrás. Por ejemplo, las células madre, que siempre se encargaron de
+producir nuevas células para regenerar nuestros tejidos, con el tiempo pierden esta capacidad y
+se vuelven cada vez menos eficientes. Pero hay cambios que ocurren a escala muchísimo más
+pequeña, a escala de lo que llamamos epigenética. Es muy probable que hayas oído hablar de
+ella alguna vez, porque en los últimos años este campo ha crecido de forma sorprendente. Pero
+¿en qué consiste?
+   Hasta hace relativamente poco, se creía que toda nuestra información genética estaba
+contenida en la secuencia de nucleótidos del ADN, y que eran las mutaciones las que, al cambiar
+la secuencia, alteraban esa información. Pero hoy sabemos que no siempre es así.
+   A veces, el ADN sufre pequeñas modificaciones químicas que, sin cambiar la secuencia de
+nucleótidos, pueden hacer que un gen se exprese o deje de hacerlo. A estos cambios los
+llamamos epigenética, y se ha demostrado que pueden mantenerse a través de las divisiones
+celulares (igual que las mutaciones) e, incluso, ¡pasar de una generación a otra de individuos!
+En definitiva, la secuencia de ADN es la misma, pero los cambios epigenéticos modifican la
+forma en que se lee la secuencia y, por tanto, la expresión de los genes. Para que te hagas una
+idea, si nuestra información genética fuese un lenguaje, el ADN sería las palabras, y los cambios
+epigenéticos, las tildes. Se cree que, a lo largo de la vida, sufrimos un conjunto de alteraciones
+epigenéticas que afectan a todas nuestras células y tejidos y que, junto con tantas otras vías
+interconectadas, también contribuyen al envejecimiento.
+
+
+  EN RESUMEN... La epigenética son las modificaciones químicas que sufre el ADN y que, sin
+  cambiar la secuencia de nucleótidos, regulan la expresión de los genes. Se ha visto que la
+  epigenética también está relacionada con el envejecimiento.
+
+
+
+   Y tras toda una vida de lucha constante contra agresiones internas y externas que
+amenazaban con hacernos daño, aquí estamos, en el final de la vida. Porque, incluso si
+conseguimos sobreponernos a esos ataques, si vencimos todas las infecciones, si arreglamos
+cada mutación peligrosa y si nuestro sistema inmunitario se mantuvo fuerte hasta sus últimos
+días, incluso entonces, no podemos escapar de los inevitables efectos del tiempo.
+   Así es como están programadas nuestras células: se alimentan, crecen y viven, pero desde el
+primer día su reloj biológico comienza una cuenta atrás que antes o después tendrá que
+terminar.
+                                          Epílogo
+
+
+
+Te prometí que este sería un libro sobre ti, sobre tu propio cuerpo, un mapa básico de cómo
+funcionas. Pero te mentí un poco: este libro explica apenas una minúscula e insignificante parte
+de todo lo que somos. Estoy segura de que, tras haber leído todas estas páginas, te habrás dado
+cuenta de la increíble complejidad de lo que nos forma: células, tejidos, sistemas y estructuras
+que trabajan perfectamente coordinados y en sincronía para hacernos vivir.
+   Algo que no siempre pinta fácil, porque sobrevivir en este mundo no es precisamente un
+camino de rosas. Entre unas cosas y otras, nos enfrentamos a una cantidad de obstácu​los
+inimaginable, ya vengan de fuera o de dentro del propio cuerpo: mutaciones en nuestros genes,
+sustancias tóxicas, radiaciones, infecciones debidas a todo tipo de microorganismos, y toda una
+lotería de enfermedades que, cuanto más te acercas al final, más probables se vuelven. Y, sin
+embargo, aquí sigues. Porque detrás de cada pequeña perturbación, de cada célula que se pasa
+de la raya, de cada intruso, tenemos un cuerpo que no se deja vencer por tan poco, y que está
+preparado para actuar en consecuencia. Y vale, puede que las cosas no siempre salgan bien,
+pero no dirás que no se ha intentado.
+   Escribir este libro ha supuesto tener que enfrentarme a dos retos. El primero ha sido tener
+que asumir que algunas de las cosas que te cuento aquí pueden quedar obsoletas algún día. Así
+es como funciona la ciencia: siempre dispuesta a descartar una teoría si aparecen resultados que
+la refutan. Es algo que la hace increíble. El segundo, y probablemente el mayor reto, ha sido
+tener que resumir, en apenas unas cuantas páginas, no solo cómo funciona tu cuerpo, sino
+cómo interacciona con el entorno, qué elementos pueden perturbarlo (que no son precisamente
+pocos) y cómo actúan en el organismo. Sin duda, el mayor de ambos retos ha sido condensar
+tantísima información interesante en apenas un libro y dejar tantas cosas en el tintero.
+   Me hubiese encantado explayarme lo suficiente como para poder explicar todo lo que quería
+en cada uno de los capítulos. Aunque tengo que reconocer que, probablemente, el libro no sería
+el mismo si me hubiera tomado la libertad de llenar tantas páginas como hubiese querido. La
+biomedicina es un campo extensísimo, no solo porque el conocimiento científico avance año
+tras año y cualquier cosa que se escriba sobre el tema corre el riesgo de quedarse desfasada,
+sino también porque involucra una increíble variedad de disciplinas (inmunología, farmacología,
+fisiología, biología del cáncer, microbiología...) que llenan bibliotecas enteras. Y esa no es mi
+intención. Mi intención con este libro no es que estudies lo equivalente a un grado de
+Biomedicina. Lo que quiero es que seas capaz de entender lo que nos hace funcionar y que, a
+partir de aquí, seas capaz de comprender mejor otras cosas que ni siquiera están aquí escritas.
+   Entre lo poco que se puede contar en unas cuantas páginas y lo muchísimo que todavía nos
+queda por conocer del complejo entramado que es el cuerpo humano, comprenderás que el final
+de este libro es tan solo un principio. Es el prólogo de un libro mayor, que está ahí fuera. Ahora
+te toca a ti descubrir el resto. ¿Qué puede salir mal?
+¿Qué puede salir mal? es un libro de divulgación científica fascinante
+ y novedoso que nos enseña el mapa básico de nuestro cuerpo para
+    entender de qué estamos hechos, cómo funcionamos y cómo
+                 interactuamos con nuestro entorno.
+
+                 En este mundo tan peligroso, ¿cómo es posible que sigas con vida?
+                 Desde que somos una sola célula, nuestro organismo se enfrenta a una serie de
+                 obstáculos que no le dan respiro: mutaciones genéticas, sustancias tóxicas que
+                 entran sin avisar, ataques constantes de virus y bacterias con muy mala leche y
+                 una lotería de todo tipo de enfermedades. Sin embargo, para sobrevivir en este
+                 mundo hostil que nos rodea, el cuerpo humano está preparado para contraatacar a
+                 estas amenazas sin pensárselo dos veces.

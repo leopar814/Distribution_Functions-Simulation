@@ -1,0 +1,190 @@
+3
+                                           Cáncer
+
+
+La segunda causa de muerte más común
+Podría haberte explicado el cáncer en cualquier otro momento: cuando te hablé del ciclo celular
+y de todas las etapas por las que pasa una célula al dividirse, de la importancia de los genes y de
+las consecuencias que tienen las mutaciones, de sustancias capaces de provocarlas, de proteínas
+como p53 (la guardiana del genoma) o de la apoptosis (el suicidio que comete la propia célula
+cuando la cosa se le va de madre). Si he tenido tantas oportunidades, ¿por qué hablarte del
+cáncer ahora?
+   Para empezar, porque se trata de un proceso tan complejo e involucra tantos sistemas del
+organismo que estaba segura de que sería más fácil explicártelo en este punto, después de haber
+pasado por los demás capítulos. El segundo motivo es porque el factor de riesgo más importante
+de esta enfermedad es la edad avanzada. Y, ya que estamos en un contexto de «el final de la
+vida», qué mejor momento que este, ¿no?
+   Pero, antes que nada, hay algo que necesito aclarar. Por mucho que se hable del «cáncer», no
+se trata de una sola enfermedad, sino de un conjunto de enfermedades. Si lo piensas, es lógico:
+con la cantidad de células diferentes que nos forman, tiene sentido que existan distintos tipos de
+cáncer, con unas características u otras según el tejido en el que se forme: cáncer de pulmón, de
+colon, de mama, de estómago, de cérvix, de vejiga... Y, precisamente, distinguir los tipos de
+cáncer y entender qué los caracteriza es clave si queremos utilizar el tratamiento que mejor se
+adapte a cada uno.
+   Pero, por mucho que pueda haber distintos tipos, todos ellos comparten algo. Sea del tipo que
+sea, en un cáncer se produce una división descontrolada de células que, de algún modo, se las
+apañan para escapar a los mecanismos de control de nuestro cuerpo, a las proteínas guardianas
+del genoma, a los linfocitos patrulla que las vigilan... y consiguen proliferar a sus anchas sin
+prácticamente nada que las detenga.
+
+Cuando los genes nos la lían
+Creo que pocas veces somos conscientes de la cantidad de cosas que pasan a cada instante en
+nuestro cuerpo, y de lo increíble que es que todo se mantenga en orden. Por cada línea que lees
+de este libro, millones de células de tu organismo se multiplican, se diferencian y renuevan los
+tejidos y los órganos que te forman. Una, y otra, y otra vez.
+   ¿Te has planteado por qué, aun así, no aumentamos de tamaño? Si millones de células se
+dividen constantemente, ¿por qué seguimos igual? La respuesta está, cómo no, en el equilibrio.
+Cuando completamos nuestro desarrollo, una vez en la etapa adulta, el número de células que
+nos forman se mantiene relativamente constante. Esto es así porque existe un equilibrio entre
+unas células que se multiplican y otras que mueren para dejarles espacio. Nuestro cuerpo
+funciona como una sociedad de células que colaboran entre ellas para mantenerse con vida,
+dividiéndose, diferenciándose o muriéndose por el bien del organismo. En el cáncer, este
+equilibrio se rompe cuando una de las células pierde el control sobre sí misma y comienza a
+dividirse y a formar nuevas células sin parar, poniendo en peligro al resto. ¿En qué momento
+pasa una célula a liarla de este modo?
+   La respuesta está en los genes. Cuando todo funciona correctamente, trabajan en equipo,
+equilibrándose de tal forma que unos estimu​lan la proliferación, mientras que otros le ponen
+freno. El problema aparece cuando alguno de ellos se daña y el equilibrio se pierde, lo que hace
+que la célula comience a dividirse sin control y termine formando un tumor. Esto es lo que
+ocurre a grandes rasgos, pero si queremos ser más con​cretos, tengo que presentarte a los dos
+protagonistas de esta historia.
+   Los primeros son los llamados genes supresores de tumores, que se encargan de inhibir la
+proliferación celular. Un ejemplo es la proteína p53, que te expliqué en el apartado sobre
+mecanismos de reparación del ADN. Verás, cuando la célula quiere dividirse, necesita duplicar
+todo su ADN para que cada célula hija tenga una copia. Pero esta maquinaria de replicación es
+tan compleja e intervienen tantísimas proteínas que, a veces, hay una que mete la pata. Lo
+mismo pasa en una obra de teatro: cuantos más actores haya y más complejo sea el guion, más
+fácilmente se equivocará alguien. Por eso puede pasar que, mientras la célula replica su ADN, se
+produzca un error. Y es en ese preciso momento cuando se activan e intervienen los genes
+supresores de tumores como p53: frenan la división, intentan que se corrija el error y, si no es
+reparable, inducen la muerte de la célula para impedir que ese error se propague y tenga
+consecuencias más graves.
+   Pero estos genes no son los únicos que intervienen, porque los segundos protagonistas de
+esta historia hacen justo lo contrario. Los protooncogenes (se llaman así porque al mutar se
+convierten en oncogenes) son genes que, en lugar de frenar el ciclo celular como los genes
+supresores de tumores, lo estimu​lan. Es decir, inducen que la célula prolifere cuando es
+necesario.
+   En el cáncer, estos genes que regulan la proliferación (ya sea induciéndola o frenándola)
+mutan, con lo que pierden su capacidad de funcionar correctamente y dan como resultado una
+proliferación descontrolada. Pero si tienen funciones contrarias, ¿por qué producen el mismo
+efecto? Lo cierto es que no todas las mutaciones son iguales ni afectan del mismo modo a un
+gen; algunas le inducen a estar constantemente activo, mientras que otras le hacen perder
+completamente su función. Por ejemplo, cuando los genes supresores de tumores mutan,
+pierden la capacidad de detener el ciclo celular, por lo que la célula tiene vía libre para dividirse
+a sus anchas. Pero espera, porque aquí viene el colmo de la historia: cuando mutan los
+protooncogenes, no pierden su función, sino que la incrementan; por tanto, inducen que la
+célula se divida sin parar. Es decir: de una forma u otra, cuando se produce una mutación en
+uno de estos genes se pierde ese equilibrio entre células nuevas y células que mueren.
+Básicamente, la balanza se mueve hacia células que se dividen incesantemente sin control.
+
+
+
+
+Los genes del cáncer. Llamamos cáncer a un conjunto de enfermedades debidas a mutaciones en los genes que
+regulan la proliferación celular: los genes supresores de tumores (al mutar pierden su capacidad de inhibir la
+proliferación) y los protooncogenes (al mutar estimu​lan todavía más la proliferación). Como resultado, la célula
+prolifera descontroladamente.
+
+
+  EN RESUMEN... En el cáncer están mutados los genes que regulan la proliferación celular. Cuando
+  mutan, los genes supresores de tumores pierden su capacidad de inhibir la división celular, y los
+  protooncogenes la estimu​lan todavía más; esta combinación da como resultado una proliferación
+  descontrolada.
+  Aun así, una sola mutación no es suficiente para que se desarrolle un cáncer, sino que las
+células tienen que acumu​lar mutaciones adicionales a medida que se dividan, generación tras
+generación. Por eso, la progresión de un tumor dura, por lo general, varios años.
+
+Las células cancerosas desarrollan habilidades increíbles
+A lo largo de esos años, las células cancerosas se dividen sin parar y acumu​lan cada vez más y
+más mutaciones, de manera que, poco a poco, adquieren una serie de características que las
+hacen superresistentes a los mecanismos de control de nuestro cuerpo. Es como si, con el
+tiempo, fuesen adquiriendo superpoderes.
+   Tal como explicaba en el primer capítulo, cuando la cosa se pone fea dentro de una célula, se
+emiten señales que la inducen a suicidarse por el bien del resto. Pero precisamente las células
+cancerosas se vuelven resistentes a estas señales: les hacen oídos sordos y siguen con la
+división, por muchas aberraciones que acumulen. Por eso, solemos decir que son células
+inmortales.
+   Sin duda se han ganado ese nombre por muchas más cosas. Por ejemplo, son capaces de
+resistir el ataque de nuestro sistema inmunitario. En principio, nuestras defensas están
+preparadas para eliminar seres extraños dentro de nuestro cuerpo, ya sean microorganismos o
+células cancerosas..., pero estas últimas no se lo ponen nada fácil; entre otras cosas, porque
+secretan sustancias capaces de bloquear la acción de algunas células inmunitarias. Incluso son
+capaces de reclutar los llamados linfocitos T reguladores, que se encargan de suprimir la
+respuesta inmunitaria dondequiera que vayan (por ejemplo, cuando deja de ser necesaria
+porque ya se ha destruido al extraño). Al reclutarlos, las células cancerosas consiguen que estos
+linfocitos se pongan de su bando y detengan el sistema inmunitario por ellas.
+   Este tipo de mecanismos les permiten mantener una tasa de proliferación loquísima sin que
+nada las detenga. Pero, como cualquier otro ser vivo, no pueden vivir del aire: necesitan
+nutrientes para mantener su elevado ritmo de división. Por eso estas células, que no se quedan
+cortas a la hora de conseguir lo que quieren, utilizan uno de sus superpoderes más increíbles:
+forman vasos sanguíneos alrededor del tumor para que les lleguen todos los nutrientes que
+necesitan. Este proceso se conoce como angiogénesis y, si ya es un drama de por sí, conlleva un
+problema todavía más grave. Conectar células cancerosas a nuestro sistema circulatorio supone
+darles carta blanca para que accedan fácilmente a otros tejidos o, en otras palabras, para que se
+produzca una metástasis. Ocurre de la siguiente forma: una de las células del tumor se separa
+del resto, se infiltra dentro de un vaso sanguíneo, a través de la sangre llega a otro tejido, se
+instala allí y comienza a proliferar, lo que da lugar a un segundo tumor. La metástasis es, ni más
+ni menos, la principal causa de muerte por cáncer, por eso resulta tan importante detectarlo
+antes de que se disemine por el resto del cuerpo.
+  EN RESUMEN... A medida que las células cancerosas van adquiriendo mutaciones, desarrollan
+  habilidades peligrosas, como la capacidad de dividirse a pesar de las señales del entorno
+  (inmortalidad), la de formar vasos sanguíneos (angiogénesis) o la de invadir otros tejidos
+  (metástasis).
+
+
+
+  Conocer en detalle todas y cada una de las características de las células cancerosas y
+entender cómo son capaces de desarrollarlas es esencial para encontrar nuevos frentes por los
+que atacar un tumor y tratar un cáncer. La pregunta es: ¿se puede?
+
+¿Podemos tratarlo?
+Escribir sobre tratamientos es arriesgado. Más que nada, porque soy consciente de que es muy
+probable que, lo que deje aquí escrito, quede obsoleto en cuestión de unos años.
+   Sin embargo, prefiero correr el riesgo, porque no puedo hablarte de cáncer sin explicarte
+cómo le hacemos frente (al menos hoy en día). Los tratamientos convencionales son la cirugía
+(se extirpa el tumor), la radioterapia (se incide radiación sobre las células cancerosas para causar
+daños mortales en su ADN) y la quimioterapia (se administran medicamentos o fármacos contra
+el tumor que, por ejemplo, inhiben el crecimiento o impiden la angiogénesis). Pero estas terapias
+tienen un problema: no atacan solo a las células cancerosas, sino también a las que proliferan
+mucho... y en nuestro organismo hay unas cuantas. Cuando aplicamos un tratamiento contra el
+cáncer, este afecta sobre todo a las células malignas, pero es inevitable (por ahora) que tenga
+efectos secundarios. Por eso, aunque se ha conseguido aumentar la esperanza de vida de los
+pacientes, cada vez se apuesta más por nuevas terapias mucho más dirigidas que ataquen
+específicamente a las células cancerosas.
+   Un ejemplo es la inmunoterapia, que consiste en fortalecer el sistema inmunitario de un
+paciente para que responda con más potencia al tumor. Existen ya varios tipos de
+inmunoterapia, como los fármacos que inhiben las proteínas utilizadas por las células
+cancerosas para frenar el sistema inmunitario. Pero una técnica que ha surgido en los últimos
+años y que ha dado bastante de qué hablar es la llamada inmunoterapia CAR-T, que «entrena»
+el sistema inmunitario del paciente para que sea capaz de atacar las células cancerosas y
+eliminarlas. Funciona del siguiente modo: se extraen linfocitos T del paciente y se llevan al
+laboratorio. Una vez allí, se les inserta un gen específico que les hará expresar en su membrana
+el llamado receptor de antígeno quimérico (de ahí el nombre CAR, porque en inglés es chimeric
+antigen receptor). La gracia de este receptor es que está preparado para reconocer una proteína
+específica de las células cancerosas, lo cual permitirá a los linfocitos localizarlas más fácilmente.
+Una vez se han «armado» estos linfocitos con el receptor de membrana, se cultivan en el
+laboratorio para obtener grandes cantidades e inyectárselos de nuevo al paciente para que
+destruyan las células malignas.
+   La inmunoterapia CAR-T tiene la ventaja de utilizar el sistema inmunitario del propio paciente
+para combatir el tumor. Pero también tiene limitaciones, como los fuertes efectos secundarios
+que pueden variar de un paciente a otro; además, al ser una terapia que solo es aplicable cada
+vez a un único paciente conlleva un proceso muy costoso. Aun así, este es, sin duda, un primer
+paso hacia nuevas terapias para abordar el tratamiento del cáncer, puesto que ya se ha
+comprobado su efectividad en la leucemia linfoblástica aguda, un cáncer de células sanguíneas.
+Y quién sabe si, en un futuro, ayudará a combatir muchos otros más.
+
+¿Podemos evitar el cáncer?
+De todos los pacientes con cáncer, entre el 5 y el 7 % estaban predispuestos genéticamente. Esto
+significa que heredaron genes ya mutados, un factor que favorece el desarrollo de ciertos
+cánceres y que, además, aparezcan más pronto que la media.
+   No obstante, la gran mayoría de los cánceres son debidos a mutaciones espontáneas. Pero eso
+no significa que no tengamos nada que ver con ello, porque, según estima la OMS, al menos un
+tercio de todos los casos de cáncer pueden prevenirse. Sin ir más lejos, fumar tabaco es el factor
+de riesgo evitable que por sí solo más muertes por cáncer provoca en todo el mundo: asciende
+al 22 % de estos fallecimientos anuales. No fumar, mantener un peso saludable, practicar
+ejercicio físico a diario, alimentarse bien (con cereales integrales, legumbres, frutas y verduras, y
+sin excesos de carne), limitar el consumo de alcohol y participar en los programas de
+diagnóstico precoz son algunas de las recomendaciones que da la OMS para prevenir el cáncer.
+   Al final, por mucho que sea cuestión de azar, funciona como una lotería: cuantos más boletos
+compras, más probabilidades tienes de que te toque..., solo que, en este caso, es mejor evitar el
+premio.

@@ -1,0 +1,196 @@
+2
+                            Enfermedades endocrinas
+
+
+¡Traigo un mensaje!
+Imagino que en este punto del libro ya te habrás dado cuenta de la compleja trama de sistemas
+que permiten, sin enterarnos, que nuestro cuerpo funcione y se adapte a lo que va viniendo.
+Pero para que esto sea así, estos sistemas no pueden ir a su bola, porque se nos acabaría rápido
+el chollo. Necesitan funcionar de forma sincronizada, saber qué está pasando en el resto del
+cuerpo para actuar según sus necesidades. ¿Cómo lo consiguen?
+   Las células de los distintos tejidos y órganos se comunican las unas con las otras a través de
+moléculas que actúan como mensajeras. En realidad ya hemos hablado de algunas, como los
+neurotransmisores, liberados por las neuronas; o las quimiocinas, que participan en la respuesta
+inmunitaria. Pero ahora quiero hablarte de una tercera: las hormonas.
+   Piensa en una gran empresa formada por pequeños departamentos: el de comunicación, el de
+finanzas, el de informática... Para que la empresa funcione, los departamentos se comunican
+constantemente a través de correos electrónicos con el fin de mantenerse informados de lo que
+está pasando y poder avisarse cuando necesitan algo del otro. Del mismo modo, las células de
+nuestro cuerpo se envían mensajes a través de las hormonas, ya sea dentro del mismo tejido o
+fuera de este. Gracias a que las hormonas viajan a través del torrente sanguíneo, pueden
+transmitir señales desde zonas muy alejadas las unas de las otras. La sangre es la vía más
+importante de transporte de moléculas por el cuerpo, ya que está conectada a prácticamente
+todos nuestros tejidos (básicamente, porque les lleva el oxígeno para vivir, así que más les vale).
+   Pero ahora imagina que eres una célula del cerebro que quiere enviar un mensaje a una del
+intestino, que has fabricado la hormona que necesitas y que la sueltas al torrente sanguíneo.
+Con la cantidad de cosas que corren por la sangre (células inmunitarias, glóbulos rojos,
+proteínas, nutrientes, moléculas...), ¿cómo lo hace la hormona para no perderse? ¿Cómo sabe
+adónde ir? Y tú, como célula del cerebro, ¿cómo te aseguras de que la hormona actúe en la
+célula que quieres y no en otra? Pues del mismo modo que una carta llega exclusivamente a la
+dirección que escribes en el sobre, la hormona solo actuará en las células que tengan receptores
+para ella. Cuando la hormona se encuentre con su receptor, se unirá a él e inducirá una serie de
+reacciones dentro de la célula: activará unas proteínas u otras y hará que ciertos genes se
+activen o se inhiban.
+  Ahora, ¿qué le pasaría a la carta si se borrase la dirección que tenía escrita? A veces, nos
+ocurre algo parecido: uno de nuestros receptores es defectuoso o nuestro cuerpo es incapaz de
+producirlo, con lo que la hormona no tiene mucho que hacer. Es como si intentásemos entrar
+en una casa sin la llave. ¿Recuerdas el caso de la leptina? Es la hormona que producen los
+adipocitos del tejido graso para inhibir el apetito cuando sienten que ya han almacenado
+suficiente grasa y que no necesitamos comer más. Algunas personas con obesidad tienen el
+receptor de la leptina alterado, de forma que esta no puede producir su efecto y entonces la
+sensación de hambre es continua... y la hormona, inútil.
+
+
+  EN RESUMEN... Las hormonas son moléculas mensajeras que son secretadas por algunas células
+  para regular la actividad de otras células. Se desplazan de un lugar a otro del organismo a través de
+  la sangre y producen un efecto en aquellas células que tienen receptores para ellas.
+
+
+
+   Las hormonas son tan importantes en nuestro cuerpo que intervienen prácticamente en
+todas sus funciones, como el metabolismo, el crecimiento, el comportamiento o la reproducción.
+Entonces, ¿todas nuestras células secretan hormonas? No, solo algunas muy especializadas, que
+se encuentran en órganos como la tiroides, el cerebro, los ovarios, los testícu​los o el páncreas.
+   El conjunto de los órganos y tejidos que contienen células secretoras de hormonas es lo que
+conocemos como sistema endocrino. Pero si las hormonas son tan importantes e intervienen en
+tantos procesos..., ¿qué pasaría si nuestras células dejasen de producir alguna? Pues lo mismo
+que si el departamento de una gran empresa decidiera hacer huelga indefinida: tendríamos un
+problema.
+
+Algo más que azúcar en sangre
+Una de las enfermedades más conocidas debidas al fallo de una hormona es la diabetes. Es muy
+probable que si te pregunto qué palabras te vienen a la cabeza cuando te digo «diabetes», estén
+entre ellas azúcar e insulina. Lo cierto es que no irías por mal camino. En la diabetes mellitus,
+las células pierden la capacidad de captar y utilizar la glucosa como fuente de energía debido a
+una hormona que no funciona correctamente: la insulina.
+   La misión de esta hormona es que aprovechemos los nutrientes al máximo. Desde el
+momento en que ingerimos una comida rica en carbohidratos y los niveles de glucosa en
+nuestra sangre aumentan, el páncreas comienza a secretar rápidamente insulina. La función de
+esta hormona es inducir a que prácticamente todos los tejidos del cuerpo capten la glucosa para
+utilizarla como energía, especialmente los múscu​los, el tejido adiposo y el hígado. Pero la cosa
+no se queda ahí, porque una vez las células de estos tejidos han consumido toda la glucosa que
+necesitan para obtener energía, la insulina provoca que la glucosa sobrante se almacene en
+depósitos de glucógeno. Así, cuando más adelante las células la necesiten, podrán usarla. Pero
+¿qué pasa si los depósitos de glucógeno están al completo y todavía nos sobra glucosa?
+Desecharla sería un desperdicio, y nunca se sabe cuándo vendrán épocas de hambruna. Si la
+glucosa ya no nos cabe por ningún lado, la insulina induce a que ese exceso se convierta en
+ácidos grasos, que se depositarán en el tejido adiposo en forma de grasa.
+   Pero la insulina va más allá, porque interviene incluso en el metabolismo de las proteínas:
+estimu​la que las células absorban los aminoácidos de la dieta y los utilicen para sintetizar las
+proteínas. O sea, que aunque las palabras azúcar e insulina no eran del todo desacertadas,
+faltaría añadir grasas y proteínas, porque la insulina influye en todos ellos. Después de una
+ingesta excesiva de nutrientes, la insulina favorece que tanto los carbohidratos como las grasas
+y las proteínas se depositen en los tejidos del cuerpo. Imagina a cuántos niveles puede afectar
+que esta hormona se altere.
+   Esto es lo que pasa en la diabetes mellitus, aunque no siempre del mismo modo. Los dos tipos
+más frecuentes son la diabetes tipo I, en la que no se produce insulina, y la diabetes tipo II, en la
+que sí se produce, pero los tejidos no responden a ella de forma adecuada.
+   La menos frecuente de ambas es la diabetes tipo I, que también se conoce como diabetes
+juvenil porque afecta sobre todo a jóvenes y a niños. En este caso, las células del páncreas que
+producen la insulina están destruidas, normalmente debido a una enfermedad autoinmune en la
+que el sistema de «defensa» las ataca por error. El resultado es un déficit total de insulina, por lo
+que la glucosa no puede entrar en las células y su concentración en sangre se eleva
+increíblemente. Para compensar, el cuerpo intenta eliminar toda esa glucosa a través de la orina,
+por eso dos de los síntomas clásicos de la diabetes son la deshidratación y la poliuria, es decir,
+orinar con mucha frecuencia.
+   Igual crees que es algo sin importancia, que al final la glucosa se eliminará del cuerpo y ya
+está. Pero esto no va solo de azúcar. Sin insulina y sin que las células puedan consumir glucosa,
+el cuerpo necesita un plan B con el que alimentar sus tejidos: degradar las grasas. Y problema
+resuelto, ¿no? Pues tampoco, porque ni siquiera estas grasas libres son inofensivas: pueden
+convertirse en colesterol y depositarse en las paredes internas de las arterias. Si esto ocurre, con
+el tiempo la estructura de los vasos sanguíneos se altera y se les vuelve más difícil llevar sangre
+a los tejidos, con lo que se daña el riñón, pueden gangrenarse las extremidades e incluso
+producirse ceguera, y el infarto de corazón y el ictus son, de repente, algo probable.
+   Y a las proteínas ¿qué les pasa? Pues que, sin insulina, las células no absorben correctamente
+los aminoácidos, con lo que se produce una consecuencia muy grave de la diabetes: la falta de
+proteínas. Como resultado, la persona se siente extremadamente débil, pierde peso rápidamente
+y sufre alteraciones en muchísimos tejidos del cuerpo que necesitan proteínas para funcionar.
+   Pero esta no es la única forma de tener diabetes. La diabetes tipo II, mucho más frecuente que
+la I, tiene efectos similares pero causas distintas. Si en la diabetes tipo I no había insulina, en la
+tipo II se produce un aumento de la insulina en sangre. ¿Cómo puede ser que dos cosas
+contrarias se llamen diabetes? Pues porque las consecuencias son parecidas. En la diabetes tipo
+II, por mucho que haya insulina en sangre, los tejidos son menos sensibles y no responden a ella
+como es debido, con lo que las células del páncreas intentan compensarlo secretando más y más
+insulina. Es como si una persona estuviese un poco sorda y, para que te oyera, comenzases a
+elevar el volumen de tu voz. Tal vez funcione al principio, pero probablemente termines
+quedándote afónico. Al páncreas le pasa lo mismo: al final, después de tanto esfuerzo, sus
+células se desgastan y no pueden producir toda la insulina que se necesita, así que los niveles de
+glucosa en sangre vuelven a aumentar porque las células son incapaces de absorberla, y ya
+sabes cómo sigue. Este es el factor común entre ambos tipos de diabetes: la glucosa por las
+nubes, con todas sus consecuencias.
+    Pero ¿por qué deja una célula de responder a la insulina? Este fenómeno, al que llamamos
+resistencia a la insulina, no ocurre de un día para otro, sino de forma gradual, y se cree que
+tiene que ver con el sobrepeso y la obesidad. Por motivos que todavía se desconocen, las células
+de las personas con obesidad pierden los receptores para la insulina, por lo que son incapaces de
+responder a esta hormona y, por tanto, de captar glucosa.
+Los tipos de diabetes. En la diabetes tipo I, no se produce insulina, mientras que, en la diabetes tipo II, los
+tejidos no responden a la insulina como toca. El resultado es que las células no pueden captar la glucosa, por lo
+que esta se acumu​la en sangre y produce efectos perjudiciales.
+
+
+  EN RESUMEN... En la diabetes mellitus, las células pierden la capacidad de captar y utilizar la
+  glucosa como fuente de energía debido a una hormona que no funciona correctamente: la insulina.
+  En la diabetes mellitus tipo I no se produce insulina, mientras que en la tipo II los tejidos no
+  responden a ella como deberían.
+
+
+
+   Si no está en fases muy avanzadas, en algunos casos la diabetes tipo II puede tratarse con
+ejercicio físico y una dieta baja en calorías, o incluso con fármacos que aumenten la sensibilidad
+a la insulina. La diabetes tipo I tiene un tratamiento algo más práctico: a falta de insulina, el
+paciente se inyecta la hormona a diario.
+   Sea tipo I o tipo II, las consecuencias del fallo de una sola hormona son nefastas y afectan al
+organismo entero a muchísimos niveles. Con la cantidad de hormonas que se secretan en el
+cuerpo a diario, imagina ahora lo probable que es que se le vaya la pinza a alguna de ellas. Por
+desgracia, la diabetes es tan solo un minúscu​lo ejemplo en un mar de adversidades.
+Subidón y bajona por la misma hormona
+Es curioso cómo muchos de los apartados de este libro se basan en explicar que tanto la falta
+como el exceso de algo pueden ser muy puñeteros, independientemente de qué sistema quede
+involucrado en ese desajuste. Pues bien, la tiroides me sirve de ejemplo para ambos casos.
+   La tiroides es una pequeña glándula con forma de mariposa situada en la zona del cuello.
+Secreta dos hormonas que desempeñan un papel fundamental en la regulación de nuestro
+metabolismo: la tiroxina y la triyodotironina. Para construir estas dos hormonas es
+imprescindible el yodo, un elemento que se encuentra en el agua de mar, las algas y otros
+organismos marinos. ¿Te has fijado alguna vez en que la sal de mesa viene bajo el nombre de
+sal yodada? Este es el motivo: se suele añadir un suplemento de yodo a la sal para evitar que la
+gente tenga deficiencia de este elemento.
+   Cuando se secretan, estas hormonas inducen un aumento del metabolismo, es decir,
+incrementan la velocidad de las reacciones químicas de casi todas las células. ¿Y en qué se
+traduce eso? Pues en que se produce mucha más actividad en prácticamente todos los tejidos
+del cuerpo: las células consumen más energía, se capta más glucosa, se degradan las grasas, se
+acelera el crecimiento, y aumentan las frecuencias cardíaca y respiratoria, ya que, entre otras
+cosas, las células necesitan consumir más oxígeno.
+   Teniendo en cuenta todos estos efectos, ahora imagina las consecuencias de que una de estas
+hormonas se desregule. En el hiper​tiroidismo, la tiroides produce mucha más hormona de lo
+normal, por ejemplo debido a un tumor en esta glándula que va creciendo y secretando una
+gran cantidad de hormonas tiroideas. El resultado, además de elevar la actividad metabólica de
+las células, es que se produce un estado de mucho nerviosismo, ansiedad, temblor en las manos,
+aumento de la sudoración, pérdida de peso, diarrea, debilidad muscular, fatiga e incapacidad de
+conciliar el sueño. Para detener estos síntomas, el tratamiento más directo y eficaz es la
+extirpación de gran parte de la glándula. Antes de que dé más problemas, mejor cortar por lo
+sano.
+   ¿Y si sucede lo contrario? ¿Y si la tiroides deja de secretar hormonas? En realidad, esta es la
+alteración más común de la glándula y se conoce como hipotiroidismo. Puede deberse, por
+ejemplo, a la falta de yodo en la dieta (aunque gracias a la sal yodada se han reducido los casos
+de hipotiroidismo por falta de yodo), a la falta de una enzima necesaria para sintetizar las
+hormonas tiroideas, o a una enfermedad autoinmune en la que se producen anticuerpos
+defectuosos que atacan la glándula tiroides hasta destruirla. Los síntomas son opuestos a los del
+hipertiroidismo: fatiga y somnolencia extrema (se necesita dormir entre 12 y 14 horas diarias),
+lentitud muscular, lentitud mental, aumento del peso corporal y menor frecuencia cardíaca. La
+solución, por suerte, es relativamente fácil y consiste en darle al cuerpo lo que le falta: hormona
+tiroidea.
+
+
+  EN RESUMEN... Las hormonas tiroideas producen un aumento de la actividad en prácticamente
+  todos los tejidos del cuerpo. Por eso, la falta de esta hormona (hipotiroidismo) provoca fatiga,
+  lentitud o somnolencia, mientras que el exceso (hipertiroidismo) causa temblores, ansiedad e
+  insomnio.
+
+
+
+   Como ves, algunos desequilibrios que tienen lugar en el organismo son debidos a una
+respuesta insuficiente o exagerada de nuestro sistema inmunitario o a la falta o exceso de una
+hormona. Otras veces, esa desregulación es debida a lo que ingerimos. Muchos nutrientes son
+imprescindibles para poder vivir, pero, aun así, tomar más de los que necesitamos puede
+suponer que se acumulen en nuestro organismo y dañen los tejidos en los que se alojan. Tomes
+lo que tomes, el cuerpo lo necesita en su justa medida

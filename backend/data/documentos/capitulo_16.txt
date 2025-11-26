@@ -1,0 +1,185 @@
+1
+                 Enfermedades del sistema inmunitario
+
+
+Solos ante el peligro
+Este libro es como una montaña rusa. Por momentos el camino es llano y parece que todo va
+bien, que estás preparado para enfrentarte a los peligros que hay ahí fuera. Y de repente, llega el
+momento de caída libre en el que te das cuenta de que hasta los mecanismos que te protegen de
+las amenazas a veces se equivocan, y las cosas salen mal.
+   Solemos dar por hecho lo que ya tenemos, por eso te propongo imaginar: ¿qué pasaría si no
+tuvieses sistema inmunitario? ¿Si estuvieses realmente indefenso? Por desgracia hay gente que
+no necesita imaginárselo para saber cómo es. Cuando nuestro sistema de defensa pierde su
+capacidad para contraatacar las infecciones y nos deja vulnerables ante el peligro, se produce
+una situación que llamamos inmunodeficiencia.
+   El sistema inmunitario es tan complejo y lo forman tantos elementos que esta
+inmunodeficiencia puede darse por distintas causas. Por ejemplo, porque no se produzcan bien
+los anticuerpos, porque los linfocitos sean destruidos o porque algunas células pierdan su
+capacidad de fagocitar microorganismos. Está claro que, sea como sea, el resultado es volverse
+muchísimo más propenso a contraer una infección. Pero la cosa no es tan sencilla, porque el
+sistema inmunitario nos defiende de otras cosas más allá de las infecciones.
+   Muchas veces, las células que nos amenazan no vienen del exterior, sino de nuestro propio
+cuerpo. Son células que han perdido el control sobre sí mismas y proliferan sin parar, ocupando
+sin ningún tipo de miramiento el espacio que las rodea. Son las células cancerosas; nuestro
+sistema inmunitario está preparado para detectarlas y destruirlas, aunque no siempre lo logre.
+   El problema es que en una inmunodeficiencia se pierden los refuerzos, con lo que hay una
+cantidad mayor de células cancerosas que consiguen proliferar y formar un tumor, y la persona
+es más proclive a padecer algunos tipos de cáncer. Esto ocurre especialmente cuando faltan
+linfocitos T, las células responsables de patrullar por el organismo en busca de células mutantes.
+Podríamos comparar estos linfocitos con un cuerpo de policía, y las células cancerosas con
+delincuentes: si recortamos la plantilla de policías, lo más seguro es que muchos más criminales
+escapen y se salgan con la suya.
+   ¿Y cómo surge una inmunodeficiencia? Muchas veces no surge, sino que se nace con ella
+debido a alguna causa genética, con lo que empieza a manifestarse ya durante la lactancia o la
+infancia. Probablemente, la inmunodeficiencia hereditaria más popular sea la inmunodeficiencia
+combinada grave, más conocida como el síndrome de los niños burbuja. Muchas veces es
+debida a la deficiencia de la enzima adenosina desaminasa, que participa en la correcta
+maduración de los linfocitos T y B. Cuando falta esta enzima, se acumu​lan productos tóxicos en
+estos linfocitos durante su crecimiento, con lo que finalmente terminan muriendo. Por eso, los
+bebés nacidos con esta inmunodeficiencia tienen un número de linfocitos menor, y su sistema
+inmunitario pierde la capacidad para protegerlos contra las infecciones. El resultado es fatídico,
+porque puede conllevar la muerte antes de los dos años de vida por una infección masiva. Por
+eso, la imagen que muchas veces tenemos de quienes la padecen, y que da lugar al nombre, es
+la de niños dentro de un habitácu​lo, aislados del mundo y de sus microorganismos.
+   Aun así, no haber heredado una inmunodeficiencia no significa que no podamos desarrollarla
+en algún momento de nuestra vida. A veces son debidas a agentes externos, como la
+malnutrición, el cáncer o el tratamiento con fármacos inmunosupresores utilizados, por
+ejemplo, para impedir que el sistema inmunitario de un paciente rechace un trasplante. Existen
+incluso ciertas infecciones que pueden dejar KO a nuestras células inmunitarias, como es el caso
+del virus de la inmunodeficiencia humana (VIH), que destruye los linfocitos. Por eso decimos
+que provoca el síndrome de la inmunodeficiencia adquirida o sida, porque el virus hace que
+adquieras una inmunodeficiencia. Hay que reconocer que el nombre va de frente.
+
+
+  EN RESUMEN... La inmunodeficiencia es un estado en el que el sistema inmunitario no cumple con
+  su papel de protector del organismo y nos deja vulnerables ante peligros como las infecciones o el
+  cáncer. Puede ser debida a causas genéticas (como el síndrome de los niños burbuja) o a causas
+  ambientales (como la infección del VIH).
+
+
+
+   Está claro que necesitamos un defensor con el que combatir las amenazas que nos rodean,
+porque no son precisamente pocas. Pero aunque la falta de un sistema inmunitario pueda ser
+devastadora, la respuesta excesiva del mismo tiene consecuencias que no se quedan cortas. Ya
+lo dice el refrán: «Del amigo usar, pero no abusar».
+
+Cuando tu peor enemigo eres tú mismo
+A veces, la respuesta del sistema inmunitario es, paradójicamente, dañina. Normalmente, la
+respuesta inmunitaria consigue eliminar los microorganismos infecciosos sin producir daños
+relevantes en el organismo. Pero, otras veces, estas respuestas están mal reguladas y atacan por
+error a nuestro propio cuerpo y dan lugar a una enfermedad.
+   Llamamos enfermedades autoinmunes a aquellas en las que el sistema inmunitario reacciona
+contra células y tejidos del propio organismo. ¿Cómo puede nuestro sistema de defensa
+confundirse así? Normalmente, estas enfermedades son debidas a un error durante el desarrollo
+de las células inmunitarias. Por ejemplo, los linfocitos T se desarrollan en el timo, un órgano
+que no es precisamente el más popular, pero que resulta esencial para la correcta formación de
+nuestro sistema inmunitario. A medida que se van formando, los linfocitos adquieren receptores
+en sus membranas capaces de reconocer sustancias externas o antígenos, de modo que, si algún
+elemento no bienvenido entra, estén preparados para enfrentarse a él. Pero a veces ocurre que
+uno de estos receptores sale defectuoso y, en lugar de reconocer sustancias del exterior,
+reconoce como «intrusas» a proteínas y estructuras de nuestro propio cuerpo. Estos linfocitos
+defectuosos se llaman linfocitos autorreactivos, y son muy peligrosos porque pueden percibir
+como extraño alguno de nuestros tejidos y activar una respuesta inmunitaria contra él.
+   En realidad, esto es más normal de lo que crees, por eso el timo cuenta con mecanismos que
+le ayudan a filtrar y eliminar estos linfocitos aberrantes antes de que maduren y vayan liándola
+por el organismo. El problema surge cuando estos mecanismos fallan: los linfocitos
+autorreactivos se saltan los controles de calidad, se desarrollan y pasan a formar parte del
+sistema inmunitario, igual que el resto de las células de defensa. En otras palabras: tienen vía
+libre para atacarnos.
+   En algunos casos, atacarán solo a algunos órganos del cuerpo. Un ejemplo es la diabetes tipo
+I, en la que el sistema inmunitario destruye las células del páncreas. En otros casos, los órganos
+afectados son muchísimos más, como pasa con el lupus eritematoso sistémico (se llama
+sistémico precisamente porque afecta a tejidos de todo el organismo). Verás, en nuestro cuerpo
+hay células que mueren de forma natural, a propósito, para dejar espacio a las nuevas células
+que renuevan nuestros tejidos. Normalmente, este «suicidio» celular ocurre de una forma muy
+limpia y ordenada, y las células mueren sin dejar rastro. Pero, en el lupus, estas células no se
+eliminan correctamente y permanecen de forma prolongada en los tejidos en los que han
+muerto. Durante ese tiempo, van liberando sustancias que inducen la producción de
+anticuerpos contra esos tejidos, y ya te imaginas el resultado. Al final acaban dañándose
+órganos y sistemas de todo el cuerpo, como los riñones, los pulmones, el sistema nervioso o las
+articulaciones, que suelen doler bastante. También se daña la piel, por eso un signo
+característico del lupus es la formación de una erupción roja en forma de mariposa en las
+mejillas y el puente de la nariz. Normalmente aparece o se vuelve más pronunciada cuando la
+persona se expone a la luz del sol, porque sus rayos ultravioleta inducen la muerte de las
+células, lo que agrava todavía más el problema inicial.
+
+
+  EN RESUMEN... En las enfermedades autoinmunes el sistema inmunitario reacciona contra células
+  y tejidos del propio organismo. Normalmente, estas enfermedades son debidas a un error en la
+  maduración de nuestras células inmunitarias que da lugar a linfocitos autorreactivos.
+   ¿Cualquiera puede desarrollar una enfermedad autoinmune? De forma parecida a lo que
+pasaba con las inmunodeficiencias, la autoinmunidad es debida a factores genéticos y
+ambientales. Un ejemplo de desencadenante ambiental son, de nuevo, las infecciones. A veces
+nuestro sistema inmunitario produce anticuerpos que, además de reconocer los antígenos de un
+microorganismo, son capaces de unirse a proteínas de nuestros propios tejidos, y provocan una
+reacción cruzada.
+   Sea cual sea el desencadenante, una vez aparece la enfermedad autoinmune suele
+desarrollarse de forma crónica y progresiva. Y ¿sabes cuál es el problema? Que, en una
+infección, el microorganismo acaba siendo eliminado del cuerpo, y, con él, los antígenos que
+activaron las alarmas del sistema inmunitario. Pero en las enfermedades autoinmunes nuestros
+tejidos seguirán ahí, por lo que los linfocitos autorreactivos siempre tendrán un enemigo
+(aunque imaginario) al que eliminar.
+
+¿Mejor pasarse que quedarse corto?
+Imagina que al principio de este capítulo te hubiese hecho esta pregunta: «Si tuvieses la
+oportunidad de volver tu sistema inmunitario mucho más potente que ahora, ¿la aceptarías?».
+Probablemente hubieses respondido que sí. Teniendo en cuenta que es nuestro sistema de
+defensa, parece lógico pensar que cuanta más protección, mejor. Que cuanto más potente la
+respuesta, más fácil lo tendrá para expulsar a un invasor.
+   Pero a lo largo de este capítulo, es probable que hayas ido cambiando de opinión y que ya no
+te parezca tan buena idea dar ese poder a nuestras células inmunitarias, porque lo más seguro
+es que terminen liándola. Es cierto que nuestro sistema de defensa es capaz de cargarse a
+visitantes indeseados con una gran eficacia... pero un gran poder conlleva una gran
+responsabilidad, ¿no?
+   Hemos visto un caso en el que nuestro sistema inmunitario falla, y otro en el que se
+confunde de enemigo y nos ataca a nosotros mismos, pero también tiene otras formas de
+cagarla. A veces, nuestras defensas reaccionan exageradamente contra una sustancia externa, lo
+cual se conoce como alergia. A ver, es cierto que ahí fuera hay muchas sustancias peligrosas,
+pero el sistema inmunitario necesita saber diferenciar entre las que suponen una amenaza y las
+que no. Es como si un guardia de seguridad cachease a todos los clientes que salieran de una
+tienda. Un poco exagerado, ¿no crees?
+   Si lo piensas, estamos en contacto con muchísimas sustancias ambientales que entran a
+través de las vías nasales o de la dieta, y no por ello el sistema inmunitario las ataca.
+Básicamente, porque no son peligrosas. En las alergias, esta distinción falla y el sistema
+inmunitario activa una respuesta inmediata cuando entra en contacto con el alérgeno, al que
+considera que hay que destruir a pesar de ser inofensivo.
+   Los alérgenos son sustancias que, aunque sean inocuas para la mayoría de la población,
+provocan una reacción inmunitaria en las personas alérgicas a esa sustancia. En realidad,
+prácticamente cualquier sustancia puede ser un alérgeno, ya sea un alimento (como la leche o
+el huevo), una sustancia que flota por el aire (como el polen o los ácaros del polvo) o un
+medicamento (como la penicilina o el ibuprofeno). Cuando una persona alérgica entra en
+contacto con su alérgeno, el cuerpo sintetiza un tipo de anticuerpos llamados inmunoglobulinas
+E. Estos anticuerpos son específicos para el alérgeno en cuestión y sirven para que nuestro
+sistema inmunitario reconozca rápidamente la sustancia. Para ello, se unirán a la superficie de
+las células inmunitarias responsables de la respuesta alérgica, tal como sucede en la típica
+escena de película cuando se le da a un perro una prenda del fugitivo para que la huela.
+   Estas células inmunitarias, ahora armadas con los anticuerpos en su superficie, estarán
+preparadas para reconocer inmediatamente el alérgeno cuando vuelva a entrar en contacto con
+nuestro cuerpo. Así, en el momento en que lo detecten, activarán la respuesta y liberarán toda
+una serie de sustancias responsables de los signos de la alergia (como la inflamación o la
+vasodilatación). En esta última, los vasos sanguíneos se ensanchan para que la sangre y todos
+los elementos de la respuesta inmunitaria lleguen más fácilmente al lugar donde está el intruso.
+El problema de estos síntomas es que causan trastornos respiratorios, digestivos o de la piel (si
+tienes alergia a alguna sustancia, seguro que ya debes de haber experimentado alguno de ellos),
+porque son las zonas que más entran en contacto con el hostil mundo exterior.
+   Una alergia no es solo una respuesta inmunitaria totalmente innecesaria, sino que, en
+algunos casos, puede ser tan peligrosa que llegue a causar la muerte. Por ejemplo, aunque no es
+ni de lejos tan común como la típica alergia, la anafilaxia es un tipo de reacción alérgica grave
+que afecta a todo el cuerpo: las sustancias liberadas por las células inmunitarias pueden inducir
+una contracción masiva de las vías respiratorias que provoque la asfixia o un colapso de los
+vasos sanguíneos y el corazón y, bueno..., ya te imaginas el resultado.
+
+
+  EN RESUMEN... Las alergias son respuestas exageradas del sistema inmunitario ante sustancias
+  no peligrosas para el organismo llamadas alérgenos, que generan síntomas como la inflamación o la
+  vasodilatación.
+
+
+
+   Al final, que tu sistema inmunitario tenga que prepararse para afrontar tantísimos peligros
+externos hace que pueda confundirse y etiquetarte a ti mismo o una sustancia random como
+«peligrosos». Es como si tuvieses que clasificar miles de libros en dos grupos: «interesantes» y
+«no interesantes». Seguramente, alguno se te pasaría por alto. El problema es que, en ese caso,
+lo peor que podría ocurrir es que alguien se aburriese leyendo el libro equivocado. Sin embargo,
+el problema de un fallo grave del sistema inmunitario es que puede terminar con la vida de
+aquel al que intentó defender.

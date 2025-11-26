@@ -4163,83 +4163,4 @@ te toca a ti descubrir el resto. ¿Qué puede salir mal?
                  una lotería de todo tipo de enfermedades. Sin embargo, para sobrevivir en este
                  mundo hostil que nos rodea, el cuerpo humano está preparado para contraatacar a
                  estas amenazas sin pensárselo dos veces.
-
-La crítica ha dicho:
-«Si no te enteraste ni papa de tus clases de biología, este libro de la Hiperactina te va a salvar la
-vida... Y además te la va a explicar. PD: El capítulo sobre las drogas es brutal.»
-José Luis Crespo, Quantum Fracture
-Sandra Ortonobes Lara es graduada en Ciencias Biomédicas por la Universidad de Barcelona y
-máster en Comunicación Científica, Médica y Ambiental por la Universidad Pompeu Fabra. Es la
-creadora de La Hiperactina, un canal de divulgación en YouTube en el que trata temas sobre
-biomedicina y el cuerpo humano, como por ejemplo: qué es el cáncer, por qué nos despierta el
-café o cómo funciona la edición genética con CRISPR. Además, divulga sus conocimientos a
-través de otros formatos como los podcast (El Aleph, Tres pies al gato), la radio (A ciencia
-cierta de CV Radio, Popap de Catalunya Ràdio), las charlas (en eventos como Cultube 2.0,
-Semanas de la Ciencia de Navarra, Ogmios 2019), los talleres o los monólogos científicos.
-Edición en formato digital: julio de 2020
-
-© 2020, Sandra Ortonobes Lara (La Hiperactina), por los textos
-© 2020, Miriam Rivera (Biomiics), por las ilustraciones
-© 2020, Penguin Random House Grupo Editorial, S. A. U.
-Travessera de Gràcia, 47-49. 08021 Barcelona
-
-Diseño de portada: Penguin Random House Grupo Editorial / Carme Alcoverro
-Ilustración de portada: Miriam Rivera
-
-Penguin Random House Grupo Editorial apoya la protección del copyright. El copyright estimula la creatividad,
-defiende la diversidad en el ámbito de las ideas y el conocimiento, promueve la libre expresión y favorece una
-cultura viva. Gracias por comprar una edición autorizada de este libro y por respetar las leyes del copyright al no
-reproducir ni distribuir ninguna parte de esta obra por ningún medio sin permiso. Al hacerlo está respaldando a los
-autores y permitiendo que PRHGE continúe publicando libros para todos los lectores. Diríjase a CEDRO (Centro
-Español de Derechos Reprográficos, http://www.cedro.org) si necesita reproducir algún fragmento de esta obra.
-
-ISBN: 978-84-17809-50-8
-
-Composición digital: leerendigital.com
-
-www.megustaleer.com
-[1] En realidad, los 2 ATP se producen en la glucólisis, pero la fermentación es necesaria para completar el ciclo
-  y regenerar algunas moléculas que se necesitan en la glucólisis. Por eso decimos que el producto final de la
-  fermentación son 2 ATP, aunque se produzcan en la glucólisis.
-                                                  Índice
-
-
-¿Qué puede salir mal?
-
-
-Agradecimientos
-Introducción
-Despacito y buena letra
-    1. El ADN
-    2. Las proteínas
-    3. La célula
-    4. Mutación
-    5. Reparación
-Mejor fuera que dentro
-    1. Metabolismo y nutrición
-    2. Fármacos
-    3. Tóxicos y toxinas
-    4. Drogas
-¡Quita, bicho!
-    1. Infecciones bacterianas
-    2. Infecciones víricas
-    3. Infecciones parasitarias
-    4. Infecciones de transmisión sexual
-    5. Sistema inmunitario
-Ni tanto ni tan poco
-    1. Enfermedades del sistema inmunitario
-    2. Enfermedades endocrinas
-    3. Enfermedades nutricionales y metabólicas
-My only friend, the end
-    1. Enfermedades cardiovasculares
-    2. Enfermedades neurodegenerativas
-    3. Cáncer
-    4. Envejecimiento
-Epílogo
-
-
-Sobre este libro
-Sobre Sandra Ortonobes Lara
-Créditos
-Notas
-
+                 

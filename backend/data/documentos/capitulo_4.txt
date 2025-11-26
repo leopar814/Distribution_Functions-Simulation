@@ -1,0 +1,235 @@
+3
+                                            La célula
+
+
+Una célula es como una pequeña empresa
+Es cierto que sin ADN no tendríamos las instrucciones que nos hacen funcionar, y sin proteínas
+no tendríamos a nadie que las llevase a cabo. Pero al final, la unidad que lo integra todo, la que
+constituye nuestros tejidos, órganos y sistemas, es la célula. Cada tipo de célula está
+especializada en realizar una o más funciones concretas: los glóbulos rojos transportan el
+oxígeno por la sangre, las neuronas transmiten los impulsos nerviosos, y las células hepáticas
+detoxifican los medicamentos que tomamos. Pero aunque las múltiples células del cuerpo
+puedan llegar a ser muy distintas entre sí, al fin y al cabo, son células, y como tales comparten
+una serie de características básicas. Cada una de ellas funciona como una pequeña empresa
+dividida en varios departamentos. Los orgánulos son los compartimentos dentro de la célula
+encargados de una o más funciones. Cada uno tiene su propio equipo de proteínas y moléculas
+indispensables para las reacciones químicas que ocurren en su interior. Del mismo modo en que
+una empresa funciona gracias al trabajo conjunto de todos sus departamentos, la acción
+coordinada de los distintos orgánulos permite a la célula estar viva.
+   La célula, y todo lo que contiene en su interior, está rodeada por la membrana plasmática,
+compuesta principalmente por lípidos que le dan una estructura elástica, fina y flexible. El
+hecho de que esta membrana sea lipídica no es casualidad, ya que aísla el agua del interior de la
+célula de la del exterior. El principio lo conoces, porque si alguna vez has intentado juntar una
+gota de agua y una de aceite, habrás visto que no se mezclan.
+   La célula es como un saquito acuoso formado por un 70-85 % de agua. El medio interno de la
+célula recibe el nombre de citoplasma y está formado por el medio acuoso y los orgánulos y
+proteínas suspendidos en él. Uno de los orgánulos principales es el núcleo, delimitado por su
+propia membrana, que contiene los cromosomas y es el lugar más importante de síntesis de
+ADN y ARN, por lo que funciona como el centro de control de la célula.
+   Si en el núcleo se sintetizan los ácidos nucleicos, la fábrica de lípidos y proteínas es el retícu​lo
+endoplasmático. Se trata de una estructura membranosa que contiene en su superficie un
+montón de ribosomas. ¿Te acuerdas de ellos? Son los que sintetizan proteínas a partir del ARN,
+en la traducción. Una vez fabricados los lípidos y las proteínas, el retícu​lo endoplasmático los
+envía a otro orgánulo: el aparato de Golgi. Aquí se les hacen algunos retoques finales y se
+envían a otros orgánulos que los necesiten. Aun así, llevar a cabo todos estos procesos no sale
+gratis, porque la célula tiene que consumir constantemente energía para poder mantener activa
+esta maquinaria. Los orgánulos que producen energía a partir de los nutrientes que llegan a la
+célula son las mitocondrias. Ya hablaremos de ellas más adelante.
+
+
+
+
+La célula y sus partes. La célula se divide en compartimentos más pequeños rodeados por membrana, que se
+encargan de una o más funciones. Se llaman orgánulos y cada uno tiene su propio equipo de proteínas y
+moléculas indispensables para las reacciones químicas que ocurren en su interior.
+
+
+   Esto que te he contado es, en resumen, lo que vendría a ser el atlas de anatomía de una
+célula, con las pequeñas estructuras que la hacen funcionar. Pero tenemos tantos tipos de célula
+con funciones tan distintas entre ellas que es normal que su anatomía difiera un poco de unas a
+otras. Por eso, aunque cada orgánulo realiza las mismas funciones esté donde esté (las
+mitocondrias producen energía tanto en una neurona como en una célula del intestino), su
+proporción puede cambiar según el tipo celular. Por ejemplo, los glóbulos rojos no tienen
+núcleo, y los adipocitos (las células del tejido graso) no son saquitos acuosos, porque no están
+formados principalmente por agua, sino por grasa. Lo cual tiene sentido, ya que de otra forma
+no podrían aislarnos del frío tan bien como lo hacen.
+
+¿De dónde salen nuestras células?
+Omnis cellula e cellula. Es una expresión que significa «toda célula proviene de otra célula» y
+es la base de la llamada teoría celular, que afirma que la célula es la unidad estructural básica de
+todos los organismos y que cada célula proviene de otra célula preexistente. Vamos, que no
+surgen de la nada: la única forma de obtener una nueva célula es que otra ya existente duplique
+todo su contenido y luego se divida en dos. Este proceso en el que la célula crece, duplica su
+ADN, se divide y da lugar a dos células hijas se conoce como ciclo celular.
+   Cada célula nueva que se forma necesita tener una copia completa de las instrucciones
+genéticas para poder funcionar, por lo que la replicación del ADN es un proceso esencial y muy
+delicado. En realidad, se parece un poco a la transcripción del ADN al ARN. En este caso, la
+proteína ADN polimerasa va leyendo la secuencia de nucleótidos y construyendo una cadena
+complementaria de ADN (a la increíble velocidad de ¡1.000 nucleótidos por segundo!). Por tanto,
+cada una de las dos cadenas de ADN originales se utiliza como patrón para la síntesis de una
+cadena complementaria, de forma que las células hijas heredarán una doble hélice de ADN
+formada por una cadena original y la otra recién sintetizada. Aun así, la replicación del ADN es
+algo más que la copia de las cadenas. Como verás más adelante, se trata de un proceso tan
+delicado que requiere la constante supervisión y reparación de las secuencias, ya que la proteína
+ADN polimerasa, lejos de ser perfecta, comete errores y puede liarla con relativa facilidad. Y eso,
+teniendo en cuenta que el ADN contiene ni más ni menos que las instrucciones genéticas, no es
+algo que la célula pueda permitirse.
+   Pero si todo sale bien y conseguimos tener bien copiadas las cadenas de ADN de cada
+cromosoma, el siguiente paso será repartirlas entre las dos futuras células hijas. Este proceso se
+llama mitosis y, como tal vez recuerdes del instituto, está compuesto por cinco fases principales:
+profase, prometafase, metafase, anafase y telofase. El conjunto de todas ellas es algo parecido a
+un baile, pero un baile bastante a lo grande, tipo flashmob, con un vaivén de proteínas,
+cromosomas y estructuras de un lado para el otro de la célula, coordinados en una coreografía
+que, no importa cuántas veces se divida la célula, siempre es la misma. En el primer paso del
+baile, la profase, el ADN de los cromosomas se condensa, haciendo que adopten la clásica forma
+de X, y se comienzan a sintetizar unas estructuras filamentosas llamadas huso mitótico. Los
+filamentos del huso, que se extienden por todo el citoplasma como una telaraña y se adhieren a
+los cromosomas, sirven para poder desplazarlos de un lado a otro de la célula, más o menos
+como un titiritero que mueve el títere mediante sus hilos. Normalmente, los cromosomas están
+dentro del núcleo de la célula, es decir, rodeados por la membrana nuclear. Por tanto, para poder
+repartir los cromosomas por la célula, será necesario romper esa membrana, lo cual ocurre en el
+siguiente paso: la prometafase. Una vez desintegrada la membrana nuclear, los filamentos del
+huso mitótico se enganchan a los cromosomas para poder moverlos. En la metafase, los
+cromosomas duplicados se alinean en el centro de la célula para que, en la anafase, se desplacen
+hacia los polos de la célula, de forma que en cada uno haya una copia de cada cromosoma. En la
+última etapa de la mitosis, la telofase, se comienza a formar de nuevo el núcleo de las dos
+futuras células, rodeando los cromosomas que, ya en el sitio que les toca, pueden comenzar a
+descondensarse. Después de todas estas fases de la mitosis, tiene lugar la citocinesis, en la que
+se forma un anillo que estrangula la célula por la mitad y termina dividiéndola en dos células
+hijas, cada una de ellas con una copia completa del material genético dentro del núcleo.
+
+
+
+
+La división de la célula. La única forma de obtener una célula es que otra se divida. Para ello, la célula duplica su
+ADN (replicación) y todo su contenido, se divide y da lugar a dos células hijas (mediante la mitosis y la
+citocinesis).
+
+
+  Quién iba a decir que un proceso que se repite tantísimas veces día tras día y por todo el
+organismo iba a ser algo tan complejo y sofisticado, ¿eh? Teniendo en cuenta lo fácil que es que
+en una coreografía con tantos actores alguno meta la pata, es un alivio que la célula cuente con
+toda una red de proteínas «patrulla» que la van guiando a través de las etapas del ciclo celular,
+asegurándose de que no se produzca ningún error y de que cada paso se complete
+correctamente antes de continuar con el siguiente. Es algo parecido a lo que ocurre en una
+fábrica, en la que se van haciendo controles de calidad y comprobando que los productos se
+fabriquen como es debido. Más allá de detectar errores, estas proteínas patrulla también están
+atentas a lo que pasa en el entorno de la célula, pendientes de si se necesitan más células para
+activar de inmediato la división celular (por ejemplo, cuando hay que reparar una herida). De
+esta forma conseguimos regular el número de células que nos componen, porque al final la
+división celular es necesaria no solo para formar un individuo desde cero, sino también para
+mantenerlo, lo que permite un perfecto equilibrio entre células que nacen y células que mueren.
+
+
+  EN RESUMEN... Para que una célula dé lugar a otra, debe duplicar todo su contenido y dividirse en
+  dos. El ciclo celular son las distintas etapas en las que la célula crece, duplica su ADN (replicación),
+  se divide y da lugar a dos células hijas (mediante mitosis y citocinesis).
+
+
+
+Las mitocondrias son multitarea
+Toda esta maquinaria que hace funcionar a nuestras células tiene un coste, ya que requiere
+energía que permita mover los engranajes. Es por eso que la célula cuenta con sus propias
+centrales de energía: las mitocondrias. A partir de los nutrientes que recibe la célula, las
+mitocondrias producen ATP (adenosín trifosfato), una de las moléculas más importantes del
+organismo y que utilizan las células para llevar a cabo las reacciones químicas que necesitan
+para funcionar. Aunque la mitocondria es algo más que una productora de energía: es el único
+orgánulo de la célula que, además del núcleo, contiene ADN en su interior. Este ADN
+mitocondrial representa solo un 1 % del total y sirve principalmente para sintetizar las propias
+proteínas de la mitocondria. Hasta ahora hemos dado mucho protagonismo al ADN y los
+cromosomas en la división celular, pero para que una célula pueda dar lugar a dos, necesita
+duplicar no solo su material genético, sino también todos sus orgánulos. Si no, ¡las células hijas
+se irían volviendo más pequeñas con cada división! Las mitocondrias, al igual que las células,
+nunca se sintetizan desde cero, sino que siempre surgen por crecimiento y división de otras ya
+existentes, que replican su ADN, duplican su masa y luego se parten en dos. Cuando la célula se
+divide, las mitocondrias se distribuyen de forma aleatoria entre las células hijas.
+   A pesar de representarse a menudo como cilindros alargados y rígidos, las mitocondrias son
+en realidad un orgánulo muy dinámico, ya que cambian constantemente de forma, se fusionan
+unas con otras y se vuelven a separar. Se cree que el hecho de que la mitocondria sea un
+orgánulo tan independiente (¡con su propio ADN!) es debido a que, originalmente, evolucionó a
+partir de una bacteria que fue incorporada dentro de una célula hace más de mil millones de
+años. Y tanto la célula como la bacteria se encontraron con que esa nueva relación favorecía a
+ambas. A fin de cuentas, la bacteria proporcionaba a la célula energía a cambio de cobijo, por lo
+que terminaron evolucionando de forma conjunta hasta volverse una parte integral de la célula
+que conocemos hoy en día: la mitocondria. ¡A eso lo llamo yo una relación estable!
+
+
+  EN RESUMEN... Las mitocondrias son los orgánulos que producen energía para la célula. Lo hacen
+  al sintetizar una molécula llamada ATP (adenosín trifosfato), que utilizan las células para llevar a
+  cabo las reacciones químicas que necesitan para funcionar.
+
+
+
+¿Por qué son especiales las células madre?
+Me parecería injusto hablar sobre la célula sin mencionar unas de las células más fascinantes
+que tenemos en el organismo: las células madre. Llevan años despertando el interés de la
+comunidad científica debido a su increíble capacidad de dar lugar a todo tipo de células. Es
+gracias a esta habilidad que las células madre de nuestro cuerpo se encargan de aportar nuevas
+células a los tejidos que las necesitan, ya sea renovándolos de forma periódica o reparándolos
+cuando se produce un daño.
+   Las células madre son especiales porque comparten una serie de características que las hacen
+únicas. Para empezar, son lo que llamamos células indiferenciadas, es decir, células que no
+tienen las características específicas de un tipo celular concreto. No se parecen a un hepatocito,
+ni a una neurona, ni a un glóbulo blanco. Cuando un tejido necesita células, estas células madre
+indiferenciadas se dividen para dar lugar a nuevas células destinadas a formar parte de ese
+tejido. Progresivamente, las células hijas irán adoptando cambios físicos y adquiriendo las
+funciones y especialidades del tipo celular que necesita el tejido, o, dicho de otra forma, se irán
+«diferenciando». Por eso, las células que forman nuestros tejidos son células diferenciadas, es
+decir, tienen una morfología y una función concretas. Imagina un muñeco de Mr. Potato al que
+podemos ponerle las piezas de plástico que queramos, como unos ojos, un bigote, un sombrero
+o una nariz, entre otras. Podríamos decir que el muñeco sin complementos estaría
+indiferenciado, mientras que, a medida que le fuéramos dando unas características u otras, se
+iría diferenciando en distintos tipos de personaje. Pues algo parecido pasa con las células.
+   La indiferenciación es un concepto muy importante porque es el que distingue a los distintos
+tipos de células madre, ya que cuanto más indiferenciadas estén, a más tipos celulares podrán
+dar lugar. Esto es lo que se conoce como potencial de diferenciación. Una célula con muchísimo
+potencial de diferenciación (como el cigoto, la célula que se forma con la unión del óvulo y el
+espermatozoide) puede dar lugar a cualquier tipo de célula, ¡incluso a un organismo humano
+entero! En cambio, habrá otras células madre que solo puedan dar lugar a uno o varios tipos
+celulares concretos, como las células madre que renuevan los tejidos. Generalmente, una célula
+normal puede dividirse un número limitado de veces en su vida, pero si esto se aplicase a todas
+nuestras células no tendría mucho sentido, porque duraríamos dos telediarios. En cambio, las
+células madre, que tienen que estar constantemente dividiéndose y aportando nuevas células a
+los tejidos, tienen la increíble capacidad de dividirse ilimitadamente, tantas veces como sea
+necesario. Pero para poder aportar nuevas células necesitamos no solo que se dividan sin parar,
+sino que existan de forma ilimitada. Por eso, cuando una célula madre se divide en dos hijas,
+una de ellas puede quedarse como «célula madre», con las mismas propiedades que tenía antes
+de la división, y la otra adquirir las características del tejido, es decir, diferenciarse. Esto es lo
+que llamamos capacidad de autorrenovación, y es lo que permite a las células madre dar lugar a
+nuevas células constantemente, pero sin agotarse.
+   Las células madre más poderosas son aquellas que tenemos cuando todavía somos un
+embrión. Un ejemplo sería el cigoto, que es una célula madre totipotente, ya que tiene la
+capacidad de dar lugar a un organismo entero con todos sus tipos celulares. Cuando el embrión
+se desarrolla y se encuentra en forma de blastocisto (apenas un agregado de células) contiene
+células madre pluripotentes, que no pueden dar lugar a un organismo, pero sí diferenciarse en
+todos los tipos celulares de nuestros tejidos y órganos. A medida que dejamos de ser un
+embrión y nos desarrollamos, nuestras células madre van perdiendo el poder que tenían al
+principio de nuestra vida.
+   Cuando somos adultos, tenemos células madre capaces de dar lugar a más de un tipo de
+célula, como las células madre hematopoyéticas (que dan lugar a las células de la sangre:
+eritrocitos, leucocitos y plaquetas), mientras que otras, como las células madre de la piel, solo
+dan lugar al tipo de célula del tejido que regeneran (en este caso, células de la piel).
+   Es gracias a todas estas propiedades únicas que las células madre están en el punto de mira
+de muchas terapias, tanto es así que ya se utilizan para regenerar la piel en personas con
+quemaduras extensas, o para restaurar el sistema sanguíneo en pacientes con leucemia (un
+cáncer de células sanguíneas). Hoy en día incluso contamos con una técnica que nos permite
+transformar células normales adultas en células madre pluripotenciales (¡como las que teníamos
+siendo embriones!). Esta técnica consiste en activar la expresión de algunos genes que hacen
+que la célula «rebobine», desdiferenciándose de nuevo y, volviéndose, por tanto, mucho más
+poderosa.
+
+
+  EN RESUMEN... Las células madre son capaces de dar lugar a muchos tipos diferentes de células
+  en el cuerpo, por eso sirven para renovar y regenerar nuestros tejidos. Dependiendo de lo
+  diferenciada que esté una célula madre, será capaz de dar lugar a muchos tipos celulares (como el
+  cigoto), o más bien a pocos (como las células madre de los adultos).
+
+
+  Somos seres increíblemente dinámicos, y nuestro cuerpo está mucho más vivo de lo que
+somos conscientes. Sin siquiera notarlo, cuando te cortas el pelo, crece; cuando te haces una
+herida, se cura; cuando te rompes un hueso, se repara. Pero todo tiene un coste. Tener millones
+de células dividiéndose a cada instante, con todas sus moléculas, proteínas y orgánulos
+trabajando sin parar, supone que sea relativamente fácil que en algún punto se nos escape algo.
+Hasta en las mejores fábricas, a veces se obtiene un producto defectuoso. La diferencia es que la
+fábrica lo tiene más fácil para deshacerse de él, porque a nosotros más nos vale repararlo si no
+queremos pagarlo caro.
