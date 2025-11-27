@@ -132,6 +132,7 @@ def initialize_topics(documents, K, V):
         current_topics = []
         for w in doc:
             if w < 0 or w >= V:
+                print(f"⚠️ Advertencia: palabra {w} fuera de rango en doc {d}")
                 continue
             topic = random.randrange(K)
             current_topics.append(topic)

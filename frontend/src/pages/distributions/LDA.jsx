@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import 'katex/dist/katex.min.css';
 import Header from "../../components/Header";
 import DistributionChart from "../../components/DistributionChart";
@@ -21,8 +21,20 @@ export default function LDA() {
     const [matrixTheta, setMatrixTheta] = useState(null);
     const [matrixPhi, setMatrixPhi] = useState(null);
     
+    // Nuevos estados para modo básico/avanzado
+    const [trainingMode, setTrainingMode] = useState("basico"); // "basico" | "avanzado"
+    const [showConfirmModal, setShowConfirmModal] = useState(false);
+    const [entropyAnalysis, setEntropyAnalysis] = useState(null);
+
+
     // Estados para controlar visualización de gráficas
     const [showChart, setShowChart] = useState({});
+
+    useEffect(() => {
+        const percent = ((iterations - 150) / (200 - 150)) * 100;
+        document.documentElement.style.setProperty("--percent", percent + "%");
+    }, [iterations]);
+
 
     const handleFileChange = (e) => {
         const selectedFile = e.target.files[0];
@@ -53,28 +65,69 @@ export default function LDA() {
                 throw new Error("Error al subir el archivo");
             }
 
-            const alphaParam = alpha ? `&alpha=${alpha}` : "";
-            const trainRes = await fetch(
-                `http://localhost:8000/lda/train?K=${K}&iterations=${iterations}${alphaParam}&beta=${beta}`
-            );
+            // Si es modo básico, iniciar entrenamiento automático
+            if (trainingMode === "basico") {
+                const trainRes = await fetch(
+                    `http://localhost:8000/lda/train-auto?min_topics=2&max_topics=18&iterations=100&beta=${beta}`,
+                    { method: "POST" }
+                );
 
-            if (!trainRes.ok) {
-                throw new Error("Error al entrenar el modelo");
+                console.log(trainRes);
+
+                if (!trainRes.ok) {
+                    throw new Error("Error al entrenar el modelo automáticamente");
+                }
+
+                const trainData = await trainRes.json();
+                setEntropyAnalysis(trainData.entropy_analysis);
+
+                const infoRes = await fetch("http://localhost:8000/lda/info");
+                const infoData = await infoRes.json();
+                setModelInfo(infoData);
+
+                alert(`¡Modelo entrenado exitosamente con K óptimo = ${trainData.optimal_K}!`);
+            } else {
+                // Modo avanzado - entrenamiento manual
+                const alphaParam = alpha ? `&alpha=${alpha}` : "";
+                const trainRes = await fetch(
+                    `http://localhost:8000/lda/train?K=${K}&iterations=${iterations}${alphaParam}&beta=${beta}`
+                );
+
+                if (!trainRes.ok) {
+                    throw new Error("Error al entrenar el modelo");
+                }
+
+                const trainData = await trainRes.json();
+
+                const infoRes = await fetch("http://localhost:8000/lda/info");
+                const infoData = await infoRes.json();
+
+                setModelInfo(infoData);
+                alert(`Modelo entrenado exitosamente!\n${trainData.message}`);
             }
-
-            const trainData = await trainRes.json();
-
-            const infoRes = await fetch("http://localhost:8000/lda/info");
-            const infoData = await infoRes.json();
-
-            setModelInfo(infoData);
-            alert(`Modelo entrenado exitosamente!\n${trainData.message}`);
         } catch (err) {
             console.error(err);
             alert(`Error: ${err.message}`);
         } finally {
             setLoading(false);
+            setShowConfirmModal(false);
         }
+    };
+
+    const handleTrainClick = () => {
+        if (trainingMode === "basico") {
+            setShowConfirmModal(true);
+        } else {
+            uploadAndTrain();
+        }
+    };
+
+    const viewEntropyAnalysis = () => {
+        if (!entropyAnalysis) {
+            alert("No hay análisis de entropía disponible. Usa el modo básico primero.");
+            return;
+        }
+        setViewMode("entropy-analysis");
     };
 
     const viewAllTopics = async () => {
@@ -465,6 +518,63 @@ export default function LDA() {
                         ))}
                     </div>
                 );
+            case "entropy-analysis":
+                return (
+                    <div className="h-full overflow-y-auto">
+                        <h3 className="text-2xl font-bold mb-4">Análisis de Entropía</h3>
+                        <p className="text-gray-600 mb-4">
+                            Este análisis muestra cómo la entropía promedio varía con el número de tópicos.
+                            El K óptimo (marcado en rojo) se encuentra en el "codo" de la curva.
+                        </p>
+                        <div className="h-[500px]">
+                            <DistributionChart 
+                                type="lda-entropy-analysis"
+                                data={{
+                                    K_values: entropyAnalysis.map(e => e.K),
+                                    entropies: entropyAnalysis.map(e => e.entropy),
+                                    optimal_K: modelInfo.K
+                                }}
+                            />
+                        </div>
+                        <div className="mt-4 p-4 bg-blue-50 rounded">
+                            <h4 className="font-semibold mb-2">Interpretación:</h4>
+                            <ul className="list-disc list-inside space-y-1 text-sm">
+                                <li>La entropía mide cuánto mezclan los documentos los tópicos</li>
+                                <li>Se selecciona K mirando el punto donde la entropía se estabiliza</li>
+                                <li><strong>K óptimo seleccionado: {modelInfo.K}</strong></li>
+                            </ul>
+                        </div>
+                        
+                        {/* Tabla de datos */}
+                        <div className="mt-4">
+                            <h4 className="font-semibold mb-2">Datos del análisis:</h4>
+                            <table className="min-w-full bg-white border text-sm">
+                                <thead className="bg-gray-100">
+                                    <tr>
+                                        <th className="border p-2">K</th>
+                                        <th className="border p-2">Entropía</th>
+                                        <th className="border p-2">Estado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {entropyAnalysis.map((item, idx) => (
+                                        <tr key={idx} className={item.K === modelInfo.K ? "bg-red-100" : ""}>
+                                            <td className="border p-2 text-center font-medium">{item.K}</td>
+                                            <td className="border p-2 text-center">{item.entropy.toFixed(4)}</td>
+                                            <td className="border p-2 text-center">
+                                                {item.K === modelInfo.K ? (
+                                                    <span className="text-red-600 font-bold">⭐ Óptimo</span>
+                                                ) : (
+                                                    "-"
+                                                )}
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                );
 
             default:
                 return null;
@@ -497,79 +607,132 @@ export default function LDA() {
                     {/* Panel 2: Parámetros */}
                     <div className="bg-gray-100 p-4 rounded shadow">
                         <h3 className="font-bold text-lg mb-3">2. Parámetros del Modelo</h3>
-                        <div className="space-y-3">
-                            <div>
-                                <label className="block text-sm font-medium mb-1">
-                                    Número de Tópicos (K)
-                                </label>
-                                <input
-                                    type="number"
-                                    min="2"
-                                    value={K}
-                                    onChange={(e) => setK(Number(e.target.value))}
-                                    className="w-full border px-3 py-2 rounded"
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-medium mb-1">
-                                    Iteraciones
-                                </label>
-                                <input
-                                    type="number"
-                                    min="150"
-                                    max="200"
-                                    step="10"
-                                    value={iterations}
-                                    onChange={(e) => setIterations(Number(e.target.value))}
-                                    className="w-full border px-3 py-2 rounded"
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-medium mb-1">
-                                    Alpha (opcional, default: 50/K)
-                                </label>
-                                <input
-                                    type="number"
-                                    step="0.01"
-                                    value={alpha}
-                                    onChange={(e) => setAlpha(e.target.value)}
-                                    placeholder="Auto"
-                                    className="w-full border px-3 py-2 rounded"
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-medium mb-1">
-                                    Beta
-                                </label>
-                                <input
-                                    type="number"
-                                    step="0.001"
-                                    value={beta}
-                                    onChange={(e) => setBeta(Number(e.target.value))}
-                                    className="w-full border px-3 py-2 rounded"
-                                />
-                            </div>
+                        
+                        {/* Pestañas Básico/Avanzado */}
+                        <div className="flex gap-2 mb-4">
+                            <button
+                                onClick={() => setTrainingMode("basico")}
+                                className={`flex-1 py-2 px-4 rounded font-semibold transition-colors ${
+                                    trainingMode === "basico"
+                                        ? "bg-blue-600 text-white"
+                                        : "bg-gray-300 text-gray-700 hover:bg-gray-400"
+                                }`}
+                            >
+                                Básico
+                            </button>
+                            <button
+                                onClick={() => setTrainingMode("avanzado")}
+                                className={`flex-1 py-2 px-4 rounded font-semibold transition-colors ${
+                                    trainingMode === "avanzado"
+                                        ? "bg-purple-600 text-white"
+                                        : "bg-gray-300 text-gray-700 hover:bg-gray-400"
+                                }`}
+                            >
+                                Avanzado
+                            </button>
                         </div>
-                        <button
-                            onClick={uploadAndTrain}
-                            disabled={loading || !file}
-                            className="w-full mt-4 bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed"
-                        >
-                            {loading ? "Entrenando..." : "Entrenar Modelo"}
-                        </button>
+
+                        {trainingMode === "basico" ? (
+                            <div className="space-y-3">
+                                <p className="text-sm text-gray-600">
+                                    El modo básico encuentra automáticamente el número óptimo de tópicos
+                                    analizando la entropía de múltiples entrenamientos.
+                                </p>
+                                <button
+                                    onClick={handleTrainClick}
+                                    disabled={loading || !file}
+                                    className="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed"
+                                >
+                                    {loading ? "Entrenando..." : "Entrenar Modelo (Auto)"}
+                                </button>
+                            </div>
+                        ) : (
+                            <div className="space-y-3">
+                                <div>
+                                    <label className="block text-sm font-medium mb-1">
+                                        Número de Tópicos (K)
+                                    </label>
+                                    <input
+                                        type="number"
+                                        min="2"
+                                        value={K}
+                                        onChange={(e) => setK(Number(e.target.value))}
+                                        className="w-full border px-3 py-2 rounded"
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-medium mb-1">
+                                        Iteraciones: <span className="font-bold">{iterations}</span>
+                                    </label>
+                                    <input
+                                        type="range"
+                                        min="150"
+                                        max="200"
+                                        step="5"
+                                        value={iterations}
+                                        onChange={(e) => setIterations(Number(e.target.value))}
+                                        className="w-full custom-slider"
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-medium mb-1">
+                                        Alpha (opcional, default: 50/K)
+                                    </label>
+                                    <input
+                                        type="number"
+                                        step="0.01"
+                                        value={alpha}
+                                        onChange={(e) => setAlpha(e.target.value)}
+                                        placeholder="Auto"
+                                        className="w-full border px-3 py-2 rounded"
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-medium mb-1">
+                                        Beta
+                                    </label>
+                                    <input
+                                        type="number"
+                                        step="0.001"
+                                        value={beta}
+                                        onChange={(e) => setBeta(Number(e.target.value))}
+                                        className="w-full border px-3 py-2 rounded"
+                                    />
+                                </div>
+                                <button
+                                    onClick={handleTrainClick}
+                                    disabled={loading || !file}
+                                    className="w-full bg-purple-600 text-white font-semibold py-2 px-4 rounded hover:bg-purple-700 disabled:bg-gray-400 disabled:cursor-not-allowed"
+                                >
+                                    {loading ? "Entrenando..." : "Entrenar Modelo"}
+                                </button>
+                            </div>
+                        )}
                     </div>
 
                     {/* Panel 3: Info del modelo */}
                     {modelInfo && (
-                        <div className="bg-green-50 p-4 rounded shadow">
-                            <h3 className="font-bold text-lg mb-2">✓ Modelo Cargado</h3>
-                            <div className="text-sm space-y-1">
-                                <p><strong>Documentos:</strong> {modelInfo.num_docs}</p>
-                                <p><strong>Vocabulario:</strong> {modelInfo.vocab_size}</p>
-                                <p><strong>Tópicos (K):</strong> {modelInfo.K}</p>
-                                <p><strong>Entropía promedio:</strong> {modelInfo.avg_entropy}</p>
+                        <>
+                            <div className="bg-green-50 p-4 rounded shadow">
+                                <h3 className="font-bold text-lg mb-2">✓ Modelo Cargado</h3>
+                                <div className="text-sm space-y-1">
+                                    <p><strong>Documentos:</strong> {modelInfo.num_docs}</p>
+                                    <p><strong>Vocabulario:</strong> {modelInfo.vocab_size}</p>
+                                    <p><strong>Tópicos (K):</strong> {modelInfo.K}</p>
+                                    <p><strong>Entropía promedio:</strong> {modelInfo.avg_entropy}</p>
+                                </div>
                             </div>
-                        </div>
+
+                            {/* Botón de análisis de entropía */}
+                            {entropyAnalysis && (
+                                <button
+                                    onClick={viewEntropyAnalysis}
+                                    className="w-full bg-amber-500 text-white py-2 px-4 rounded shadow hover:bg-amber-600 font-semibold"
+                                >
+                                    📊 Ver Análisis de Entropía
+                                </button>
+                            )}
+                        </>
                     )}
 
                     {/* Panel 4: Visualización de tópicos */}
@@ -657,6 +820,37 @@ export default function LDA() {
                     {renderContent()}
                 </div>
             </div>
+
+            {/* Modal de confirmación para modo básico */}
+            {showConfirmModal && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                    <div className="bg-white p-6 rounded-lg shadow-xl max-w-md mx-4">
+                        <h3 className="text-xl font-bold mb-4">Entrenamiento Automático</h3>
+                        <p className="mb-6 text-gray-700">
+                            Se obtendrá el número recomendado de tópicos mediante el análisis de la entropía
+                            de varios entrenamientos del modelo. El proceso es tardado, por lo que se requiere
+                            paciencia :D
+                        </p>
+                        <div className="flex gap-3 justify-end">
+                            <button
+                                onClick={() => setShowConfirmModal(false)}
+                                className="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400 font-semibold"
+                            >
+                                Cancelar
+                            </button>
+                            <button
+                                onClick={() => {
+                                    setShowConfirmModal(false);
+                                    uploadAndTrain();
+                                }}
+                                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 font-semibold"
+                            >
+                                Aceptar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

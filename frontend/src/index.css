@@ -1,1 +1,34 @@
 @import "tailwindcss";
+
+.custom-slider {
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: linear-gradient(
+        to right,
+        #7fa9ed 0%,                                 /* seleccionado */
+        #0759dd var(--percent),                      /* seleccionado */
+        #ebe4e4 var(--percent),                      /* no seleccionado */
+        #d4d6db 100%                                 /* no seleccionado */
+    );
+    outline: none;
+}
+
+/* Thumb (bolita) */
+.custom-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #1e40af;
+    cursor: pointer;
+}
+
+.custom-slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #1e40af;
+    cursor: pointer;
+}

@@ -769,6 +769,61 @@ else if (type === "lda-topic-words") {
     );
   }
   
+  else if (type === "lda-entropy-analysis") {
+    // Gráfica de análisis de entropía
+    return (
+      <div className="flex flex-col p-4 h-full w-full justify-center items-center">
+        <h2 className="w-full text-xl font-bold mb-2">Análisis de Entropía vs Número de Tópicos</h2>
+        <Plot
+          data={[
+            {
+              x: data.K_values,
+              y: data.entropies,
+              type: "scatter",
+              mode: "lines+markers",
+              line: { color: "#3B82F6", width: 3 },
+              marker: { size: 8, color: "#3B82F6" },
+              name: "Entropía promedio"
+            },
+            {
+              x: [data.optimal_K],
+              y: [data.entropies[data.K_values.indexOf(data.optimal_K)]],
+              type: "scatter",
+              mode: "markers",
+              marker: { 
+                size: 15, 
+                color: "red",
+                symbol: "star",
+                line: { color: "darkred", width: 2 }
+              },
+              name: `K óptimo (${data.optimal_K})`
+            }
+          ]}
+          layout={{
+            autosize: true,
+            margin: { t: 10, b: 60, l: 60, r: 30 },
+            xaxis: { 
+              title: { text: "Número de Tópicos (K)", font: { size: 14 } },
+              dtick: 1
+            },
+            yaxis: { 
+              title: { text: "Entropía Promedio", font: { size: 14 } }
+            },
+            showlegend: true,
+            legend: {
+              x: 0.7,
+              y: 0.95,
+              bgcolor: "rgba(255,255,255,0.8)",
+              bordercolor: "#c4c4c4",
+              borderwidth: 1
+            }
+          }}
+          useResizeHandler={true}
+          style={{ width: "100%", height: "100%" }}
+        />
+      </div>
+    );
+  }
   return null;
 }
   

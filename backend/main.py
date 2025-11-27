@@ -406,7 +406,6 @@ def train_lda(
     
     try:
         documents = lda_state["documents"]
-        vocab = lda_state["vocab"]
         inv_vocab = lda_state["inv_vocab"]
         V = lda_state["V"]
         num_docs = lda_state["num_docs"]
@@ -447,6 +446,187 @@ def train_lda(
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error al entrenar LDA: {str(e)}")
+
+@app.post("/lda/train-auto")
+async def train_lda_auto(
+    min_topics: int = Query(2, description="Número mínimo de tópicos a probar"),
+    max_topics: int = Query(10, description="Número máximo de tópicos a probar"),
+    iterations: int = Query(150, description="Iteraciones por entrenamiento"),
+    beta: float = Query(0.01, description="Parámetro beta")
+):
+    """
+    Entrena múltiples modelos LDA con diferente número de tópicos y selecciona el óptimo
+    basándose en el análisis de entropía (modo básico).
+    """
+    if lda_state["documents"] is None:
+        raise HTTPException(status_code=400, detail="Primero debes cargar un corpus usando /lda/upload")
+    
+    if min_topics >= max_topics:
+        raise HTTPException(status_code=400, detail="min_topics debe ser >= 2, max_topics <= 20, y min < max")
+    
+    try:
+        documents = lda_state["documents"]
+        vocab = lda_state["vocab"]
+        inv_vocab = lda_state["inv_vocab"]
+        V = lda_state["V"]
+        num_docs = lda_state["num_docs"]
+        
+        print(f"\n{'='*60}")
+        print(f"INICIANDO ANÁLISIS DE ENTROPÍA")
+        print(f"Probando K de {min_topics} a {max_topics}")
+        print('='*60)
+        
+        entropy_results = []
+        
+        # Entrenar modelos con diferentes K
+        num_runs = ((max_topics - min_topics) // 4) + 1
+
+        for run, K in enumerate(range(min_topics, max_topics + 1, 4), start=1):
+            print(f"[{run}/{num_runs}] Entrenando con K={K} tópicos...")   
+
+            alpha = 50 / K
+            
+            # Entrenar modelo
+            z_dn, ndk, nkw, nk, perplexities = LDA(
+                documents, 
+                V=V,
+                K=K, 
+                iterations=iterations,
+                alpha=alpha, 
+                beta=beta, 
+                compute_perp=False
+            )
+            
+            # Computar matrices
+            theta_temp = compute_theta(ndk, alpha, K)
+            
+            # Calcular entropía promedio
+            entropies = []
+            for dist in theta_temp:
+                entropy = float(-np.sum(dist * np.log(dist + 1e-10)))
+                entropies.append(entropy)
+            avg_entropy = float(np.mean(entropies))
+            
+            entropy_results.append({
+                "K": K,
+                "entropy": avg_entropy,
+                "alpha": alpha
+            })
+            
+            print(f"    ✓ K={K}: Entropía = {avg_entropy:.4f}")
+        
+        # Encontrar el número óptimo de tópicos
+        optimal_K = find_optimal_k(entropy_results)
+        
+        print(f"\n{'='*60}")
+        print(f"✓ NÚMERO ÓPTIMO DE TÓPICOS: K={optimal_K}")
+        print(f"  Entrenando modelo final...")
+        print('='*60)
+        
+        # Entrenar el modelo final con el K óptimo
+        alpha_optimal = 50 / optimal_K
+        z_dn, ndk, nkw, nk, perplexities = LDA(
+            documents, 
+            V=V,
+            K=optimal_K, 
+            iterations=iterations,
+            alpha=alpha_optimal, 
+            beta=beta, 
+            compute_perp=True
+        )
+        
+        theta = compute_theta(ndk, alpha_optimal, optimal_K)
+        phi = compute_phi(nkw, beta, V, optimal_K)
+        
+        metadata = {
+            "K": optimal_K,
+            "iterations": iterations,
+            "alpha": alpha_optimal,
+            "beta": beta,
+            "num_docs": num_docs,
+            "vocab_size": V,
+            "final_perplexity": float(perplexities[-1]) if perplexities else None,
+            "training_mode": "auto"
+        }
+        
+        # Guardar estado
+        lda_state["trained"] = True
+        lda_state["theta"] = theta
+        lda_state["phi"] = phi
+        lda_state["K"] = optimal_K
+        lda_state["metadata"] = metadata
+        lda_state["entropy_analysis"] = entropy_results
+        
+        print(f"✓ Modelo final entrenado exitosamente\n")
+        
+        return {
+            "success": True,
+            "message": f"Modelo LDA entrenado automáticamente con K óptimo = {optimal_K}",
+            "optimal_K": optimal_K,
+            "num_docs": num_docs,
+            "vocab_size": V,
+            "iterations": iterations,
+            "alpha": alpha_optimal,
+            "beta": beta,
+            "entropy_analysis": entropy_results,
+            "final_perplexity": float(perplexities[-1]) if perplexities else None
+        }
+        
+    except Exception as e:
+        import traceback
+        error_detail = traceback.format_exc()
+        print(f"\n❌ ERROR en train_lda_auto:")
+        print(error_detail)
+        raise HTTPException(status_code=500, detail=f"Error en entrenamiento automático: {str(e)}\n{error_detail}")
+
+
+def find_optimal_k(entropy_results, threshold_ratio=0.30):
+    """
+    Encuentra K óptimo detectando el punto donde la entropía deja de aumentar significativamente.
+    threshold_ratio: porcentaje mínimo del cambio inicial
+    """
+    K_values = [r["K"] for r in entropy_results]
+    entropies = [r["entropy"] for r in entropy_results]
+
+    if len(entropies) < 3:
+        return K_values[len(K_values) // 2]
+    
+    # Primera derivada (cambios)
+    deltas = [entropies[i] - entropies[i-1] for i in range(1, len(entropies))]
+    
+    # Tomar el cambio inicial como referencia
+    initial_delta = deltas[0]
+    threshold = initial_delta * threshold_ratio
+
+    # Buscar el primer K donde el crecimiento deja de ser significativo
+    for i in range(1, len(deltas)):
+        if deltas[i] <= threshold:
+            return K_values[i]  # K correspondiente
+    
+    # Si nunca se estabiliza, elegir máximo K
+    return K_values[-1]
+
+
+@app.get("/lda/entropy-analysis")
+def get_entropy_analysis():
+    """Retorna el análisis de entropía si está disponible."""
+    if not lda_state.get("entropy_analysis"):
+        raise HTTPException(
+            status_code=404,
+            detail="No hay análisis de entropía disponible. Usa el modo de entrenamiento automático primero."
+        )
+    
+    entropy_data = lda_state["entropy_analysis"]
+    
+    return {
+        "success": True,
+        "data": entropy_data,
+        "optimal_K": lda_state["K"],
+        "chart_data": {
+            "K_values": [d["K"] for d in entropy_data],
+            "entropies": [d["entropy"] for d in entropy_data]
+        }
+    }
 
 @app.get("/lda/info")
 def get_lda_info():
